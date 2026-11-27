@@ -51,6 +51,7 @@ git push origin v1.0.0
 | 推送分支或创建 main 的 PR | 检查源码、运行测试、构建单文件 EXE 试用包 |
 | 推送与 package.json 一致的 v 标签 | 校验 main 历史、检查、测试、构建单文件 EXE |
 | 发布构建成功 | 创建含 EXE 和 SHA256SUMS 的 Release 草稿 |
+| 在网页发布尚无附件的 Release | 为该版本构建并附加 EXE 和 SHA256SUMS |
 
 试用包在 Actions 运行页的 Artifacts 下载，解压后运行单文件 EXE；通过运行记录识别对应分支和提交。维护者在 Releases 中检查并发布草稿，其他使用者下载正式 EXE 即可。
 
