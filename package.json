@@ -1,6 +1,6 @@
 {
   "name": "prototype-editor-desktop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "原型编辑器：原页面编辑、独立交互与图片导出",
   "main": "app/main.cjs",
   "author": "PrototypeEditor",
@@ -19,7 +19,8 @@
     "prepack": "node scripts/prepare-app.cjs",
     "pack": "electron-builder --win --x64 --dir --publish never",
     "predist": "node scripts/prepare-app.cjs",
-    "dist": "electron-builder --win portable --x64 --publish never"
+    "dist": "electron-builder --win portable --x64 --publish never",
+    "test:window-close": "node tests/window-close.cjs"
   },
   "devDependencies": {
     "electron": "45.3.3",

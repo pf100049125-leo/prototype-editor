@@ -1,6 +1,6 @@
 # PrototypeEditor 开发源码
 
-原型编辑工具 1.0.0 基线版源码。已拆分页面、样式和脚本，可继续修改功能并构建 Windows EXE。
+原型编辑工具 1.0.1 修复版源码。修复未保存工程时窗口无法关闭的问题，初始基线继续保留为 v1.0.0。已拆分页面、样式和脚本，可继续修改功能并构建 Windows EXE。
 
 ## GitHub 协作
 
@@ -76,7 +76,7 @@ npm run dist  # 生成单文件便携 EXE
 ```
 
 - 目录版：`dist/win-unpacked/PrototypeEditor.exe`，须保留整个目录。
-- 便携版：`dist/PrototypeEditor-1.0.0-portable.exe`，文件名随版本变化。
+- 便携版：`dist/PrototypeEditor-1.0.1-portable.exe`，文件名随版本变化。
 - 修改版本号后，同时检查窗口标题和 preload 中的版本标识。
 - 打包使用本项目安装的 Electron；首次便携打包可能还需下载构建工具。
 

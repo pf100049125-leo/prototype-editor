@@ -56,12 +56,21 @@ else {
     });
     window = new BrowserWindow({
       width: 1680, height: 1040, minWidth: 1000, minHeight: 700,
-      title: 'PrototypeEditor 1.0.0 · 原型编辑器', icon: path.join(__dirname, 'icon.ico'),
+      title: 'PrototypeEditor 1.0.1 · 原型编辑器', icon: path.join(__dirname, 'icon.ico'),
       show: false, autoHideMenuBar: true, backgroundColor: '#f4f5f7',
       webPreferences: { preload: path.join(__dirname, 'preload.cjs'), contextIsolation: true, sandbox: true, nodeIntegration: false }
     });
     window.webContents.setWindowOpenHandler(() => ({ action: 'deny' }));
     window.webContents.on('will-navigate', (event, url) => { if (url.split('#')[0] !== APP_URL) event.preventDefault(); });
+    window.webContents.on('will-prevent-unload', event => {
+      const choice = dialog.showMessageBoxSync(window, {
+        type: 'warning', title: '退出原型编辑器', message: '工程有未保存的修改',
+        detail: '选择“继续编辑”后，可使用“文件 → 保存工程”保留修改。选择“不保存并关闭”将丢弃尚未导出的工程修改。',
+        buttons: ['继续编辑', '不保存并关闭'], defaultId: 0, cancelId: 0, noLink: true
+      });
+      // In Electron this permits the unload that the renderer tried to cancel.
+      if (choice === 1) event.preventDefault();
+    });
     window.once('ready-to-show', () => { window.maximize(); window.show(); });
     window.on('closed', () => { window = null; saves.clear(); });
     await window.loadURL(APP_URL);

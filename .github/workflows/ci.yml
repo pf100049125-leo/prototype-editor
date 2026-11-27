@@ -30,6 +30,7 @@ jobs:
       - run: npm ci --no-audit --no-fund
       - run: npm run check
       - run: npm test
+      - run: npm run test:window-close
       - run: npm run dist
       - run: node scripts/release-assets.cjs
       - name: Upload branch preview
