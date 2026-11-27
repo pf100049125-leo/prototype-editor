@@ -1,0 +1,69 @@
+<div class="panel">
+    <div class="panel-body">
+        <div class="row">
+            <div id="deviceStorageTitle"><div class="basic-background "><div class="col-sm-3"><div class="">Storage Name&nbsp;</div></div><div class="col-sm-3"><div class="">Free/Total&nbsp;</div></div><div class="col-sm-3"><div class="">Status&nbsp;</div></div><div class="col-sm-3">Format</div></div></div>
+            <div id="deviceStorageXpad"><div class="basic-background select"><div class="col-sm-3"><div class="">HDD&nbsp;</div></div><div class="col-sm-3"><div class="">3.0G/499.8G&nbsp;</div></div><div class="col-sm-3"><div class="">Recording&nbsp;</div></div><div class="col-sm-3"><button class="btn btn-operater" data-name="HDD" data-value="0" type="button"><i class="fa fa-trash-o"></i></button></div></div><div class="basic-background select"><div class="col-sm-3"><div class="">SD(Internal)&nbsp;</div></div><div class="col-sm-3"><div class="">37.2G/63.8G&nbsp;</div></div><div class="col-sm-3"><div class="">Ok&nbsp;</div></div><div class="col-sm-3"><button class="btn btn-operater" data-name="SD(Internal)" data-value="1" type="button"><i class="fa fa-trash-o"></i></button></div></div></div>
+            <div id="deviceStorageUDisk"></div>
+        </div>
+        <div class="row" id="mdvrStorageDisplay" style="display:none">
+            <div id="deviceStorageTitle1"></div>
+            <div id="deviceStorageMdvr"></div>
+        </div>
+        <div class="row" id="local_storage_div" style="display: none;">
+            <div class="basic-background ">
+                <div class="col-sm-4"><span data-lang="STR_LOCAL_STORAGE">Local Storage</span></div>
+                <div class="col-sm-6"><span><i class="fa fa-hand-o-down"></i></span></div>
+            </div>
+            <div class="basic-background select">
+                <div class="col-sm-4"><span data-lang="IE_SnapFilePath">Snap Path</span></div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input id="dir_path_capture" class="form-control" type="text" disabled="" data-widget="editbox">
+                            <span class="input-group-addon" style="width: 50px;cursor: pointer;line-height: 1.0;" data-lang="STR_BROWSE">Browse</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="basic-background select">
+                <div class="col-sm-4"><span data-lang="IE_RecordBackupPath">Record Backup Path</span></div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input id="dir_path_record_backup" class="form-control" type="text" disabled="" data-widget="editbox">
+                            <span class="input-group-addon" style="width: 50px;cursor: pointer;line-height: 1.0;" data-lang="STR_BROWSE">Browse</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 选择格式提示框 -->
+<div id="usb_format_dialog_modal" class="modal no-backdrop in  modal-page-middle" style="display: none;">
+    <div class="modal-dialog modal-md">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none">
+                <span data-lang="STR_FORMAT">Format</span>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <a><span data-lang="STR_SELECT FORMAT SYSTEM">Format Type:</span></a>
+                </div>
+                <div class="col-sm-5">
+                    <span class="lavaui-combo-container"><input type="text" id="usb_format_type" class="form-control" data-widget="selectbox" readonly="" data-type="int"><div class="lavaui-combo-panel list-group" style="width: 203px; height: 60px; overflow: auto;"><a href="#" class="list-group-item" data-value="0">N9M</a><a href="#" class="list-group-item" data-value="1">FAT32</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" style="width: 80px;" id="btn_device_format_cancel" type="button"><span data-lang="STR_CANCEL">Cancel</span></button>
+                <button class="btn" style="width: 80px;margin-left:15%;" id="btn_device_format" type="button"><span data-lang="STR_FORMAT">Format</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+

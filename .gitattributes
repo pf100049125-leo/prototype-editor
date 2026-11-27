@@ -1,0 +1,6 @@
+* text=auto eol=lf
+# Page strings are part of the saved prototype. Preserve their exact bytes.
+src/prototype/** -text
+vendor/** -text
+*.png binary
+*.ico binary

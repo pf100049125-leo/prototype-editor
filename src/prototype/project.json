@@ -1,0 +1,406 @@
+{
+  "project": {
+    "pages": [
+      {
+        "key": "preview",
+        "title": "Live View",
+        "type": "preview",
+        "path": [
+          "Live View"
+        ],
+        "icon": "",
+        "url": "/pages/preview/default.html"
+      },
+      {
+        "key": "playback",
+        "title": "Playback",
+        "type": "playback",
+        "path": [
+          "Playback"
+        ],
+        "icon": "",
+        "url": "/pages/playback/default.html"
+      },
+      {
+        "key": "maintenance-version",
+        "title": "Version Info",
+        "type": "maintenance",
+        "path": [
+          "Maintenance",
+          "Version Info"
+        ],
+        "icon": "exclamation-circle",
+        "url": "/pages/maintenance/menu/version/default.html"
+      },
+      {
+        "key": "maintenance-module",
+        "title": "Device Module",
+        "type": "maintenance",
+        "path": [
+          "Maintenance",
+          "Device Module"
+        ],
+        "icon": "square",
+        "url": "/pages/maintenance/menu/module/default.html"
+      },
+      {
+        "key": "maintenance-storage",
+        "title": "Storage Device",
+        "type": "maintenance",
+        "path": [
+          "Maintenance",
+          "Storage Device"
+        ],
+        "icon": "save",
+        "url": "/pages/maintenance/menu/storage/default.html"
+      },
+      {
+        "key": "maintenance-environment",
+        "title": "Environment",
+        "type": "maintenance",
+        "path": [
+          "Maintenance",
+          "Environment"
+        ],
+        "icon": "thermometer",
+        "url": "/pages/maintenance/menu/deviceenvironment/default.html"
+      },
+      {
+        "key": "maintenance-server",
+        "title": "Server Status",
+        "type": "maintenance",
+        "path": [
+          "Maintenance",
+          "Server Status"
+        ],
+        "icon": "server",
+        "url": "/pages/maintenance/menu/server/default.html"
+      },
+      {
+        "key": "maintenance-parameter",
+        "title": "Config",
+        "type": "maintenance",
+        "path": [
+          "Maintenance",
+          "Config"
+        ],
+        "icon": "book",
+        "url": "/pages/maintenance/menu/parameter/default.html"
+      },
+      {
+        "key": "maintenance-upgrade",
+        "title": "Upgrade",
+        "type": "maintenance",
+        "path": [
+          "Maintenance",
+          "Upgrade"
+        ],
+        "icon": "gavel",
+        "url": "/pages/maintenance/menu/upgrade/default.html"
+      },
+      {
+        "key": "log",
+        "title": "Log",
+        "type": "log",
+        "path": [
+          "Log"
+        ],
+        "icon": "",
+        "url": "/pages/log/default.html"
+      },
+      {
+        "key": "config-regist-info",
+        "title": "Regist Info",
+        "type": "config",
+        "path": [
+          "Config",
+          "Basic Setup",
+          "Regist Info"
+        ],
+        "icon": "info-circle",
+        "url": "/pages/config/menu-basic-set/config-regist-info.html"
+      },
+      {
+        "key": "config-time",
+        "title": "Time Setup",
+        "type": "config",
+        "path": [
+          "Config",
+          "Basic Setup",
+          "Time Setup"
+        ],
+        "icon": "clock-o",
+        "url": "/pages/config/menu-basic-set/config-time-setup.html"
+      },
+      {
+        "key": "config-startup",
+        "title": "Startup",
+        "type": "config",
+        "path": [
+          "Config",
+          "Basic Setup",
+          "Startup"
+        ],
+        "icon": "power-off",
+        "url": "/pages/config/menu-basic-set/config-startup.html"
+      },
+      {
+        "key": "config-user",
+        "title": "User Setup",
+        "type": "config",
+        "path": [
+          "Config",
+          "Basic Setup",
+          "User Setup"
+        ],
+        "icon": "user",
+        "url": "/pages/config/menu-basic-set/config-user-setup.html"
+      },
+      {
+        "key": "config-network",
+        "title": "Network",
+        "type": "config",
+        "path": [
+          "Config",
+          "Basic Setup",
+          "Network"
+        ],
+        "icon": "internet-explorer",
+        "url": "/pages/config/menu-basic-set/config-network.html"
+      },
+      {
+        "key": "config-application",
+        "title": "Application",
+        "type": "config",
+        "path": [
+          "Config",
+          "Basic Setup",
+          "Application"
+        ],
+        "icon": "qrcode",
+        "url": "/pages/config/menu-basic-set/config-application.html"
+      },
+      {
+        "key": "config-other",
+        "title": "Other Setup",
+        "type": "config",
+        "path": [
+          "Config",
+          "Basic Setup",
+          "Other Setup"
+        ],
+        "icon": "share",
+        "url": "/pages/config/menu-basic-set/config-other-setup.html"
+      },
+      {
+        "key": "config-telephone",
+        "title": "Telephone",
+        "type": "config",
+        "path": [
+          "Config",
+          "Basic Setup",
+          "Telephone"
+        ],
+        "icon": "phone",
+        "url": "/pages/config/menu-basic-set/config-its.html"
+      },
+      {
+        "key": "config-liveview",
+        "title": "Live View",
+        "type": "config",
+        "path": [
+          "Config",
+          "Surveillance",
+          "Live View"
+        ],
+        "icon": "television",
+        "url": "/pages/config/menu-video-set/config-monior.html"
+      },
+      {
+        "key": "config-record",
+        "title": "Record",
+        "type": "config",
+        "path": [
+          "Config",
+          "Surveillance",
+          "Record"
+        ],
+        "icon": "youtube-play",
+        "url": "/pages/config/menu-video-set/config-record.html"
+      },
+      {
+        "key": "config-remote",
+        "title": "IPC Setup",
+        "type": "config",
+        "path": [
+          "Config",
+          "Surveillance",
+          "IPC Setup"
+        ],
+        "icon": "cloud",
+        "url": "/pages/config/menu-video-set/config-remote.html"
+      },
+      {
+        "key": "config-camera",
+        "title": "Camera Setup",
+        "type": "config",
+        "path": [
+          "Config",
+          "Surveillance",
+          "Camera Setup"
+        ],
+        "icon": "video-camera",
+        "url": "/pages/config/menu-video-set/config-camera.html"
+      },
+      {
+        "key": "config-general",
+        "title": "General",
+        "type": "config",
+        "path": [
+          "Config",
+          "Collection",
+          "General"
+        ],
+        "icon": "cog",
+        "url": "/pages/config/menu-data-set/config-general.html"
+      },
+      {
+        "key": "config-snap",
+        "title": "Snap Setting",
+        "type": "config",
+        "path": [
+          "Config",
+          "Collection",
+          "Snap Setting"
+        ],
+        "icon": "camera",
+        "url": "/pages/config/menu-data-set/config-capture.html"
+      },
+      {
+        "key": "config-alarm-base",
+        "title": "Base",
+        "type": "config",
+        "path": [
+          "Config",
+          "Alarm",
+          "Base"
+        ],
+        "icon": "circle-o",
+        "url": "/pages/config/menu-alarm-set/config-base-alarm.html"
+      },
+      {
+        "key": "config-alarm-video",
+        "title": "Video",
+        "type": "config",
+        "path": [
+          "Config",
+          "Alarm",
+          "Video"
+        ],
+        "icon": "globe",
+        "url": "/pages/config/menu-alarm-set/config-video-alarm.html"
+      },
+      {
+        "key": "config-alarm-advanced",
+        "title": "Advanced",
+        "type": "config",
+        "path": [
+          "Config",
+          "Alarm",
+          "Advanced"
+        ],
+        "icon": "spinner",
+        "url": "/pages/config/menu-alarm-set/config-advance-alarm.html"
+      },
+      {
+        "key": "config-alarm-ai",
+        "title": "AI",
+        "type": "config",
+        "path": [
+          "Config",
+          "Alarm",
+          "AI"
+        ],
+        "icon": "user-md",
+        "url": "/pages/config/menu-alarm-set/config-aiapp-alarm.html"
+      },
+      {
+        "key": "config-alarm-schoolbus",
+        "title": "SchoolBus",
+        "type": "config",
+        "path": [
+          "Config",
+          "Alarm",
+          "SchoolBus"
+        ],
+        "icon": "bus",
+        "url": "/pages/config/menu-alarm-set/config-schoolbus-alarm.html"
+      }
+    ],
+    "topDefaults": {
+      "/pages/preview/default.html": "preview",
+      "/pages/playback/default.html": "playback",
+      "/pages/log/default.html": "log",
+      "/pages/config/default.html": "config-regist-info",
+      "/pages/maintenance/default.html": "maintenance-version"
+    },
+    "editorStartKey": "config-alarm-base"
+  },
+  "order": [
+    "theme",
+    "typeStyles",
+    "topNav",
+    "shellByType",
+    "content",
+    "pages",
+    "topDefaults",
+    "editorStartKey"
+  ],
+  "files": {
+    "theme": "styles/theme.css",
+    "typeStyles": {
+      "preview": "styles/preview.css",
+      "playback": "styles/playback.css",
+      "log": "styles/log.css",
+      "maintenance": "styles/maintenance.css",
+      "config": "styles/config.css",
+      "login": "styles/login.css"
+    },
+    "topNav": "top-nav.html",
+    "shellByType": {
+      "config": "shells/config.html",
+      "maintenance": "shells/maintenance.html"
+    },
+    "content": {
+      "preview": "pages/preview.html",
+      "playback": "pages/playback.html",
+      "maintenance-version": "pages/maintenance-version.html",
+      "maintenance-module": "pages/maintenance-module.html",
+      "maintenance-storage": "pages/maintenance-storage.html",
+      "maintenance-environment": "pages/maintenance-environment.html",
+      "maintenance-server": "pages/maintenance-server.html",
+      "maintenance-parameter": "pages/maintenance-parameter.html",
+      "maintenance-upgrade": "pages/maintenance-upgrade.html",
+      "log": "pages/log.html",
+      "config-regist-info": "pages/config-regist-info.html",
+      "config-time": "pages/config-time.html",
+      "config-startup": "pages/config-startup.html",
+      "config-user": "pages/config-user.html",
+      "config-network": "pages/config-network.html",
+      "config-application": "pages/config-application.html",
+      "config-other": "pages/config-other.html",
+      "config-telephone": "pages/config-telephone.html",
+      "config-liveview": "pages/config-liveview.html",
+      "config-record": "pages/config-record.html",
+      "config-remote": "pages/config-remote.html",
+      "config-camera": "pages/config-camera.html",
+      "config-general": "pages/config-general.html",
+      "config-snap": "pages/config-snap.html",
+      "config-alarm-base": "pages/config-alarm-base.html",
+      "config-alarm-video": "pages/config-alarm-video.html",
+      "config-alarm-advanced": "pages/config-alarm-advanced.html",
+      "config-alarm-ai": "pages/config-alarm-ai.html",
+      "config-alarm-schoolbus": "pages/config-alarm-schoolbus.html"
+    }
+  }
+}

@@ -1,0 +1,578 @@
+
+
+<div class="panel">
+    <div class="panel-body">
+        <ul class="tabs" data-options="onSelect:'window.configGeneralPage.refreshInterfaceFinish'">
+            <li class="active">
+                <a href="#general_serial"><span data-lang="STR_SERIAL">Serial Port</span></a>
+            </li>
+            <li id="network_port_tab" style="">
+                <a href="#general_networkport"><span data-lang="STR_Network">Network</span></a>
+            </li>
+            <li id="can_port_tab" style="display:none">
+                <a href="#general_canport"><span data-lang="STR_CAN">CAN</span></a>
+            </li>
+            <li>
+                <a href="#general_speed"><span data-lang="STR_CAR_SPEED">Speed</span></a>
+            </li>
+            <li id="navigation_tab" style="display:none">
+                <a href="#general_navigation"><span data-lang="STR_LOCATION">Location</span></a>
+            </li>
+            <li>
+                <a href="#general_milege"><span data-lang="STR_MileageStatistics">Mileage</span></a>
+            </li>
+            <!-- <li>
+                <a href="#general_flowlimit"><span data-lang="STR_FlowLimited"></span></a>
+            </li> -->
+            <li>
+                <a href="#general_unit"><span data-lang="STR_UNIT">Unit</span></a>
+            </li>
+            <!--<li>
+                <a href="#general_agps"><span data-lang="STR_AGPS"></span></a>
+            </li> -->
+			<li id="sensor-li">
+                <a href="#general_motion_sensor"><span data-lang="STR_MOTION_SENSOR">Motion Sensor</span></a>
+            </li>
+            <li id="thSensor-li">
+                <a href="#general_th_sensor"><span data-lang="STR_T&amp;H_SENSOR">T&amp;H Sensor</span></a>
+            </li>
+            <li id="b2-li" style="display: none;">
+                <a href="#general_b2_sensor"><span data-lang="STR_B2_SENSOR">Acousto</span></a>
+            </li>
+            <li id="gps-li" style="display: none;">
+                <a href="#general_schoolgps"><span data-lang="STR_GPS_UPLOAD">GPS</span></a>
+            </li>
+        </ul>
+        <div class="tabs-content">
+            <div id="general_serial" class="panel-body active">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <table class="table table-bordered table-striped align-center" style="margin-left:20px;width:480px">
+                            <tbody id="serial_info_list"><tr><td class="serial-name" style="width:18%;">232-1</td><td class="serial-type" style="width:38%;"><div><span class="lavaui-combo-container"><input id="FT_ST" type="text" class="form-control" data-widget="selectbox" readonly="" style="color: rgb(255, 255, 255);"><div class="lavaui-combo-panel list-group" style="width: 218px; height: 146px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0-0-0">None</a><a href="#" class="list-group-item" data-value="1-0-0">Extend Box</a><a href="#" class="list-group-item" data-value="2-0-0">Control Panel</a><a href="#" class="list-group-item" data-value="2-1-0">Old Control Panel</a><a href="#" class="list-group-item" data-value="8-0-0">External GPS</a><a href="#" class="list-group-item" data-value="150-0-0">Keyboard</a><a href="#" class="list-group-item" data-value="195-1-0">PBP</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="serial-baudrate" style="width:25%;"><div><span class="lavaui-combo-container"><input id="BR" type="text" class="form-control" data-widget="selectbox" data-param="PSS-SP-0-BR" readonly="" style="color: rgb(255, 255, 255);"><div class="lavaui-combo-panel list-group" style="width: 114px; height: 146px; overflow: auto;"><a href="#" class="list-group-item" data-value="7">2400</a><a href="#" class="list-group-item active" data-value="0">4800</a><a href="#" class="list-group-item" data-value="1">9600</a><a href="#" class="list-group-item" data-value="2">19200</a><a href="#" class="list-group-item" data-value="8">28800</a><a href="#" class="list-group-item" data-value="3">38400</a><a href="#" class="list-group-item" data-value="4">56000</a><a href="#" class="list-group-item" data-value="5">57600</a><a href="#" class="list-group-item" data-value="6">115200</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="serial-operate" style="width:18%;display:none"><button id="serial_extend_upgrade" class="btn btn-operater" data-value="0" type="button"></button></td></tr><tr><td class="serial-name" style="width:18%;">232-2</td><td class="serial-type" style="width:38%;"><div><span class="lavaui-combo-container"><input id="FT_ST" type="text" class="form-control" data-widget="selectbox" readonly="" style="color: rgb(255, 255, 255);"><div class="lavaui-combo-panel list-group" style="width: 218px; height: 146px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0-0-1">None</a><a href="#" class="list-group-item" data-value="1-0-1">Extend Box</a><a href="#" class="list-group-item" data-value="2-0-1">Control Panel</a><a href="#" class="list-group-item" data-value="2-1-1">Old Control Panel</a><a href="#" class="list-group-item" data-value="8-0-1">External GPS</a><a href="#" class="list-group-item" data-value="150-0-1">Keyboard</a><a href="#" class="list-group-item" data-value="195-1-1">PBP</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="serial-baudrate" style="width:25%;"><div><span class="lavaui-combo-container"><input id="BR" type="text" class="form-control" data-widget="selectbox" data-param="PSS-SP-1-BR" readonly="" style="color: rgb(255, 255, 255);"><div class="lavaui-combo-panel list-group" style="width: 114px; height: 146px; overflow: auto;"><a href="#" class="list-group-item" data-value="7">2400</a><a href="#" class="list-group-item active" data-value="0">4800</a><a href="#" class="list-group-item" data-value="1">9600</a><a href="#" class="list-group-item" data-value="2">19200</a><a href="#" class="list-group-item" data-value="8">28800</a><a href="#" class="list-group-item" data-value="3">38400</a><a href="#" class="list-group-item" data-value="4">56000</a><a href="#" class="list-group-item" data-value="5">57600</a><a href="#" class="list-group-item" data-value="6">115200</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="serial-operate" style="width:18%;display:none"><button id="serial_extend_upgrade" class="btn btn-operater" data-value="1" type="button"></button></td></tr><tr><td class="serial-name" style="width:18%;">485-2</td><td class="serial-type" style="width:38%;"><div><span class="lavaui-combo-container"><input id="FT_ST" type="text" class="form-control" data-widget="selectbox" readonly="" style="color: rgb(255, 255, 255);"><div class="lavaui-combo-panel list-group" style="width: 218px; height: 146px; overflow: auto;"><a href="#" class="list-group-item" data-value="0-0-2">None</a><a href="#" class="list-group-item" data-value="2-0-2">Control Panel</a><a href="#" class="list-group-item" data-value="2-1-2">Old Control Panel</a><a href="#" class="list-group-item" data-value="8-0-2">External GPS</a><a href="#" class="list-group-item" data-value="30-0-2">Swip Card</a><a href="#" class="list-group-item" data-value="150-0-2">Keyboard</a><a href="#" class="list-group-item active" data-value="147-0-2">Motion Sensor</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="serial-baudrate" style="width:25%;"><div><span class="lavaui-combo-container"><input id="BR" type="text" class="form-control" data-widget="selectbox" data-param="PSS-SP-2-BR" readonly="" style="color: rgb(255, 255, 255);"><div class="lavaui-combo-panel list-group" style="width: 114px; height: 146px; overflow: auto;"><a href="#" class="list-group-item" data-value="7">2400</a><a href="#" class="list-group-item" data-value="0">4800</a><a href="#" class="list-group-item" data-value="1">9600</a><a href="#" class="list-group-item" data-value="2">19200</a><a href="#" class="list-group-item" data-value="8">28800</a><a href="#" class="list-group-item" data-value="3">38400</a><a href="#" class="list-group-item active" data-value="4">56000</a><a href="#" class="list-group-item" data-value="5">57600</a><a href="#" class="list-group-item" data-value="6">115200</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="serial-operate" style="width: 18%;"><button id="serial_extend_upgrade" class="btn btn-operater" data-value="2" style="color: rgb(255, 255, 255);" type="button">Setup</button></td></tr></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="general_speed" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <div class="row">
+                            <label class="col-sm-4"><span data-lang="STR_SPEED UNIT">Unit</span></label>
+                            <div class="col-sm-4">
+                                <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" data-param="SAP-UN" readonly=""><div class="lavaui-combo-panel list-group" style="width: 204px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item active" data-value="0">km/h</a><a href="#" class="list-group-item" data-value="1">mph</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-4"><span data-lang="STR_SPEED SOURCE">Source</span></label>
+                            <div class="col-sm-4">
+                                <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" data-param="SAP-SF" readonly=""><div class="lavaui-combo-panel list-group" style="width: 204px; height: 120px; overflow: auto; display: none;"><a href="#" class="list-group-item active" data-value="0">Satellite</a><a href="#" class="list-group-item" data-value="1">Pulse</a><a href="#" class="list-group-item" data-value="4">OBD</a><a href="#" class="list-group-item" data-value="2">Auto</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" id="pulse_speed_show" style="display: none;">
+                        <div class="row">
+                            <label class="col-sm-4"><span data-lang="STR_SPEED_CALIBRATE MODEL">Calibration Mode</span></label>
+                            <div class="col-sm-7">
+                                <div class="row" style="margin-left:0px;">
+                                    <div style="width:55%;float:left;">
+                                        <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" data-param="PSA-AT" readonly=""><div class="lavaui-combo-panel list-group" style="width: 204px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item" data-value="0">Automatic Correct</a><a href="#" class="list-group-item active" data-value="3">Input Manually</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                                    </div>
+                                    <div style="width:30%;float:left;margin-left:10px">
+                                        <button id="start_end_study" class="btn btn-operater" data-value="0" type="button">Start</button>
+                                    </div>
+                                </div>
+                                <div class="row" id="pulse_calc_show" style="">
+                                    <div style="width:32%;float:left;">
+                                        <input id="pulse_input_mileage" type="text" class="form-control" data-widget="editbox" maxlength="6" style="color: rgb(255, 255, 255);">
+                                    </div>
+                                    <div style="width:30%;float:left;margin-left:10px">
+                                        <button id="pulse_calc_button" class="btn btn-operater" style="color: rgb(255, 255, 255);" type="button"><span data-lang="STR_CALC">Calculate</span></button>
+                                    </div>
+                                </div>
+                                <div class="row" id="pulse_speed_status_show" style="display:none">
+                                    <label><span data-lang="STR_STUDY">Studying...</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="pulse_speed_ratio_show" style="">
+                            <label class="col-sm-4"><span data-lang="STR_PULSE_RATIO">Pulse Ratio</span></label>
+                            <div class="col-sm-4">
+                            <input id="pulse_ratio" type="text" class="form-control" data-type="int" data-widget="editbox" maxlength="6" style="width: 40%;"><label class="input1">Per KM</label>
+                            </div>
+                            <label class="col-sm6" id="pulse_ratio_unit"></label>                   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="general_navigation" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-4"><span data-lang="STR_NAVIGATION_MODE">Navigation Mode</span></label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" data-widget="selectbox" data-param="GSP-GM">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="general_milege" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-4"><span data-lang="STR_TotalMileage">Total</span></label>
+                        <label class="col-sm-6" id="total_mileage_value"></label>
+                    </div>
+                    <div class="form-group milegeCalibrate">
+                        <label class="col-sm-4"><span data-lang="STR_MILEAGE_BASE_VALUE">Mileage</span></label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" data-widget="editbox" data-param="PMS-BV" data-type="int" maxlength="7" style="width: 40%;"><label class="input1">(0 ~ 4000000)km</label>
+                        </div>
+                    </div>
+                    <div class="form-group  milegeCalibrate">
+                        <label class="col-sm-4"><span data-lang="STR_MILEAGE_OPORATION">Operation</span></label>
+                        <div class="col-sm-5">
+                            <button id="milege_calibrate_button" class="btn btn-operater" type="button"><span data-lang="STR_CORRECT">Correct</span></button>
+                            <button id="milege_clear_button" class="btn btn-operater" style="margin-left:15px;" type="button"><span data-lang="STR_CLEARED_TO_ZERO">Clear</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="general_flowlimit" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-5">
+                            <div class="radio-list" data-widget="radiolistbox" data-param="SUBSTRNET-RLE">
+                                <label class="radio">
+                                    <span data-lang="STR_FlowLimit_No">Default , No Limit</span>
+                                    <input type="radio" name="radio-one">
+                                    <span></span>
+                                </label>
+                                <label class="radio">
+                                    <span data-lang="STR_FlowLimit_Custom">Custom</span>
+                                    <input type="radio" name="radio-one">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" id="flowlimit_custom" style="display:none">
+                            <div class="row" style="margin-top:37px">
+                                <input type="text" class="form-control" style="width:50%;" data-widget="editbox" data-param="SUBSTRNET-TOTALBW" data-type="int">
+                                <label class="input1"><span data-lang="STR_FlowLimit_Unit">(20~10240)Kbps</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="general_networkport" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <table class="table table-bordered table-striped align-center">
+                            <thead id="networkPort_data_title"><tr><th class="sensor-name"><span>Name</span></th><th class="sensor-mode"><span>Type</span></th><th class="sensor-subMode"><span>Sub Type</span></th><th class="sensor-ip"><span>IP</span></th><th class="sensor-port"><span>Port</span></th><th class="sensor-ch"><span>Channel</span></th><th class="sensor-search"><span>Search</span></th></tr></thead>
+                            <tbody id="networkPort_data_list"><tr data-value="0"><td class="sensor-name">Device 1</td><td class="sensor-mode"><div><span class="lavaui-combo-container"><input name="FT" type="text" class="form-control" data-widget="selectbox" data-param="PEN-PENA-0-FT" readonly=""><div class="lavaui-combo-panel list-group" style="width: 131px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">None</a><a href="#" class="list-group-item" data-value="2">APC</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="sensor-subMode"><div><span class="lavaui-combo-container"><input name="ST" type="text" class="form-control" data-widget="selectbox" data-param="PEN-PENA-0-ST" readonly=""><div class="lavaui-combo-panel list-group" style="width: 99px; height: 30px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">None</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="sensor-ip"><div><input name="IP" type="text" class="form-control" data-widget="editbox" data-param="PEN-PENA-0-IP" data-type="check-blur"></div></td><td class="sensor-port"><div><input name="PORT" type="text" class="form-control" data-widget="editbox" data-param="PEN-PENA-0-PORT" data-type="port-input" maxlength="5"></div></td><td class="sensor-ch" id="ch_0"></td><td class="sensor-search"><button name="search-btn" class="btn btn-seatch" data-value="0" disabled="" style="color: gray;" type="button"> <i class="fa fa-search"></i></button></td></tr><tr data-value="1"><td class="sensor-name">Device 2</td><td class="sensor-mode"><div><span class="lavaui-combo-container"><input name="FT" type="text" class="form-control" data-widget="selectbox" data-param="PEN-PENA-1-FT" readonly=""><div class="lavaui-combo-panel list-group" style="width: 131px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">None</a><a href="#" class="list-group-item" data-value="2">APC</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="sensor-subMode"><div><span class="lavaui-combo-container"><input name="ST" type="text" class="form-control" data-widget="selectbox" data-param="PEN-PENA-1-ST" readonly=""><div class="lavaui-combo-panel list-group" style="width: 99px; height: 30px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">None</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="sensor-ip"><div><input name="IP" type="text" class="form-control" data-widget="editbox" data-param="PEN-PENA-1-IP" data-type="check-blur"></div></td><td class="sensor-port"><div><input name="PORT" type="text" class="form-control" data-widget="editbox" data-param="PEN-PENA-1-PORT" data-type="port-input" maxlength="5"></div></td><td class="sensor-ch" id="ch_1"></td><td class="sensor-search"><button name="search-btn" class="btn btn-seatch" data-value="1" disabled="" style="color: gray;" type="button"> <i class="fa fa-search"></i></button></td></tr><tr data-value="2"><td class="sensor-name">Device 3</td><td class="sensor-mode"><div><span class="lavaui-combo-container"><input name="FT" type="text" class="form-control" data-widget="selectbox" data-param="PEN-PENA-2-FT" readonly=""><div class="lavaui-combo-panel list-group" style="width: 131px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">None</a><a href="#" class="list-group-item" data-value="2">APC</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="sensor-subMode"><div><span class="lavaui-combo-container"><input name="ST" type="text" class="form-control" data-widget="selectbox" data-param="PEN-PENA-2-ST" readonly=""><div class="lavaui-combo-panel list-group" style="width: 99px; height: 30px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">None</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="sensor-ip"><div><input name="IP" type="text" class="form-control" data-widget="editbox" data-param="PEN-PENA-2-IP" data-type="check-blur"></div></td><td class="sensor-port"><div><input name="PORT" type="text" class="form-control" data-widget="editbox" data-param="PEN-PENA-2-PORT" data-type="port-input" maxlength="5"></div></td><td class="sensor-ch" id="ch_2"></td><td class="sensor-search"><button name="search-btn" class="btn btn-seatch" data-value="2" disabled="" style="color: gray;" type="button"> <i class="fa fa-search"></i></button></td></tr><tr data-value="3"><td class="sensor-name">Device 4</td><td class="sensor-mode"><div><span class="lavaui-combo-container"><input name="FT" type="text" class="form-control" data-widget="selectbox" data-param="PEN-PENA-3-FT" readonly=""><div class="lavaui-combo-panel list-group" style="width: 131px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">None</a><a href="#" class="list-group-item" data-value="2">APC</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="sensor-subMode"><div><span class="lavaui-combo-container"><input name="ST" type="text" class="form-control" data-widget="selectbox" data-param="PEN-PENA-3-ST" readonly=""><div class="lavaui-combo-panel list-group" style="width: 99px; height: 30px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">None</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="sensor-ip"><div><input name="IP" type="text" class="form-control" data-widget="editbox" data-param="PEN-PENA-3-IP" data-type="check-blur"></div></td><td class="sensor-port"><div><input name="PORT" type="text" class="form-control" data-widget="editbox" data-param="PEN-PENA-3-PORT" data-type="port-input" maxlength="5"></div></td><td class="sensor-ch" id="ch_3"></td><td class="sensor-search"><button name="search-btn" class="btn btn-seatch" data-value="3" disabled="" style="color: gray;" type="button"> <i class="fa fa-search"></i></button></td></tr></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="general_canport" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <table class="table table-bordered table-striped align-center" style="margin-left:20px;width:480px">
+                            <thead>
+                                <tr>
+                                    <th><span data-lang="STR_CAN Name">Name</span></th>
+                                    <th><span data-lang="STR_CAN Type">Type</span></th>
+                                    <th><span data-lang="STR_CAN Pbs">Baud Rate</span></th>
+                                </tr>
+                            </thead>
+                            <tbody id="can_info_list"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="general_unit" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <div class="row">
+                            <label class="col-sm-4"><span data-lang="STR_Temperature">Temperature</span></label>
+                            <div class="col-sm-4">
+                                <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" data-param="GSP-TM" readonly=""><div class="lavaui-combo-panel list-group" style="width: 204px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">Celsius(°C)</a><a href="#" class="list-group-item" data-value="1">Fahrenheit(°F)</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="general_agps" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_ENABLE">Enable</span></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <label class="checkbox">
+                                <input type="checkbox" value="0" data-widget="checkbox" data-param="PGDSM-AGPS-EN">
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-5">
+                            <a class="retract"><span data-lang="STR_CMS SERVER_ADDRESS">Server Address</span></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" data-widget="editbox" data-param="PGDSM-AGPS-SERVE">
+                            <label class="input1"></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-5">
+                            <a class="retract"><span data-lang="STR SERVER_PORT">Server Port</span></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" style="width:50%" data-widget="editbox" data-param="PGDSM-AGPS-PORT">
+                            <label class="input1"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="general_motion_sensor" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                            <table class="table table-bordered table-striped align-center" style="width:60% ; margin-left:150px; ">
+                                <thead id="motion_sensor_address_title"><tr><th class="motionsensoraddress"><span>Address</span></th></tr></thead>
+                                <tbody id="motion_sensor_address_list"><tr><td class="motion-sensor-address">1</td><td class="bind-address"><button name="address-bind" class="btn" data-value="1" type="button">Bind</button></td></tr><tr><td class="motion-sensor-address">2</td><td class="bind-address"><button name="address-bind" class="btn" data-value="2" type="button">Bind</button></td></tr><tr><td class="motion-sensor-address">3</td><td class="bind-address"><button name="address-bind" class="btn" data-value="3" type="button">Bind</button></td></tr><tr><td class="motion-sensor-address">4</td><td class="bind-address"><button name="address-bind" class="btn" data-value="4" type="button">Bind</button></td></tr></tbody>
+                            </table>
+                    </div>
+                </div>
+            </div>
+            <div id="general_th_sensor" class="panel-body">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-body">
+                        <div class="form-group row">
+                            <table class="table table-bordered table-striped align-center">
+                                <thead>
+                                    <tr>
+                                        <th><span data-lang="STR_TEMP_SENSOR_ADRESS">Address</span></th>
+                                        <th><span data-lang="STR_TEMP_SENSOR_NAME">Sensor Name</span></th>
+                                        <th><span data-lang="STR_TEMP_SENSOR_OSD">OSD Name</span></th>
+                                        <th><span data-lang="STR_TEMP_SENSOR_BIND">Bind</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tempsensor_data_list"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="general_b2_sensor" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <table class="table table-bordered table-striped align-center" style="width:60% ; margin-left:150px; ">
+                            <thead id="b2_sensor_address_title"></thead>
+                            <tbody id="b2_sensor_address_list"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="general_schoolgps" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a class="bolder"><span data-lang="STR_CONSTANT_MODE">Constant Upload Mode</span></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" data-widget="selectbox" data-param="PSI-PI-0-GPS-RSC">
+                        </div>
+                    </div>
+                    <div class="form-group retract">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a><span data-lang="STR_Mode">Mode</span></a>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" data-widget="selectbox" data-param="PGDSM-PGPS-MODE">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a><span data-lang="STR_INTERVAL_TIME">Interval Time</span></a>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" data-widget="editbox" data-param="PGDSM-PGPS-TM">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a><span data-lang="STR_INTERVAL_DISTANCE">Interval Distance</span></a>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" data-widget="editbox" data-param="PGDSM-PGPS-SEP">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a class="bolder"><span data-lang="STR_POINT_REPORT">GPS Heading Change</span></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <label class="checkbox">
+                                <input type="checkbox" value="0" data-widget="checkbox" data-param="PGDSM-PGPS-TPEN">
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group retract"> 
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a><span data-lang="STR_DEVIATION_ANGLE">Deviation Angle</span></a>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" data-widget="editbox" data-param="PGDSM-PGPS-TPDA">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a><span data-lang="STR_DURATION_TIME">Duration Time</span></a>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" data-widget="editbox" data-param="PGDSM-PGPS-TPDT">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="div_save_default" class="form-group">
+        <div class="form-actions right">
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_Default">Default</span></button>
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_APPLY">Save</span></button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 串口扩展盒页面 -->
+<div id="general_serial_extend_modal" class="modal no-backdrop in modal-page-middle">
+    <div class="modal-dialog modal-md">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none">
+                <span data-lang="DEV_SERIAL_FUNC_EXTEND_BOX">Extend Box</span>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group row">
+                <table class="table table-bordered table-striped align-center">
+                    <tbody id="serial_extend_info_list"></tbody>
+                </table>
+            </div>
+            <div class="form-group row">
+                <table class="table align-center">
+                    <thead>
+                        <tr>
+                            <th style="width:25%"><span data-lang="STR_NAME">Name</span></th>
+                            <th style="width:50%"><span data-lang="STR_CURRENT_VERSION">Current Version</span></th>
+                            <th style="width:25%"><span data-lang="STR_OPERATE">Setup</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width:25%"><label id="extend_name"></label></td>
+                            <td style="width:50%"><label id="extend_version"></label></td>
+                            <td style="width:25%">
+                                <button id="extend_upgrade" class="btn btn-operater" type="button"><span data-lang="STR_UPGRADE">Upgrade</span></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" type="button"><span data-lang="STR_CANCEL">Cancel</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_OK">OK</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PBP -->
+<div id="general_serial_pbp_modal" class="modal no-backdrop in modal-page-middle">
+    <div class="modal-dialog modal-md" style="width:680px;">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none">
+                <span data-lang="DEV_SERIAL_FUNC_POWER_BOX_PLUS">PBP</span>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group row">
+                <div class="form-group" style="max-height: 980px;">
+                    <table class="table table-bordered table-striped align-center">
+                        <thead id="pbp_select_title"></thead>
+                        <tbody id="pbp_select_list"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_OK">OK</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 搜索IPC列表信息选择页面 -->
+<div id="search_p2_select_modal" class="modal no-backdrop in modal-page-middle">
+    <div class="modal-dialog modal-md" style="width:680px;">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none">
+                <span data-lang=""> </span>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group row">
+                <div class="form-group" style="max-height: 980px;">
+                    <table class="table table-bordered table-striped align-center">
+                        <thead id="p2_select_title"></thead>
+                        <tbody id="p2_select_list"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" type="button"><span data-lang="STR_CANCEL">Cancel</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_OK">OK</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_Refresh">Refresh</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 串口扩展盒页面 -->
+<div id="general_serial_485bus_modal" class="modal no-backdrop in modal-page-middle">
+    <div class="modal-dialog modal-md">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none">
+                <span data-lang="DEV_SERIAL_FUNC_STREAMAX_BUS">T&amp;H Sensor</span>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group row">
+                <table class="table table-bordered table-striped align-center">
+                    <thead>
+                        <tr>
+                            <th><span data-lang="STR_TEMP_SENSOR_ADRESS">Address</span></th>
+                            <th><span data-lang="STR_TEMP_SENSOR_NAME">Sensor Name</span></th>
+                            <th><span data-lang="STR_TEMP_SENSOR_OSD">OSD Name</span></th>
+                            <th><span data-lang="STR_TEMP_SENSOR_BIND">Bind</span></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tempsensor_data_list"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" type="button"><span data-lang="STR_CANCEL">Cancel</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_OK">OK</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Motion Sensor设置页面-->
+<div id="motion_sensor_setup_modal" class="modal no-backdrop in modal-page-middle">
+    <div class="modal-dialog modal-md" style="width:680px;">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none">
+                <span data-lang="STR_MOTION_SENSOR_VERSION_INFOMATION">Version Information</span>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group row">
+                <div class="form-group" style="max-height: 980px;">
+                    <table class="table table-bordered table-striped align-center">
+                        <thead id="motion_sensor_title"></thead>
+                        <tbody id="motion_sensor_list"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" type="button"><span data-lang="STR_OK">OK</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--MotionSensor参数配置界面-->
+<div id="motion_sensor_parameter_setup_modal" class="modal no-backdrop in modal-page-middle">
+    <div class="modal-dialog modal-md" style="width:680px;">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none">
+                <span data-lang="STR_MOTION_SENSOR_PARAMETER_SETUP">Motion Sensor Parameter</span>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group row">
+                <div class="form-group" style="max-height: 980px;">
+                    <div class="row">
+                        <label class="col-sm-4"><span data-lang="STR_MOTION_SENSOR_HARDWARE_VERSION">HardWare Version</span></label>
+                        <label class="col-sm-4"><span>Motion sensor 3.0</span></label>
+                    </div>
+                   
+                    <div class="row">
+                        <label class="col-sm-4"><span data-lang="STR_MOTION_SENSOR_RADIUS_LEVEL">Radius Level</span></label>
+                        <div class="col-sm-3">
+                            <input type="text" name="radius-level" class="form-control" data-widget="selectbox" data-param="MRL">
+                        </div>
+                        <label class="col-sm-3"><span>&nbsp;</span></label>
+                        <div class="col-sm-2">
+                            <button name="help" value="1" class="btn btn-sm" type="button">&nbsp;<i class="fa fa-question" style="font-size:18px;"></i>&nbsp;</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="col-sm-4"><span data-lang="STR_MOTION_SENSOR_DELAY">Delay</span></label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" data-widget="editbox" data-param="DDT">
+                        </div>
+                        <div class="col-sm-2">
+                            <button name="help" value="2" class="btn btn-sm" type="button">&nbsp;<i class="fa fa-question" style="font-size:18px;"></i>&nbsp;</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-4"><span data-lang="STR_MOTION_SENSOR_IO">IO</span></label>
+                        <div class="col-sm-3">
+                            <input type="text" name="io" class="form-control" data-widget="selectbox" data-param="IOL">
+                        </div>
+                        <label class="col-sm-3"><span>&nbsp;</span></label>
+                        <div class="col-sm-2">
+                            <button name="help" value="3" class="btn btn-sm" type="button">&nbsp;<i class="fa fa-question" style="font-size:18px;"></i>&nbsp;</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-4"><span data-lang="STR_MOTION_SENSOR_DETECTING_TIME">Detecting Time</span></label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" data-widget="editbox" data-param="DT">
+                        </div>
+                        <div class="col-sm-2">
+                            <button name="help" value="4" class="btn btn-sm" type="button">&nbsp;<i class="fa fa-question" style="font-size:18px;"></i>&nbsp;</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" type="button"><span data-lang="STR_CANCEL">Cancel</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_OK">OK</span></button>
+            </div>
+        </div>
+    </div>
+</div>

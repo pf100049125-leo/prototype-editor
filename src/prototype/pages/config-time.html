@@ -1,0 +1,233 @@
+<div class="panel">
+    <div class="panel-body">
+        <ul class="tabs" data-options="onSelect:'window.appParamApi.refreshInterfaceFinish'">
+            <li class="active"><a href="#general"><span data-lang="STR_TONGYONG SET">General</span></a></li>
+            <li><a href="#time_sync"><span data-lang="STR_CORRECT_TIME">Time Sync</span></a></li>
+            <li id="dst-li" style="display: none;"><a href="#dst"><span data-lang="STR_DST">DST</span></a></li>
+        </ul>
+        <div class="tabs-content">
+            <div id="general" class="panel-body active">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_DATE FORMAT">Date Format</span></a>
+                        </div>
+                        <div class="col-sm-5">
+                            <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" data-param="TIMEP-DATEM" readonly=""><div class="lavaui-combo-panel list-group" style="width: 260px; height: 90px; overflow: auto;"><a href="#" class="list-group-item" data-value="0">MONTH/DAY/YEAR</a><a href="#" class="list-group-item active" data-value="1">YEAR-MONTH-DAY</a><a href="#" class="list-group-item" data-value="2">DAY/MONTH/YEAR</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_TIME FORMAT">Time Format</span></a>
+                        </div>
+                        <div class="col-sm-5">
+                            <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" data-param="TIMEP-TIMEM" readonly=""><div class="lavaui-combo-panel list-group" style="width: 260px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">24 Hours</a><a href="#" class="list-group-item" data-value="1">12 Hours</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_ZONE">Time Zone</span></a>
+                        </div>
+                        <div class="col-sm-8">
+                            <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" data-param="TIMEP-TIMEZ" readonly=""><div class="lavaui-combo-panel list-group" style="width: 429px; height: 146px; overflow: auto;"><a href="#" class="list-group-item" data-value="-720A">(GMT-12:00)INTERNATIONAL DATE LINE WEST</a><a href="#" class="list-group-item" data-value="-660A">(GMT-11:00)MIDWAY ISLANDS,SAMOA</a><a href="#" class="list-group-item" data-value="-660B">(GMT-11:00)UNIVERSAL TIME-11</a><a href="#" class="list-group-item" data-value="-600A">(GMT-10:00)HAWAII</a><a href="#" class="list-group-item" data-value="-540A">(GMT-09:00)ALASKA</a><a href="#" class="list-group-item" data-value="-480A">(GMT-08:00)PACIFIC TIME(US &amp; CANADA)</a><a href="#" class="list-group-item" data-value="-480B">(GMT-08:00)BAJA CALIFORNIA</a><a href="#" class="list-group-item" data-value="-420A">(GMT-07:00)CHIHUAHUA,LA PAZ,MAZATLAN</a><a href="#" class="list-group-item" data-value="-420B">(GMT-07:00)MOUNTAIN TIME(US&amp;CANADA)</a><a href="#" class="list-group-item" data-value="-420C">(GMT-07:00)ARIZONA</a><a href="#" class="list-group-item" data-value="-360A">(GMT-06:00)GUADALAJARA, MEXICO CITY</a><a href="#" class="list-group-item" data-value="-360B">(GMT-06:00)SASKATCHEWAN</a><a href="#" class="list-group-item" data-value="-360C">(GMT-06:00)CENTRAL TIME(US &amp; CANADA)</a><a href="#" class="list-group-item" data-value="-360D">(GMT-06:00)CENTRAL AMERICA</a><a href="#" class="list-group-item" data-value="-300A">(GMT-05:00)BOGOTA,LIMA,QUITO</a><a href="#" class="list-group-item" data-value="-300B">(GMT-05:00)EASTERN TIME(US &amp; CANADA)</a><a href="#" class="list-group-item" data-value="-300C">(GMT-05:00)INDIANA(EAST)</a><a href="#" class="list-group-item" data-value="-270A">(GMT-04:30)CARACAS</a><a href="#" class="list-group-item" data-value="-240A">(GMT-04:00)ATLANTIC TIME(CANADA)</a><a href="#" class="list-group-item" data-value="-240B">(GMT-04:00)CUIABA</a><a href="#" class="list-group-item" data-value="-240C">(GMT-04:00)GEORGETOWN,LAM,PAZ,MANAUS</a><a href="#" class="list-group-item" data-value="-240D">(GMT-04:00)SANTIAGO</a><a href="#" class="list-group-item" data-value="-240E">(GMT-04:00)ASUNCION</a><a href="#" class="list-group-item" data-value="-210A">(GMT-03:30)NEWFOUNDLAND</a><a href="#" class="list-group-item" data-value="-180A">(GMT-03:00)BRASILIA</a><a href="#" class="list-group-item" data-value="-180B">(GMT-03:00)BUENOS AIRES</a><a href="#" class="list-group-item" data-value="-180C">(GMT-03:00)GREENLAND</a><a href="#" class="list-group-item" data-value="-180D">(GMT-03:00)CAYENNE, FORTALEZA</a><a href="#" class="list-group-item" data-value="-180E">(GMT-03:00)MONTEVIDEO</a><a href="#" class="list-group-item" data-value="-120A">(GMT-02:00)UNIVERSAL TIME-02</a><a href="#" class="list-group-item" data-value="-120B">(GMT-02:00)MID-ATLANTIC</a><a href="#" class="list-group-item" data-value="-60A">(GMT-01:00)CAPE VERDE IS.</a><a href="#" class="list-group-item" data-value="-60B">(GMT-01:00)AZORES</a><a href="#" class="list-group-item" data-value="0A">(GMT)DUBLIN, EDINBURGH, LONDON</a><a href="#" class="list-group-item" data-value="0B">(GMT)CASABLANCA</a><a href="#" class="list-group-item" data-value="0C">(GMT)MONROVIA, REYKJAVIK</a><a href="#" class="list-group-item" data-value="0D">(GMT)COORDINATED UNIVERSAL TIME</a><a href="#" class="list-group-item" data-value="60A">(GMT+01:00)AMSTERDAM,BERLIN,ROME</a><a href="#" class="list-group-item" data-value="60B">(GMT+01:00)BELGRADE, BRATISLAVA</a><a href="#" class="list-group-item" data-value="60C">(GMT+01:00)BRUSSELS,MADRID,PARIS</a><a href="#" class="list-group-item" data-value="60D">(GMT+01:00)SARAJEVO,WARSAW,ZAGREB</a><a href="#" class="list-group-item" data-value="60E">(GMT+01:00)WEST CENTRAL AFRICA</a><a href="#" class="list-group-item" data-value="60F">(GMT+01:00)WINDHOEK</a><a href="#" class="list-group-item" data-value="120A">(GMT+02:00)ATHENS</a><a href="#" class="list-group-item" data-value="120B">(GMT+02:00)BEIRUT</a><a href="#" class="list-group-item" data-value="120C">(GMT+02:00)DAMASCUS</a><a href="#" class="list-group-item" data-value="120D">(GMT+02:00)HARARE, PRETORIA</a><a href="#" class="list-group-item" data-value="120E">(GMT+02:00)HELSINKI,KYIV,RIGA,TALLINN</a><a href="#" class="list-group-item" data-value="120F">(GMT+02:00)CAIRO</a><a href="#" class="list-group-item" data-value="120G">(GMT+02:00)MINSK</a><a href="#" class="list-group-item" data-value="120H">(GMT+02:00)ATHENS,BUCHAREST,ISTANBUL</a><a href="#" class="list-group-item" data-value="120I">(GMT+02:00)JERUSALEM</a><a href="#" class="list-group-item" data-value="180A">(GMT+03:00)BAGHDAD</a><a href="#" class="list-group-item" data-value="180B">(GMT+03:00)KUWAIT,RIYADH</a><a href="#" class="list-group-item" data-value="180C">(GMT+03:00)MOSCOW, ST.PETERSBURG</a><a href="#" class="list-group-item" data-value="180D">(GMT+03:00)NAIROBI</a><a href="#" class="list-group-item" data-value="210A">(GMT+03:30)TEHRAN</a><a href="#" class="list-group-item" data-value="240A">(GMT+04:00)ABU DHABI, MUSCAT</a><a href="#" class="list-group-item" data-value="240B">(GMT+04:00)YEREVAN</a><a href="#" class="list-group-item" data-value="240C">(GMT+04:00)BAKU</a><a href="#" class="list-group-item" data-value="240D">(GMT+04:00)TBILISI</a><a href="#" class="list-group-item" data-value="240E">(GMT+04:00)PORT LOUIS</a><a href="#" class="list-group-item" data-value="270A">(GMT+04:30)KABUL</a><a href="#" class="list-group-item" data-value="300A">(GMT+05:00)TASHKENT</a><a href="#" class="list-group-item" data-value="300B">(GMT+05:00)EKATERINBURG</a><a href="#" class="list-group-item" data-value="300C">(GMT+05:00)ISLAMABAD, KARACHI</a><a href="#" class="list-group-item" data-value="330A">(GMT+05:30)CHENNAI,MUMBAI,NEW DELHI</a><a href="#" class="list-group-item" data-value="330B">(GMT+05:30)SRI JAYAWARDENEPURA</a><a href="#" class="list-group-item" data-value="345A">(GMT+05:45)KATHMANDU</a><a href="#" class="list-group-item" data-value="360A">(GMT+06:00)ASTANA, DHAKA</a><a href="#" class="list-group-item" data-value="360B">(GMT+06:00)NOVOSIBIRSK</a><a href="#" class="list-group-item" data-value="390A">(GMT+06:30)YANGON</a><a href="#" class="list-group-item" data-value="420A">(GMT+07:00)KRASNOYARSK</a><a href="#" class="list-group-item" data-value="420B">(GMT+07:00)BANGKOK, HANOI, JAKARTA</a><a href="#" class="list-group-item active" data-value="480A">(GMT+08:00)BEIJING,CHONGQING,HONGKONG</a><a href="#" class="list-group-item" data-value="480B">(GMT+08:00)KUALA LUMPUR, SINGAPORE</a><a href="#" class="list-group-item" data-value="480C">(GMT+08:00)PERTH</a><a href="#" class="list-group-item" data-value="480D">(GMT+08:00)TAIPEI</a><a href="#" class="list-group-item" data-value="480E">(GMT+08:00)ULAN BATOR</a><a href="#" class="list-group-item" data-value="480F">(GMT+08:00)IRKUTSK</a><a href="#" class="list-group-item" data-value="540A">(GMT+09:00)OSAKA,SAPPORO, TOKYO</a><a href="#" class="list-group-item" data-value="540B">(GMT+09:00)SEOUL</a><a href="#" class="list-group-item" data-value="540C">(GMT+09:00)YAKUTSK</a><a href="#" class="list-group-item" data-value="570A">(GMT+09:30)ADELAIDE</a><a href="#" class="list-group-item" data-value="570B">(GMT+09:30)DARWIN</a><a href="#" class="list-group-item" data-value="600A">(GMT+10:00)BRISBANE</a><a href="#" class="list-group-item" data-value="600B">(GMT+10:00)VLADIVOSTOK</a><a href="#" class="list-group-item" data-value="600C">(GMT+10:00)GUAM. PORT MORESBY</a><a href="#" class="list-group-item" data-value="600D">(GMT+10:00)HOBART</a><a href="#" class="list-group-item" data-value="600E">(GMT+10:00)CANBERRA, MELBOURNE,SYDNEY</a><a href="#" class="list-group-item" data-value="660A">(GMT+11:00)MAGADAN,SOLOMON IS.</a><a href="#" class="list-group-item" data-value="720A">(GMT+12:00)AUCKLAND, WELLINGTON</a><a href="#" class="list-group-item" data-value="720B">(GMT+12:00)FIJI</a><a href="#" class="list-group-item" data-value="720C">(GMT+12:00)UNIVERSAL TME+12</a><a href="#" class="list-group-item" data-value="780A">(GMT+13:00)NUKU'ALOFA</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Time_Sync 页面-->
+            <div id="time_sync" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <a class="bolder"><span data-lang="STR_MANUAL_CORRECT_TIME">Manually</span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a class="retract"><span data-lang="STR_DEVICE_TIME">Date/Time</span></a>
+                            </div>
+                            <div class="col-sm-3">
+                                <span class="lavaui-combo-container"><input type="text" id="time_sync_date" class="form-control" readonly="" data-widget="datetimebox" data-format="1"><div class="lavaui-combo-panel" style="width: 250px; height: auto; display: none;"><div class="datetimebox-container lava-calendar"><div class="lava-calendar-header" style="background:undefined;"><div class="lava-calendar-prevyear">«</div><div class="lava-calendar-nextyear">»</div><div class="lava-calendar-prevmonth">&lt;</div><div class="lava-calendar-nextmonth">&gt;</div><span class="lava-calendar-text">2026-09</span></div><table class="lava-calendar-table"><thead class="lava-calendar-thead"><tr><th style="color:undefined;">Su</th><th style="color:undefined;">Mo</th><th style="color:undefined;">Tu</th><th style="color:undefined;">We</th><th style="color:undefined;">Th</th><th style="color:undefined;">Fr</th><th style="color:undefined;">Sa</th></tr></thead><tbody class="lava-calendar-tbody"><tr><td style="height: 0px;"></td><td style="height: 0px;"></td><td data-date="2026/9/1" style="height: 0px;">1</td><td data-date="2026/9/2" style="height: 0px;">2</td><td data-date="2026/9/3" style="height: 0px;">3</td><td data-date="2026/9/4" style="height: 0px;">4</td><td data-date="2026/9/5" style="height: 0px;">5</td></tr><tr><td data-date="2026/9/6" style="height: 0px;">6</td><td data-date="2026/9/7" style="height: 0px;">7</td><td data-date="2026/9/8" style="height: 0px;">8</td><td data-date="2026/9/9" style="height: 0px;">9</td><td data-date="2026/9/10" style="height: 0px;">10</td><td data-date="2026/9/11" style="height: 0px;">11</td><td data-date="2026/9/12" style="height: 0px;">12</td></tr><tr><td data-date="2026/9/13" style="height: 0px;">13</td><td data-date="2026/9/14" style="height: 0px;">14</td><td data-date="2026/9/15" style="height: 0px;">15</td><td data-date="2026/9/16" style="height: 0px;">16</td><td data-date="2026/9/17" style="height: 0px;">17</td><td data-date="2026/9/18" style="height: 0px;">18</td><td data-date="2026/9/19" style="height: 0px;">19</td></tr><tr><td data-date="2026/9/20" style="height: 0px;">20</td><td data-date="2026/9/21" style="height: 0px;">21</td><td data-date="2026/9/22" style="height: 0px;">22</td><td data-date="2026/9/23" style="height: 0px;">23</td><td data-date="2026/9/24" style="height: 0px;">24</td><td data-date="2026/9/25" style="height: 0px;">25</td><td data-date="2026/9/26" style="height: 0px;">26</td></tr><tr><td data-date="2026/9/27" style="height: 0px;">27</td><td data-date="2026/9/28" class="active" style="height: 0px;">28</td><td data-date="2026/9/29" style="height: 0px;">29</td><td data-date="2026/9/30" style="height: 0px;">30</td><td style="height: 0px;"></td><td style="height: 0px;"></td><td style="height: 0px;"></td></tr><tr><td style="height: 0px;"></td><td style="height: 0px;"></td><td style="height: 0px;"></td><td style="height: 0px;"></td><td style="height: 0px;"></td><td style="height: 0px;"></td><td style="height: 0px;"></td></tr></tbody></table><div class="lava-calendar-menu hidden"><div class="lava-calendar-menu-year"><div class="lava-calendar-prevyear-inner">«</div><span><input class="lava-calendar-menu-year-input" maxlength="4" readonly=""></span><div class="lava-calendar-nextyear-inner">»</div></div><div class="lava-calendar-menu-month"><table><tbody><tr><td data-month="1">Jan</td><td data-month="2">Feb</td><td data-month="3">Mar</td><td data-month="4">Apr</td></tr><tr><td data-month="5">May</td><td data-month="6">Jun</td><td data-month="7">Jul</td><td data-month="8">Aug</td></tr><tr><td data-month="9">Sep</td><td data-month="10">Oct</td><td data-month="11">Nov</td><td data-month="12">Dec</td></tr></tbody></table></div></div></div></div></span>
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="text" id="time_sync_time" class="form-control" data-widget="editbox">
+                            </div>
+                            <div class="col-sm-2" id="time_sync_time_type_div" style="display: none;">
+                                <span class="lavaui-combo-container"><input type="text" id="time_sync_time_type" readonly="" class="form-control" data-widget="selectbox"><div class="lavaui-combo-panel list-group" style="width: 91px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item active" data-value="0">AM</a><a href="#" class="list-group-item" data-value="1">PM</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">&nbsp;</div>
+                            <div class="col-sm-3">
+                                <button id="btn_time_with_pc" class="btn btn-operater" type="button"><span data-lang="SyncTimeWithPC">Sync With PC</span></button>
+                            </div>
+                            <div class="col-sm-3">
+                                <button id="btn_save_system_time" class="btn btn-operater" type="button"><span data-lang="ModifySystemTime">Change Time</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <a class="bolder"><span data-lang="STR_AUTOMATISM_TIME">Auto</span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a class="retract"><span data-lang="STR_ON_SATELLITE_CORRECT_TIME">Satellite</span></a>
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="checkbox">
+                                    <input type="checkbox" value="0" data-widget="checkbox" data-param="ATP-GE">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a class="retract"><span data-lang="STR_LOG_TYPE_OPT_NTP_ADJUST_TIME">NTP</span></a>
+                            </div>
+                            <div class="col-sm-2">
+                                <label class="checkbox">
+                                    <input type="checkbox" value="0" id="ntp_sync_checkbox" data-widget="checkbox" data-param="ATP-NE">
+                                    <span></span>
+                                </label>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="row" id="ntp_sync_div" style="">
+                                    <span class="lavaui-combo-container"><input type="text" id="ntp_sync" class="form-control" data-widget="selectbox" readonly=""><div class="lavaui-combo-panel list-group" style="width: 204px; height: 146px; overflow: auto; display: none;"><a href="#" class="list-group-item" data-value="1">time.windows.com</a><a href="#" class="list-group-item active" data-value="2">time.nist.gov</a><a href="#" class="list-group-item" data-value="3">time-nw.nist.gov</a><a href="#" class="list-group-item" data-value="4">time-a.nist.gov</a><a href="#" class="list-group-item" data-value="5">time-b.nist.gov</a><a href="#" class="list-group-item" data-value="0">User-Defined</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                                </div>
+                                <div class="row" id="ntp_sync_user_defined_div" style="display:none;">
+                                    <input type="text" class="form-control" data-widget="editbox" data-param="ATP-NS" data-type="mdvr-input" maxlength="31">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a class="retract"><span data-lang="STR_CENTRAL_CORRECT_TIME">Center Server</span></a>
+                            </div>
+                            <div class="col-sm-2">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="center_server_checkbox" data-widget="checkbox" data-param="ATP-CE" value="0">
+                                    <span></span>
+                                </label>
+                            </div>
+                            <div class="col-sm-4" id="center_server_div" style="display: none;">
+                                <div class="form-group row">
+                                    <span class="lavaui-combo-container"><input type="text" id="center_server" class="form-control" data-widget="selectbox" data-param="ATP-SID" readonly=""><div class="lavaui-combo-panel list-group" style="width: 204px; height: 146px; overflow: auto; display: none;"><a href="#" class="list-group-item active" data-value="0">Server1</a><a href="#" class="list-group-item" data-value="1">Server2</a><a href="#" class="list-group-item" data-value="2">Server3</a><a href="#" class="list-group-item" data-value="3">Server4</a><a href="#" class="list-group-item" data-value="4">Server5</a><a href="#" class="list-group-item" data-value="5">Server6</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Dst页面-->
+            <div id="dst" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-3">
+                            <a><span data-lang="UseDST">Enable</span></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="checkbox">
+                                <input type="checkbox" value="0" data-widget="checkbox" data-param="TIMEP-DST-SW">
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-3">
+                            <a><span data-lang="STR_OFFSET_HOUR">Offset</span></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" data-widget="selectbox" data-param="TIMEP-DST-DSTS">
+                        </div>
+                    </div>
+                    <div class="form-group" id="week_display">
+                        <div class="row" style="margin-left:0px;margin-right:0px">
+                            <div class="col-sm-3">
+                                <a><span data-lang="STR_START">Start</span></a>
+                            </div>
+                            <div class="col-sm-1" style="min-width: 90px;">
+                                <input type="text" name="month" class="form-control" readonly="" data-param="TIMEP-DST-SMON" data-widget="selectbox">
+                            </div>
+                            <div class="col-sm-1" style="min-width: 90px;">
+                                <input type="text" name="day" class="form-control" readonly="" data-param="TIMEP-DST-SWEEK" data-widget="selectbox">
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="text" name="week" class="form-control" readonly="" data-param="TIMEP-DST-SWIND" data-widget="selectbox">
+                            </div>
+                            <div class="col-sm-2" style="min-width: 70px;">
+                                <input type="text" id="time_sync_time_start" data-widget="timebox" value="23:59:59" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row" style="margin-left:0px;margin-right:0px">
+                            <div class="col-sm-3">
+                                <a><span data-lang="STR_END">End</span></a>
+                            </div>
+                            <div class="col-sm-1" style="min-width: 90px;">
+                                <input type="text" name="month" class="form-control" readonly="" data-param="TIMEP-DST-EMON" data-widget="selectbox">
+                            </div>
+                            <div class="col-sm-1" style="min-width: 90px;">
+                                <input type="text" name="day" class="form-control" readonly="" data-param="TIMEP-DST-EWEEK" data-widget="selectbox">
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="text" name="week" class="form-control" readonly="" data-param="TIMEP-DST-EWIND" data-widget="selectbox">
+                            </div>
+                            <div class="col-sm-2" style="min-width: 70px;">
+                                <input type="text" id="time_sync_time_end" data-widget="timebox" value="23:59:59" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" id="date_display" style="display:none;">
+                        <div class="row" style="margin-left:0px;margin-right:0px">
+                            <div class="col-sm-3">
+                                <a><span data-lang="STR_START">Start</span></a>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" id="start_date" class="form-control" readonly="" data-widget="datetimebox">
+                            </div>
+                            <!-- <div class="col-sm-3">
+                                <input type="text" id="start_time" class="form-control" maxlength="8" data-widget="timebox">
+                            </div> -->
+                            <div class="col-sm-1" style="min-width: 70px;">
+                                <input type="text" name="hour" class="form-control" readonly="" data-widget="selectbox">
+                            </div>
+                            <div style="float:left;width:5px;line-height:25px;">:</div>
+                            <div class="col-sm-1" style="min-width: 70px;">
+                                <input type="text" name="minute" class="form-control" readonly="" data-widget="selectbox">
+                            </div>
+                        </div>
+                        <div class="row" style="margin-left:0px;margin-right:0px">
+                            <div class="col-sm-3">
+                                <a><span data-lang="STR_END">End</span></a>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" id="end_date" class="form-control" readonly="" data-widget="datetimebox">
+                            </div>
+                            <!-- <div class="col-sm-3">
+                                <input type="text" id="end_time" class="form-control" maxlength="8" data-widget="timebox">
+                            </div> -->
+                            <div class="col-sm-1" style="min-width: 70px;">
+                                <input type="text" name="hour" class="form-control" readonly="" data-widget="selectbox">
+                            </div>
+                            <div style="float:left;width:5px;line-height:25px;">:</div>
+                            <div class="col-sm-1" style="min-width: 70px;">
+                                <input type="text" name="minute" class="form-control" readonly="" data-widget="selectbox">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="div_save_default" class="form-group">
+        <div class="form-actions right">
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_Default">Default</span></button>
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_APPLY">Save</span></button>
+        </div>
+    </div>
+</div>
+

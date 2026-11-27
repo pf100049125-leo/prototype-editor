@@ -1,0 +1,215 @@
+
+
+<div class="panel">
+    <div class="panel-body">
+        <ul class="tabs" data-options="onSelect:'window.appParamApi.refreshInterfaceFinish'">
+            <li class="active"><a href="#monior_display"><span data-lang="STR_PREVIEW SETUP">Preview</span></a></li>
+            <li style="display: none;"><a href="#spot_setup"><span data-lang="STR_SPOT_SETUP">Spot Setup</span></a></li>
+            <li><a href="#monior_osd"><span data-lang="STR_REAL_OSD">Live OSD</span></a></li>
+        </ul>
+        <div class="tabs-content">
+            <div id="monior_display" class="panel-body active">
+                <div class="form form-horizontal">
+                    <!--开机画面-->
+                    <div class="form-group">
+                        <label class="col-sm-4"><span data-lang="STR_BOOT_SCREEN">Startup Screen</span></label>
+                        <div class="col-sm-4">
+                            <input id="display_boot_screen" type="text" class="form-control" data-widget="selectbox" data-param="PSM-MODE" data-type="int">
+                        </div>
+                    </div>
+                    <!--通道-->
+                    <div class="form-group">
+                        <label class="col-sm-4"><span style="margin-left:25px;" data-lang="STR_CHANNEL">Channel</span></label>
+                        <div class="col-sm-8">
+                            <div class="checkbox-list checkbox-inline" id="display_boot_channel_list" data-widget="checkgroupbox"></div>
+                        </div>
+                    </div>
+
+                    <!--开机窗口-->
+                    <div class="form-group" id="startup">
+                        <label class="col-sm-4"><span data-lang="STR_POWER_WINDOW">Startup Enter Window</span></label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" data-widget="selectbox" data-param="PSM-TYPE" data-type="int">
+                        </div>
+                    </div>
+
+                    <!--预览音频-->
+                    <div class="form-group">
+                        <label class="col-sm-4"><span data-lang="STR_PREVIEW AUDIO">Preview Audio</span></label>
+                        <div class="col-sm-4">
+                            <label class="checkbox"><input type="checkbox" value="0" data-widget="checkbox" data-param="GSP-PAS"><span></span></label>
+                        </div>
+                    </div>
+
+                    <!--自动轮巡使能-->
+                    <div class="form-group">
+                        <label class="col-sm-4"><span data-lang="STR_Auto_LoopEnable">Auto Loop Enable</span></label>
+                        
+                        <div class="col-sm-4">
+                            <label class="checkbox" style="width:8%;margin-top:3px;margin-right:0px;float:left">
+                                <input id="display_autoloop_enable" type="checkbox" value="0" data-widget="checkbox" data-param="ASQ-SW"><span></span>
+                            </label>
+                            <button id="display_add_autoloop" class="btn btn-operater" type="button"><span data-lang="STR_ADD_SCREEN">Add Screen</span></button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="panel">
+                            <div class="panel-body" style="overflow:auto;max-height:470px;">
+                                <table class="table table-bordered table-striped align-center">
+                                    <thead>
+                                        <tr>
+                                            <th><span data-lang="STR_SCREEN">Screen</span></th>
+                                            <th><span data-lang="STR_Mode">Mode</span></th>
+                                            <th><span data-lang="STR_CHANNEL">Channel</span></th>
+                                            <th><span data-lang="STR_Dwell">Duration</span></th>
+                                            <th><span data-lang="STR_OPERATE">Setup</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="display_auto_loop_list"> </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="spot_setup" class="panel-body">
+                <div class="form form-horizontal">
+                    <!--开机画面-->
+                    <div class="form-group">
+                        <label class="col-sm-4"><span data-lang="STR_BOOT_SCREEN">Startup Screen</span></label>
+                        <div class="col-sm-4">
+                            <input id="spot_setup_screen" type="text" class="form-control" data-widget="selectbox" data-param="PSME-MODE" data-type="int">
+                        </div>
+                    </div>
+                    <!--通道-->
+                    <div class="form-group">
+                        <label class="col-sm-4"><span style="margin-left:25px;" data-lang="STR_CHANNEL">Channel</span></label>
+                        <div class="col-sm-7">
+                            <div class="checkbox-list checkbox-inline" id="spot_setup_channel_list" data-widget="checkgroupbox"></div>
+                        </div>
+                    </div>
+
+                    <!--自动轮巡使能-->
+                    <div class="form-group">
+                        <label class="col-sm-4"><span data-lang="STR_Auto_LoopEnable">Auto Loop Enable</span></label>
+                        
+                        <div class="col-sm-4">
+                            <label class="checkbox" style="width:8%;margin-top:3px;margin-right:0px;float:left">
+                                <input id="spot_setup_autoloop_enable" type="checkbox" value="0" data-widget="checkbox" data-param="ASQE-SW"><span></span>
+                            </label>
+                            <button id="spot_setup_add_autoloop" class="btn btn-operater" type="button"><span data-lang="STR_ADD_SCREEN">Add Screen</span></button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="panel">
+                            <div class="panel-body" style="overflow:auto;max-height:470px;">
+                                <table class="table table-bordered table-striped align-center">
+                                    <thead>
+                                        <tr>
+                                            <th><span data-lang="STR_SCREEN">Screen</span></th>
+                                            <th><span data-lang="STR_Mode">Mode</span></th>
+                                            <th><span data-lang="STR_CHANNEL">Channel</span></th>
+                                            <th><span data-lang="STR_Dwell">Duration</span></th>
+                                            <th><span data-lang="STR_OPERATE">Setup</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="spot_setup_auto_loop_list"> </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="monior_osd" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group" id="osd_enable_form"></div>
+                    <div class="form-group">
+                        <label class="col-sm-4"><span data-lang="STR_DATION SET">Position</span></label>
+                        <div class="col-sm-4">
+                            <button id="osd_edit_position" class="btn btn-operater" type="button"><span data-lang="STR_SETUP">Setup</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="div_save_default" class="form-group">
+        <div class="form-actions right">
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_Default">Default</span></button>
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_APPLY">Save</span></button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 自动轮询编辑界面 -->
+<div id="edit_auto_loop_modal" class="modal no-backdrop in modal-page-middle">
+    <div class="modal-dialog modal-md">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none">
+                <span data-lang="STR_ADD_SCREEN">Add Screen</span>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group row">
+                <div class="col-sm-3">
+                    <a><span data-lang="STR_Mode">Mode</span></a>
+                </div>
+                <div class="col-sm-4">
+                    <input id="edit_screen_mode" type="text" class="form-control" readonly="" data-widget="selectbox">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-3">
+                    <a><span data-lang="STR_Layout">Layout</span></a>
+                </div>
+                <div class="col-sm-9">
+                    <div class="autoseq-screen-border" id="screen_layout"></div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-3">
+                    <a><span data-lang="STR_Dwell">Duration</span></a>
+                </div>
+                <div class="col-sm-7">
+                    <input id="edit_screen_dwell" type="text" class="form-control" style="width: 100px" data-widget="editbox" data-type="int">
+                </div>
+            </div>
+            
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" type="button"><span data-lang="STR_CANCEL">Cancel</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_OK">OK</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- OSD坐标设置页面 -->
+<div id="edit_osd_position_modal" class="modal no-backdrop in modal-page-middle">
+    <div class="modal-dialog modal-md">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none">
+                <span data-lang="STR_REAL_OSD">Live OSD</span>&nbsp;&nbsp;<span data-lang="STR_DATION SET">Position</span>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group row">
+                <div class="osd-canvas"></div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" style="margin-right:15%;" type="button"><span data-lang="STR_Default">Default</span></button>
+                <button class="btn" type="button"><span data-lang="STR_CANCEL">Cancel</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_OK">OK</span></button>
+            </div>
+        </div>
+    </div>
+</div>

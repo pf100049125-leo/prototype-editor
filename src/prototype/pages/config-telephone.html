@@ -1,0 +1,54 @@
+<div class="panel">
+    <div class="panel-body">
+        <ul class="tabs" style="display: none;" data-options="onSelect:'window.appParamApi.refreshInterfaceFinish'">
+            <li class="active"><a href="#telephoneManager"><span data-lang="STR_LT Telephony Manager">Telephone</span></a></li>
+        </ul>
+        <div class="tabs-content">
+            <!-- telephoneManager-->
+            <div id="telephoneManager" class="panel-body active">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_Time Once">Every Longest Time</span></a>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" data-widget="editbox" data-param="PSI-CG-ECL" data-type="int" maxlength="7" style="width: 40%;"><label class="input1">(0 ~ 2678400)Second</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_Time Month">Month Longest Time</span></a>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" data-widget="editbox" data-param="PSI-CG-ECML" data-type="int" maxlength="7" style="width: 40%;"><label class="input1">(0 ~ 2678400)Second</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_Answering Strategy">Answering</span></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" data-param="PSI-CG-AS" data-type="int" readonly=""><div class="lavaui-combo-panel list-group" style="width: 147px; height: 90px; overflow: auto;"><a href="#" class="list-group-item" data-value="0">Automatic</a><a href="#" class="list-group-item" data-value="1">ACC</a><a href="#" class="list-group-item active" data-value="2">Manual</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_Answer Countdown">Auto Answer Time</span></a>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" data-widget="editbox" data-param="PSI-CG-AT" data-type="int" maxlength="2" style="width: 40%;"><label class="input1">(0 ~ 60)Second</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="div_save_default" class="form-group">
+        <div class="form-actions right">
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_Default">Default</span></button>
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_APPLY">Save</span></button>
+        </div>
+    </div>
+</div>
+
+

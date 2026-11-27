@@ -1,0 +1,1 @@
+window.addEventListener("load",()=>{document.getElementById("oe-fit")?.click();},{once:true});

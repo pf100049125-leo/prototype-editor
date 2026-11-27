@@ -1,0 +1,68 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Windows release build
+    runs-on: windows-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '24.21.0'
+          cache: npm
+      - name: Validate release tag and main ancestry
+        run: node scripts/verify-release.cjs
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+      - run: npm ci --no-audit --no-fund
+      - run: npm run check
+      - run: npm test
+      - run: npm run dist
+      - run: node scripts/release-assets.cjs
+      - uses: actions/upload-artifact@v7
+        with:
+          name: release-files
+          path: |
+            dist/PrototypeEditor-*-portable.exe
+            dist/SHA256SUMS.txt
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+  draft:
+    name: Create draft release
+    needs: build
+    runs-on: windows-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: release-files
+          path: release
+      - name: Create release with EXE and checksums
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          $taskAssets = @(Get-ChildItem -LiteralPath release -File | Where-Object { $_.Extension -eq '.exe' -or $_.Name -eq 'SHA256SUMS.txt' } | ForEach-Object { $_.FullName })
+          if ($taskAssets.Count -ne 2) { throw 'Expected one portable EXE and SHA256SUMS.txt' }
+          gh release create $env:RELEASE_TAG @taskAssets --verify-tag --draft --generate-notes --title "PrototypeEditor $env:RELEASE_TAG"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

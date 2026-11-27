@@ -1,0 +1,63 @@
+{
+  "name": "prototype-editor-desktop",
+  "version": "3.0.1",
+  "description": "原型编辑器：原页面编辑、独立交互与图片导出",
+  "main": "app/main.cjs",
+  "author": "PrototypeEditor",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "version:set": "node scripts/set-version.cjs",
+    "release:verify": "node scripts/verify-release.cjs",
+    "import-project": "node scripts/import-project.cjs",
+    "check": "node scripts/check.cjs",
+    "prestart": "node scripts/prepare-app.cjs",
+    "start": "electron . --user-data-dir=./.dev-profile",
+    "pretest": "npm run build",
+    "test": "node scripts/test.cjs",
+    "prepack": "node scripts/prepare-app.cjs",
+    "pack": "electron-builder --win --x64 --dir --publish never",
+    "predist": "node scripts/prepare-app.cjs",
+    "dist": "electron-builder --win portable --x64 --publish never"
+  },
+  "devDependencies": {
+    "electron": "45.3.3",
+    "electron-builder": "26.18.0",
+    "jsdom": "30.1.3"
+  },
+  "build": {
+    "appId": "local.prototypeeditor.desktop",
+    "productName": "PrototypeEditor",
+    "artifactName": "PrototypeEditor-${version}-portable.${ext}",
+    "asar": true,
+    "compression": "normal",
+    "files": [
+      "app/**/*",
+      "licenses/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "electronDist": "node_modules/electron/dist",
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "app/icon.ico",
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "portable": {
+      "requestExecutionLevel": "user"
+    }
+  },
+  "engines": {
+    "node": "^22.12.0 || >=24.0.0"
+  }
+}

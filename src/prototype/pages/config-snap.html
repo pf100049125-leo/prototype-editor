@@ -1,0 +1,97 @@
+
+
+<div class="panel">
+    <div class="panel-body">
+        <ul class="tabs" data-options="onSelect:'window.appParamApi.refreshInterfaceFinish'">
+            <li class="active"><a href="#capture_timer"><span data-lang="STR_CAPTURE TIMING">Time Snap</span></a></li>
+            <li class=""><a href="#capture_trigger"><span data-lang="STR_CAPTURE TRIGGER">Trigger Snap</span></a></li>
+            <li class=""><a href="#capture_distance"><span data-lang="STR_CAPTURE DISTANCE">Distance Snap</span></a></li>
+        </ul>
+        <div class="tabs-content">
+            <div id="capture_timer" class="panel-body active">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-4"><span data-lang="STR_CAPTURE TIMING ENABLE">Time Snap</span></label>
+                    
+                        <div class="col-sm-5">
+                            <label class="checkbox" style="width:8%;margin-top:3px;margin-right:0px;float:left">
+                                <input type="checkbox" value="0" data-widget="checkbox" data-param="PSNAP-NE"><span></span>
+                            </label>
+                            <button id="add_timer_capture" class="btn btn-operater" data-value="-1" disabled="" style="color: gray;" type="button"><span data-lang="STR_Add">Add</span></button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="panel">
+                            <div class="panel-body" style="overflow:auto;max-height:450px;">
+                                <table class="table table-bordered table-striped align-center">
+                                    <thead>
+                                        <tr>
+                                            <th><span data-lang="STR_Number">No.</span></th>
+                                            <th><span data-lang="STR_FILE_STATRT_TIME">Start Time</span></th>
+                                            <th><span data-lang="STR_FILE_END_TIME">End Time</span></th>
+                                            <th><span data-lang="STR_OPERATE">Setup</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="capture_timer_list"><tr style="height:25px"><td style="width:10%">1</td><td style="width:12%"><div style="position: relative;"><input name="time-start" type="text" class="form-control" maxlength="8" value="00:00:00" data-widget="timebox" data-value="0" disabled="" style="color: gray;"></div></td><td style="width:12%"><div style="position: relative;"><input name="time-end" type="text" class="form-control" maxlength="8" value="23:59:59" data-widget="timebox" data-value="0" disabled="" style="color: gray;"></div></td><td style="width:20%"><div><button class="btn btn-sm outline" data-value="0" disabled="" style="color: gray;" type="button"><i class="fa fa-remove"></i></button><button class="btn btn-sm outline" style="margin-left: 15px; color: gray;" data-value="0" disabled="" type="button"><i class="fa fa-navicon"></i></button></div></td></tr></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="capture_trigger" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <div class="row">
+                            <label class="col-sm-4"><span data-lang="STR_CAPTURE ALARM">Alarm Snap</span></label>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-4" style="padding-left:10%"><span data-lang="STR_CAPTURE LINK">Snap Link</span></label>
+                            <div class="col-sm-5">
+                                <button id="alarm_capture" class="btn btn-operater" type="button"><span data-lang="STR_SETTINGS">Setup</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <label class="col-sm-4"><span data-lang="STR_CAPTURE MANUALLY">Manual Snap</span></label>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-4" style="padding-left:10%"><span data-lang="STR_CAPTURE LINK">Snap Link</span></label>
+                            <div class="col-sm-5">
+                                <button id="manual_capture" class="btn btn-operater" type="button"><span data-lang="STR_SETTINGS">Setup</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 定距抓拍 -->
+            <div id="capture_distance" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <div class="row">
+                            <label class="col-sm-4"><span data-lang="STR_CAPTURE DISTANCEGAP">Distance Interval</span></label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" data-widget="editbox" data-param="DSP-SD" data-type="int">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-4"><span data-lang="STR_CAPTURE LINK">Snap Link</span></label>
+                            <div class="col-sm-5">
+                                <button id="distance_capture" class="btn btn-operater" type="button"><span data-lang="STR_SETTINGS">Setup</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="div_save_default" class="form-group">
+        <div class="form-actions right">
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_Default">Default</span></button>
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_APPLY">Save</span></button>
+        </div>
+    </div>
+</div>
+
+

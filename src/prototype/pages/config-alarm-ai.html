@@ -1,0 +1,404 @@
+
+
+<div class="panel">
+    <div class="panel-body">
+        <ul class="tabs" data-options="onSelect:'window.appParamApi.refreshInterfaceFinish'">
+            <li class="active"><a href="#safety_alarm_adas"><span data-lang="STR_ADAS_ALARM">ADAS</span></a></li>
+            <li class=""><a href="#safety_alarm_dsm"><span data-lang="STR_DSM_ALARM">DMS</span></a></li>
+            <li class=""><a href="#safety_alarm_sc" style="display: none;"><span data-lang="STR_SC_ALARM">SC</span></a></li>
+            <li class=""><a href="#safety_alarm_bsd"><span data-lang="STR_BSD_ALARM">BSD</span></a></li>
+            <!-- <li class=""><a href="#safety_alarm_cp"><span data-lang="STR_CP_ALARM"></span></a></li>-->
+            <li class=""><a href="#safety_algorithm"><span data-lang="STR_OTHER_Algorithm">Algorithm</span></a></li>
+            <li class=""><a href="#safety_calibration"><span data-lang="STR_Algorithm_Calibration">Algorithm Calibration</span></a></li>
+        </ul>
+        <div class="tabs-content">
+            <div id="safety_alarm_adas" class="panel-body active">
+                <div class="form form-horizontal">
+                    <!-- <div class="form-group">
+                        <div class="col-sm-4">
+                            <span data-lang="STR_IPC_MODETYPE"></span>
+                        </div>
+                        <div class="col-sm-4">
+                            <input name="safety-modetype" type="text" class="form-control" data-widget="selectbox"/>
+                        </div>
+                        <div class="col-sm-3" id="installtype_0">
+                            <input name="safety-installtype" type="text" class="form-control" data-widget="selectbox"/>
+                        </div>
+                    </div> -->
+                    <div class="form-group">
+                        <table class="table table-bordered table-striped align-center"><thead><tr><th class="alarm-name"><span>Name</span></th><th class="alarm-enable"><span>Enable</span></th><th class="alarm-type"><span>Alarm Type</span></th><th class="alarm-trigger"><span>Trigger</span></th><th class="alarm-link"><span>Linkage</span></th><th class="alarm-link"><span>Snap</span></th></tr></thead> <tbody><tr data-value="0"><td class="alarm-name">LDW</td><td class="alarm-enable"><label class="checkbox"><input name="enable" type="checkbox" value="0" data-widget="checkbox" data-param="DSM-DSMA-5-EN"><span></span></label></td><td class="alarm-type"><div><span class="lavaui-combo-container"><input name="type" type="text" class="form-control" data-widget="selectbox" data-param="DSM-DSMA-5-AS" disabled="" readonly="" style="color: gray;"><div class="lavaui-combo-panel list-group" style="width: 128px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item" data-value="0">Event</a><a href="#" class="list-group-item active" data-value="1">Alarm</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="alarm-trigger"><button name="trigger" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="0" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="link" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="0" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="capture" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="0" disabled="" type="button">Setup</button></td></tr><tr data-value="1"><td class="alarm-name">FCW</td><td class="alarm-enable"><label class="checkbox"><input name="enable" type="checkbox" value="0" data-widget="checkbox" data-param="DSM-DSMA-6-EN"><span></span></label></td><td class="alarm-type"><div><span class="lavaui-combo-container"><input name="type" type="text" class="form-control" data-widget="selectbox" data-param="DSM-DSMA-6-AS" disabled="" readonly="" style="color: gray;"><div class="lavaui-combo-panel list-group" style="width: 128px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item" data-value="0">Event</a><a href="#" class="list-group-item active" data-value="1">Alarm</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="alarm-trigger"><button name="trigger" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="1" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="link" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="1" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="capture" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="1" disabled="" type="button">Setup</button></td></tr><tr data-value="2"><td class="alarm-name">HMW</td><td class="alarm-enable"><label class="checkbox"><input name="enable" type="checkbox" value="0" data-widget="checkbox" data-param="DSM-DSMA-9-EN"><span></span></label></td><td class="alarm-type"><div><span class="lavaui-combo-container"><input name="type" type="text" class="form-control" data-widget="selectbox" data-param="DSM-DSMA-9-AS" disabled="" readonly="" style="color: gray;"><div class="lavaui-combo-panel list-group" style="width: 128px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item" data-value="0">Event</a><a href="#" class="list-group-item active" data-value="1">Alarm</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="alarm-trigger"><button name="trigger" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="2" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="link" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="2" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="capture" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="2" disabled="" type="button">Setup</button></td></tr><tr data-value="3"><td class="alarm-name">PCW</td><td class="alarm-enable"><label class="checkbox"><input name="enable" type="checkbox" value="0" data-widget="checkbox" data-param="DSM-DSMA-11-EN"><span></span></label></td><td class="alarm-type"><div><span class="lavaui-combo-container"><input name="type" type="text" class="form-control" data-widget="selectbox" data-param="DSM-DSMA-11-AS" disabled="" readonly="" style="color: gray;"><div class="lavaui-combo-panel list-group" style="width: 128px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item" data-value="0">Event</a><a href="#" class="list-group-item active" data-value="1">Alarm</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="alarm-trigger"><button name="trigger" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="3" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="link" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="3" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="capture" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="3" disabled="" type="button">Setup</button></td></tr><tr data-value="4"><td class="alarm-name">Solid Lane Violation</td><td class="alarm-enable"><label class="checkbox"><input name="enable" type="checkbox" value="0" data-widget="checkbox" data-param="DSM-DSMA-14-EN"><span></span></label></td><td class="alarm-type"><div><span class="lavaui-combo-container"><input name="type" type="text" class="form-control" data-widget="selectbox" data-param="DSM-DSMA-14-AS" disabled="" readonly="" style="color: gray;"><div class="lavaui-combo-panel list-group" style="width: 128px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item" data-value="0">Event</a><a href="#" class="list-group-item active" data-value="1">Alarm</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="alarm-trigger"><button name="trigger" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="4" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="link" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="4" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="capture" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="4" disabled="" type="button">Setup</button></td></tr><tr data-value="5"><td class="alarm-name">Virtual Bumper</td><td class="alarm-enable"><label class="checkbox"><input name="enable" type="checkbox" value="0" data-widget="checkbox" data-param="DSM-DSMA-19-EN"><span></span></label></td><td class="alarm-type"><div><span class="lavaui-combo-container"><input name="type" type="text" class="form-control" data-widget="selectbox" data-param="DSM-DSMA-19-AS" disabled="" readonly="" style="color: gray;"><div class="lavaui-combo-panel list-group" style="width: 128px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item" data-value="0">Event</a><a href="#" class="list-group-item active" data-value="1">Alarm</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="alarm-trigger"><button name="trigger" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="5" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="link" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="5" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="capture" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="5" disabled="" type="button">Setup</button></td></tr></tbody></table>
+                    </div>
+                </div>
+            </div>
+            <div id="safety_alarm_dsm" class="panel-body">
+                <div class="form form-horizontal">
+                    <!-- <div class="form-group">
+                        <div class="col-sm-4">
+                            <span data-lang="STR_IPC_MODETYPE"></span>
+                        </div>
+                        <div class="col-sm-4">
+                            <input name="safety-modetype" type="text" class="form-control" data-widget="selectbox"/>
+                        </div>
+                        <div class="col-sm-3" id="installtype_1">
+                            <input name="safety-installtype" type="text" class="form-control" data-widget="selectbox"/>
+                        </div>
+                    </div> -->
+                    <div class="form-group">
+                        <table class="table table-bordered table-striped align-center"><thead><tr><th class="alarm-name"><span>Name</span></th><th class="alarm-enable"><span>Enable</span></th><th class="alarm-type"><span>Alarm Type</span></th><th class="alarm-trigger"><span>Trigger</span></th><th class="alarm-link"><span>Linkage</span></th><th class="alarm-link"><span>Snap</span></th></tr></thead> <tbody><tr data-value="0"><td class="alarm-name">Fatigue Driving</td><td class="alarm-enable"><label class="checkbox"><input name="enable" type="checkbox" value="0" data-widget="checkbox" data-param="DSM-DSMA-0-EN"><span></span></label></td><td class="alarm-type"><div><span class="lavaui-combo-container"><input name="type" type="text" class="form-control" data-widget="selectbox" data-param="DSM-DSMA-0-AS" disabled="" readonly="" style="color: gray;"><div class="lavaui-combo-panel list-group" style="width: 128px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item" data-value="0">Event</a><a href="#" class="list-group-item active" data-value="1">Alarm</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="alarm-trigger"><button name="trigger" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="0" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="link" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="0" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="capture" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="0" disabled="" type="button">Setup</button></td></tr><tr data-value="1"><td class="alarm-name">No Driver</td><td class="alarm-enable"><label class="checkbox"><input name="enable" type="checkbox" value="0" data-widget="checkbox" data-param="DSM-DSMA-1-EN"><span></span></label></td><td class="alarm-type"><div><span class="lavaui-combo-container"><input name="type" type="text" class="form-control" data-widget="selectbox" data-param="DSM-DSMA-1-AS" disabled="" readonly="" style="color: gray;"><div class="lavaui-combo-panel list-group" style="width: 128px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item" data-value="0">Event</a><a href="#" class="list-group-item active" data-value="1">Alarm</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="alarm-trigger"><button name="trigger" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="1" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="link" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="1" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="capture" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="1" disabled="" type="button">Setup</button></td></tr><tr data-value="2"><td class="alarm-name">Phone Call</td><td class="alarm-enable"><label class="checkbox"><input name="enable" type="checkbox" value="0" data-widget="checkbox" data-param="DSM-DSMA-2-EN"><span></span></label></td><td class="alarm-type"><div><span class="lavaui-combo-container"><input name="type" type="text" class="form-control" data-widget="selectbox" data-param="DSM-DSMA-2-AS" disabled="" readonly="" style="color: gray;"><div class="lavaui-combo-panel list-group" style="width: 128px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item" data-value="0">Event</a><a href="#" class="list-group-item active" data-value="1">Alarm</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="alarm-trigger"><button name="trigger" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="2" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="link" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="2" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="capture" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="2" disabled="" type="button">Setup</button></td></tr><tr data-value="3"><td class="alarm-name">Smoking</td><td class="alarm-enable"><label class="checkbox"><input name="enable" type="checkbox" value="0" data-widget="checkbox" data-param="DSM-DSMA-3-EN"><span></span></label></td><td class="alarm-type"><div><span class="lavaui-combo-container"><input name="type" type="text" class="form-control" data-widget="selectbox" data-param="DSM-DSMA-3-AS" disabled="" readonly="" style="color: gray;"><div class="lavaui-combo-panel list-group" style="width: 128px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item" data-value="0">Event</a><a href="#" class="list-group-item active" data-value="1">Alarm</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="alarm-trigger"><button name="trigger" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="3" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="link" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="3" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="capture" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="3" disabled="" type="button">Setup</button></td></tr><tr data-value="4"><td class="alarm-name">Driver Distraction</td><td class="alarm-enable"><label class="checkbox"><input name="enable" type="checkbox" value="0" data-widget="checkbox" data-param="DSM-DSMA-4-EN"><span></span></label></td><td class="alarm-type"><div><span class="lavaui-combo-container"><input name="type" type="text" class="form-control" data-widget="selectbox" data-param="DSM-DSMA-4-AS" disabled="" readonly="" style="color: gray;"><div class="lavaui-combo-panel list-group" style="width: 128px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item" data-value="0">Event</a><a href="#" class="list-group-item active" data-value="1">Alarm</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="alarm-trigger"><button name="trigger" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="4" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="link" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="4" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="capture" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="4" disabled="" type="button">Setup</button></td></tr><tr data-value="5"><td class="alarm-name">Yawn</td><td class="alarm-enable"><label class="checkbox"><input name="enable" type="checkbox" value="0" data-widget="checkbox" data-param="DSM-DSMA-10-EN"><span></span></label></td><td class="alarm-type"><div><span class="lavaui-combo-container"><input name="type" type="text" class="form-control" data-widget="selectbox" data-param="DSM-DSMA-10-AS" disabled="" readonly="" style="color: gray;"><div class="lavaui-combo-panel list-group" style="width: 128px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item" data-value="0">Event</a><a href="#" class="list-group-item active" data-value="1">Alarm</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="alarm-trigger"><button name="trigger" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="5" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="link" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="5" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="capture" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="5" disabled="" type="button">Setup</button></td></tr><tr data-value="6"><td class="alarm-name">Infrared Block Alarm</td><td class="alarm-enable"><label class="checkbox"><input name="enable" type="checkbox" value="0" data-widget="checkbox" data-param="DSM-DSMA-22-EN"><span></span></label></td><td class="alarm-type"><div><span class="lavaui-combo-container"><input name="type" type="text" class="form-control" data-widget="selectbox" data-param="DSM-DSMA-22-AS" disabled="" readonly="" style="color: gray;"><div class="lavaui-combo-panel list-group" style="width: 128px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item" data-value="0">Event</a><a href="#" class="list-group-item active" data-value="1">Alarm</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="alarm-trigger"><button name="trigger" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="6" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="link" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="6" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="capture" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="6" disabled="" type="button">Setup</button></td></tr></tbody></table>
+                    </div>
+                </div>
+            </div>
+            <div id="safety_alarm_sc" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <table class="table table-bordered table-striped align-center"></table>
+                    </div>
+                </div>
+            </div>
+            <div id="safety_alarm_bsd" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <table class="table table-bordered table-striped align-center"><thead><tr><th class="alarm-name"><span>Name</span></th><th class="alarm-enable"><span>Enable</span></th><th class="alarm-type"><span>Alarm Type</span></th><th class="alarm-trigger"><span>Trigger</span></th><th class="alarm-link"><span>Linkage</span></th><th class="alarm-link"><span>Snap</span></th></tr></thead> <tbody><tr data-value="0"><td class="alarm-name">R-BSD</td><td class="alarm-enable"><label class="checkbox"><input name="enable" type="checkbox" value="0" data-widget="checkbox" data-param="DSM-DSMA-18-EN"><span></span></label></td><td class="alarm-type"><div><span class="lavaui-combo-container"><input name="type" type="text" class="form-control" data-widget="selectbox" data-param="DSM-DSMA-18-AS" disabled="" readonly="" style="color: gray;"><div class="lavaui-combo-panel list-group" style="width: 128px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item active" data-value="0">Event</a><a href="#" class="list-group-item" data-value="1">Alarm</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="alarm-trigger"><button name="trigger" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="0" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="link" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="0" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="capture" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="0" disabled="" type="button">Setup</button></td></tr><tr data-value="1"><td class="alarm-name">L-BSD</td><td class="alarm-enable"><label class="checkbox"><input name="enable" type="checkbox" value="0" data-widget="checkbox" data-param="DSM-DSMA-23-EN"><span></span></label></td><td class="alarm-type"><div><span class="lavaui-combo-container"><input name="type" type="text" class="form-control" data-widget="selectbox" data-param="DSM-DSMA-23-AS" disabled="" readonly="" style="color: gray;"><div class="lavaui-combo-panel list-group" style="width: 128px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item active" data-value="0">Event</a><a href="#" class="list-group-item" data-value="1">Alarm</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="alarm-trigger"><button name="trigger" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="1" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="link" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="1" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="capture" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="1" disabled="" type="button">Setup</button></td></tr><tr data-value="2"><td class="alarm-name">F-BSD</td><td class="alarm-enable"><label class="checkbox"><input name="enable" type="checkbox" value="0" data-widget="checkbox" data-param="DSM-DSMA-34-EN"><span></span></label></td><td class="alarm-type"><div><span class="lavaui-combo-container"><input name="type" type="text" class="form-control" data-widget="selectbox" data-param="DSM-DSMA-34-AS" disabled="" readonly="" style="color: gray;"><div class="lavaui-combo-panel list-group" style="width: 128px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item active" data-value="0">Event</a><a href="#" class="list-group-item" data-value="1">Alarm</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td class="alarm-trigger"><button name="trigger" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="2" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="link" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="2" disabled="" type="button">Setup</button></td><td class="alarm-link"><button name="capture" class="btn btn-operater" style="display: inline-block; color: gray;" data-value="2" disabled="" type="button">Setup</button></td></tr></tbody></table>
+                    </div>
+                </div>
+            </div>
+            <div id="safety_alarm_cp" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <table class="table table-bordered table-striped align-center"></table>
+                    </div>
+                </div>
+            </div>
+            <div id="safety_algorithm" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_Algorithm_InstallIpcHeight">ADAS Camera Install Height</span></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <input class="form-control" type="text" data-widget="editbox" data-param="IAP-SIH" data-type="int" maxlength="3" style="width: 40%;"><label class="input1">(50 ~ 400) </label>
+                        </div>
+                        <div class="col-sm-2">
+                            <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" data-param="IAP-IHU" data-type="int" readonly=""><div class="lavaui-combo-panel list-group" style="width: 91px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item active" data-value="0">CM</a><a href="#" class="list-group-item" data-value="1">INCH</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_ADAS_CAMERA_LEFT_MARGIN">ADAS Camera Left Margin</span></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <input class="form-control" type="text" data-widget="editbox" data-param="IAP-ADLN" data-type="int" maxlength="3" style="width: 40%;"><label class="input1">(0 ~ 400) </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_ADAS_CAR_WIDTH">Car Width</span></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <input class="form-control" type="text" data-widget="editbox" data-param="IAP-VWTH" data-type="int" maxlength="3" style="width: 40%;"><label class="input1">(100 ~ 400) </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_ADAS_HEAD_LENGTH">Vehicle Head Length</span></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <input class="form-control" type="text" data-widget="editbox" data-param="IAP-ADBH" data-type="int" maxlength="3" style="width: 40%;"><label class="input1">(0 ~ 400) </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_DSM_ALARM_TTS_Enable">AI Alarm Voice Enable</span><span data-lang="STR_ALARM_ALL_CONTROL">(All)</span></a>
+                        </div>
+                        <div class="col-sm-1">
+                            <label class="checkbox"><input type="checkbox" class="form-control" data-widget="checkbox" data-param="DSM-DSMFE"><span></span></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_ALARM_RWATCHVOICE">R-Watch Voice Enable(All)</span><span></span></a>
+                        </div>
+                        <div class="col-sm-1">
+                            <label class="checkbox"><input type="checkbox" class="form-control" data-widget="checkbox" data-param="DSM-RWFE"><span></span></label>
+                        </div>
+                    </div>
+                    <div class="form-group" id="inside_speaker" style="display: none;">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_INSIDE_SPEAKER_ALL_ENABLE">Inside Speaker</span></a>
+                        </div>
+                        <div class="col-sm-1">
+                            <label class="checkbox"><input type="checkbox" class="form-control" data-widget="checkbox" data-param="DSM-ISPK"><span></span></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_B1_PLAY_ENABLE">B1 Enable</span></a>
+                        </div>
+                        <div class="col-sm-1">
+                            <label class="checkbox"><input type="checkbox" class="form-control" data-widget="checkbox" data-param="DSM-BFE"><span></span></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_B1_PLAY_MODE">B1 Play Mode</span></a>
+                        </div>
+                        <div class="col-sm-2">
+                            <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" data-param="DSM-BFM" readonly=""><div class="lavaui-combo-panel list-group" style="width: 91px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item active" data-value="0">Mode1</a><a href="#" class="list-group-item" data-value="1">Mode2</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                        </div>
+                    </div>
+                    <div class="form-group" id="ssp_icon" style="display: none;">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_CPX_ICON_ENABLE">CPX Icon Enable</span></a>
+                        </div>
+                        <div class="col-sm-1">
+                            <label class="checkbox"><input type="checkbox" class="form-control" data-widget="checkbox" data-param="SSP-ICON"><span></span></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="safety_calibration" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <table class="table table-bordered table-striped align-center">
+                            <thead id="calibration_title"><tr><th class="channel-id"><span>Channel</span></th><th class="remote-ip-port"><span>Use</span></th><th class="remote-ip-port"><span>Mode Type</span></th><th class="remote-caroutside"><span>Calibration</span></th></tr></thead>
+                            <tbody id="calibration_list"><tr data-value="0"><td class="channel-id">1</td><td><div><span class="lavaui-combo-container"><input name="use" type="text" data-value="0" class="form-control" data-widget="selectbox" data-param="MAIN-0-USE" readonly=""><div class="lavaui-combo-panel list-group" style="width: 140px; height: 146px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">None</a><a href="#" class="list-group-item" data-value="3">ADAS</a><a href="#" class="list-group-item" data-value="4">R-BSD</a><a href="#" class="list-group-item" data-value="5">DMS</a><a href="#" class="list-group-item" data-value="10">L-BSD</a><a href="#" class="list-group-item" data-value="32">Overlook R-BSD</a><a href="#" class="list-group-item" data-value="11">F-BSD</a><a href="#" class="list-group-item" data-value="29">DSC</a><a href="#" class="list-group-item" data-value="43">Overlook L-BSD</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td style="text-align:left;width: 60%;"><div style="display:inline-block;width:49%"><span class="lavaui-combo-container"><input name="mode" type="text" data-value="0" class="form-control" data-widget="selectbox" data-param="IPCCTR-0-OPM" readonly=""><div class="lavaui-combo-panel list-group" style="width: 171px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">Normal</a><a href="#" class="list-group-item" data-value="2">Calibration</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div><div style="display:inline-block;width:49%;margin-left:2%;"><span class="lavaui-combo-container" style="display: none;"><input name="install" type="text" class="form-control" data-widget="selectbox" data-param="IPCCTR-0-IAT" readonly=""><div class="lavaui-combo-panel list-group" style="width: 171px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="1">Front</a><a href="#" class="list-group-item" data-value="2">Side</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td><div><button name="calibration" class="btn btn-operater" data-value="0" disabled="" style="color: gray;" type="button">Calibration</button></div></td></tr><tr data-value="1"><td class="channel-id">2</td><td><div><span class="lavaui-combo-container"><input name="use" type="text" data-value="1" class="form-control" data-widget="selectbox" data-param="MAIN-1-USE" readonly=""><div class="lavaui-combo-panel list-group" style="width: 140px; height: 146px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">None</a><a href="#" class="list-group-item" data-value="3">ADAS</a><a href="#" class="list-group-item" data-value="4">R-BSD</a><a href="#" class="list-group-item" data-value="5">DMS</a><a href="#" class="list-group-item" data-value="10">L-BSD</a><a href="#" class="list-group-item" data-value="32">Overlook R-BSD</a><a href="#" class="list-group-item" data-value="11">F-BSD</a><a href="#" class="list-group-item" data-value="29">DSC</a><a href="#" class="list-group-item" data-value="43">Overlook L-BSD</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td style="text-align:left;width: 60%;"><div style="display:inline-block;width:49%"><span class="lavaui-combo-container"><input name="mode" type="text" data-value="1" class="form-control" data-widget="selectbox" data-param="IPCCTR-1-OPM" readonly=""><div class="lavaui-combo-panel list-group" style="width: 171px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">Normal</a><a href="#" class="list-group-item" data-value="2">Calibration</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div><div style="display:inline-block;width:49%;margin-left:2%;"><span class="lavaui-combo-container" style="display: none;"><input name="install" type="text" class="form-control" data-widget="selectbox" data-param="IPCCTR-1-IAT" readonly=""><div class="lavaui-combo-panel list-group" style="width: 171px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="1">Front</a><a href="#" class="list-group-item" data-value="2">Side</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td><div><button name="calibration" class="btn btn-operater" data-value="1" disabled="" style="color: gray;" type="button">Calibration</button></div></td></tr><tr data-value="2"><td class="channel-id">3</td><td><div><span class="lavaui-combo-container"><input name="use" type="text" data-value="2" class="form-control" data-widget="selectbox" data-param="MAIN-2-USE" readonly=""><div class="lavaui-combo-panel list-group" style="width: 140px; height: 146px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">None</a><a href="#" class="list-group-item" data-value="3">ADAS</a><a href="#" class="list-group-item" data-value="4">R-BSD</a><a href="#" class="list-group-item" data-value="5">DMS</a><a href="#" class="list-group-item" data-value="10">L-BSD</a><a href="#" class="list-group-item" data-value="32">Overlook R-BSD</a><a href="#" class="list-group-item" data-value="11">F-BSD</a><a href="#" class="list-group-item" data-value="29">DSC</a><a href="#" class="list-group-item" data-value="43">Overlook L-BSD</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td style="text-align:left;width: 60%;"><div style="display:inline-block;width:49%"><span class="lavaui-combo-container"><input name="mode" type="text" data-value="2" class="form-control" data-widget="selectbox" data-param="IPCCTR-2-OPM" readonly=""><div class="lavaui-combo-panel list-group" style="width: 171px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">Normal</a><a href="#" class="list-group-item" data-value="2">Calibration</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div><div style="display:inline-block;width:49%;margin-left:2%;"><span class="lavaui-combo-container" style="display: none;"><input name="install" type="text" class="form-control" data-widget="selectbox" data-param="IPCCTR-2-IAT" readonly=""><div class="lavaui-combo-panel list-group" style="width: 171px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="1">Front</a><a href="#" class="list-group-item" data-value="2">Side</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td><div><button name="calibration" class="btn btn-operater" data-value="2" disabled="" style="color: gray;" type="button">Calibration</button></div></td></tr><tr data-value="3"><td class="channel-id">4</td><td><div><span class="lavaui-combo-container"><input name="use" type="text" data-value="3" class="form-control" data-widget="selectbox" data-param="MAIN-3-USE" readonly=""><div class="lavaui-combo-panel list-group" style="width: 140px; height: 146px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">None</a><a href="#" class="list-group-item" data-value="3">ADAS</a><a href="#" class="list-group-item" data-value="4">R-BSD</a><a href="#" class="list-group-item" data-value="5">DMS</a><a href="#" class="list-group-item" data-value="10">L-BSD</a><a href="#" class="list-group-item" data-value="32">Overlook R-BSD</a><a href="#" class="list-group-item" data-value="11">F-BSD</a><a href="#" class="list-group-item" data-value="29">DSC</a><a href="#" class="list-group-item" data-value="43">Overlook L-BSD</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td style="text-align:left;width: 60%;"><div style="display:inline-block;width:49%"><span class="lavaui-combo-container"><input name="mode" type="text" data-value="3" class="form-control" data-widget="selectbox" data-param="IPCCTR-3-OPM" readonly=""><div class="lavaui-combo-panel list-group" style="width: 171px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">Normal</a><a href="#" class="list-group-item" data-value="2">Calibration</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div><div style="display:inline-block;width:49%;margin-left:2%;"><span class="lavaui-combo-container" style="display: none;"><input name="install" type="text" class="form-control" data-widget="selectbox" data-param="IPCCTR-3-IAT" readonly=""><div class="lavaui-combo-panel list-group" style="width: 171px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="1">Front</a><a href="#" class="list-group-item" data-value="2">Side</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td><div><button name="calibration" class="btn btn-operater" data-value="3" disabled="" style="color: gray;" type="button">Calibration</button></div></td></tr><tr data-value="4"><td class="channel-id">5</td><td><div><span class="lavaui-combo-container"><input name="use" type="text" data-value="4" class="form-control" data-widget="selectbox" data-param="MAIN-4-USE" readonly=""><div class="lavaui-combo-panel list-group" style="width: 140px; height: 146px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">None</a><a href="#" class="list-group-item" data-value="3">ADAS</a><a href="#" class="list-group-item" data-value="4">R-BSD</a><a href="#" class="list-group-item" data-value="5">DMS</a><a href="#" class="list-group-item" data-value="10">L-BSD</a><a href="#" class="list-group-item" data-value="32">Overlook R-BSD</a><a href="#" class="list-group-item" data-value="11">F-BSD</a><a href="#" class="list-group-item" data-value="29">DSC</a><a href="#" class="list-group-item" data-value="43">Overlook L-BSD</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td style="text-align:left;width: 60%;"><div style="display:inline-block;width:49%"><span class="lavaui-combo-container"><input name="mode" type="text" data-value="4" class="form-control" data-widget="selectbox" data-param="IPCCTR-4-OPM" readonly=""><div class="lavaui-combo-panel list-group" style="width: 171px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">Normal</a><a href="#" class="list-group-item" data-value="2">Calibration</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div><div style="display:inline-block;width:49%;margin-left:2%;"><span class="lavaui-combo-container" style="display: none;"><input name="install" type="text" class="form-control" data-widget="selectbox" data-param="IPCCTR-4-IAT" readonly=""><div class="lavaui-combo-panel list-group" style="width: 171px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="1">Front</a><a href="#" class="list-group-item" data-value="2">Side</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td><div><button name="calibration" class="btn btn-operater" data-value="4" disabled="" style="color: gray;" type="button">Calibration</button></div></td></tr><tr data-value="5"><td class="channel-id">6</td><td><div><span class="lavaui-combo-container"><input name="use" type="text" data-value="5" class="form-control" data-widget="selectbox" data-param="MAIN-5-USE" readonly=""><div class="lavaui-combo-panel list-group" style="width: 140px; height: 146px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">None</a><a href="#" class="list-group-item" data-value="3">ADAS</a><a href="#" class="list-group-item" data-value="4">R-BSD</a><a href="#" class="list-group-item" data-value="5">DMS</a><a href="#" class="list-group-item" data-value="10">L-BSD</a><a href="#" class="list-group-item" data-value="32">Overlook R-BSD</a><a href="#" class="list-group-item" data-value="11">F-BSD</a><a href="#" class="list-group-item" data-value="29">DSC</a><a href="#" class="list-group-item" data-value="43">Overlook L-BSD</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td style="text-align:left;width: 60%;"><div style="display:inline-block;width:49%"><span class="lavaui-combo-container"><input name="mode" type="text" data-value="5" class="form-control" data-widget="selectbox" data-param="IPCCTR-5-OPM" readonly=""><div class="lavaui-combo-panel list-group" style="width: 171px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">Normal</a><a href="#" class="list-group-item" data-value="2">Calibration</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div><div style="display:inline-block;width:49%;margin-left:2%;"><span class="lavaui-combo-container" style="display: none;"><input name="install" type="text" class="form-control" data-widget="selectbox" data-param="IPCCTR-5-IAT" readonly=""><div class="lavaui-combo-panel list-group" style="width: 171px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="1">Front</a><a href="#" class="list-group-item" data-value="2">Side</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td><div><button name="calibration" class="btn btn-operater" data-value="5" disabled="" style="color: gray;" type="button">Calibration</button></div></td></tr><tr data-value="6"><td class="channel-id">7</td><td><div><span class="lavaui-combo-container"><input name="use" type="text" data-value="6" class="form-control" data-widget="selectbox" data-param="MAIN-6-USE" readonly=""><div class="lavaui-combo-panel list-group" style="width: 140px; height: 146px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">None</a><a href="#" class="list-group-item" data-value="3">ADAS</a><a href="#" class="list-group-item" data-value="4">R-BSD</a><a href="#" class="list-group-item" data-value="5">DMS</a><a href="#" class="list-group-item" data-value="10">L-BSD</a><a href="#" class="list-group-item" data-value="32">Overlook R-BSD</a><a href="#" class="list-group-item" data-value="11">F-BSD</a><a href="#" class="list-group-item" data-value="29">DSC</a><a href="#" class="list-group-item" data-value="43">Overlook L-BSD</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td style="text-align:left;width: 60%;"><div style="display:inline-block;width:49%"><span class="lavaui-combo-container"><input name="mode" type="text" data-value="6" class="form-control" data-widget="selectbox" data-param="IPCCTR-6-OPM" readonly=""><div class="lavaui-combo-panel list-group" style="width: 171px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">Normal</a><a href="#" class="list-group-item" data-value="2">Calibration</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div><div style="display:inline-block;width:49%;margin-left:2%;"><span class="lavaui-combo-container" style="display: none;"><input name="install" type="text" class="form-control" data-widget="selectbox" data-param="IPCCTR-6-IAT" readonly=""><div class="lavaui-combo-panel list-group" style="width: 171px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="1">Front</a><a href="#" class="list-group-item" data-value="2">Side</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td><div><button name="calibration" class="btn btn-operater" data-value="6" disabled="" style="color: gray;" type="button">Calibration</button></div></td></tr><tr data-value="7"><td class="channel-id">8</td><td><div><span class="lavaui-combo-container"><input name="use" type="text" data-value="7" class="form-control" data-widget="selectbox" data-param="MAIN-7-USE" readonly=""><div class="lavaui-combo-panel list-group" style="width: 140px; height: 146px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">None</a><a href="#" class="list-group-item" data-value="3">ADAS</a><a href="#" class="list-group-item" data-value="4">R-BSD</a><a href="#" class="list-group-item" data-value="5">DMS</a><a href="#" class="list-group-item" data-value="10">L-BSD</a><a href="#" class="list-group-item" data-value="32">Overlook R-BSD</a><a href="#" class="list-group-item" data-value="11">F-BSD</a><a href="#" class="list-group-item" data-value="29">DSC</a><a href="#" class="list-group-item" data-value="43">Overlook L-BSD</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td style="text-align:left;width: 60%;"><div style="display:inline-block;width:49%"><span class="lavaui-combo-container"><input name="mode" type="text" data-value="7" class="form-control" data-widget="selectbox" data-param="IPCCTR-7-OPM" readonly=""><div class="lavaui-combo-panel list-group" style="width: 171px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">Normal</a><a href="#" class="list-group-item" data-value="2">Calibration</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div><div style="display:inline-block;width:49%;margin-left:2%;"><span class="lavaui-combo-container" style="display: none;"><input name="install" type="text" class="form-control" data-widget="selectbox" data-param="IPCCTR-7-IAT" readonly=""><div class="lavaui-combo-panel list-group" style="width: 171px; height: 60px; overflow: auto;"><a href="#" class="list-group-item active" data-value="1">Front</a><a href="#" class="list-group-item" data-value="2">Side</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span></div></td><td><div><button name="calibration" class="btn btn-operater" data-value="7" disabled="" style="color: gray;" type="button">Calibration</button></div></td></tr></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="div_save_default" class="form-group">
+        <div class="form-actions right">
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_Default">Default</span></button>
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_APPLY">Save</span></button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- DSM报警触发条件界面 -->
+<div id="dsm_alarm_trigger_modal" class="modal no-backdrop in modal-page-middle" style="display: none;">
+    <div class="modal-dialog modal-md">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none"></div>
+        </div>
+        <div class="modal-body">
+            <!-- overspeed -->
+            <div id="dsm_over_speed" class="form-group row">
+                <div class="row">
+                    <label class="col-sm-4"><span data-lang="STR_Detection_Effective_Time">Detection Effective Time</span></label>
+                    <div class="col-sm-5">
+                        <input id="Detection_Effective_Time" type="text" class="form-control" data-param="SPTWO" data-widget="editbox" data-type="int">
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4"><span data-lang="STR_Big_Icon_Reminder_Time">Big Icon Reminder Time</span></label>
+                    <div class="col-sm-5">
+                        <input id="Big_Icon_Reminder_Time" type="text" class="form-control" data-param="PPST" data-widget="editbox" data-type="int">
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4"><span data-lang="STR_Warn_Speed">Warn Speed</span></label>
+                    <div class="col-sm-3">
+                        <input id="Warn_Speed" type="text" class="form-control" data-param="FGMS" data-widget="editbox" data-type="int">
+                    </div>
+                    <label class="input1"><span data-lang="STR_Below_Limit_Speed">(0-20mph)Below Limit Speed</span></label>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4"><span data-lang="STR_Alarm_Speed">Alarm Speed</span></label>
+                    <div class="col-sm-3">
+                        <input id="Alarm_Speed" type="text" class="form-control" data-param="SGMS" data-widget="editbox" data-type="int">
+                    </div>
+                    <label class="input1"><span data-lang="STR_Than_Limit_Speed">(0-20mph)Than Limit Speed</span></label>
+                </div>
+				
+				<div class="row">
+                    <label class="col-sm-4"><span data-lang="STR_DurationTime">Duration</span></label>
+                    <div class="col-sm-5">
+                        <input id="Detection_Duration_Time" type="text" class="form-control" data-param="SPONE" data-widget="editbox" data-type="int">
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4"><span data-lang="STR_Alarm_StopDelay">Effective Time</span></label>
+                    <div class="col-sm-5">
+                        <input id="D_Alarm_Effective_Time" type="text" class="form-control" data-param="SDT" data-widget="editbox" data-type="int">
+                    </div>
+                </div>
+				
+            </div>
+            <!-- stop alarm -->
+            <div id="dsm_stop_alarm" class="form-group row">
+                <div class="row">
+                    <label class="col-sm-4"><span data-lang="STR_Stop_Alarm_Speed_Threshold">Stop Alarm Speed Threshold</span></label>
+                    <div class="col-sm-5">
+                        <input id="Stop_Alarm_Speed_Threshold" type="text" class="form-control" data-widget="editbox" data-type="int">
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4"><span data-lang="STR_Monitoring_Vehicle_Stop">Effective Time For Monitoring Vehicle Stop</span></label>
+                    <div class="col-sm-5">
+                        <input id="Monitoring_Vehicle_Stop" type="text" class="form-control" data-widget="editbox" data-type="int">
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4"><span data-lang="STR_Check_Distance">Detection Distance</span></label>
+                    <div class="col-sm-3">
+                        <input id="Check_Distance" type="text" class="form-control" data-widget="editbox" data-type="int">
+                    </div>
+                </div>
+            </div>
+            <div id="dsm_normal_speed" class="form-group row">
+                <div class="row">
+                    <label class="col-sm-4"><span data-lang="STR_DSM_ALARM_LevelThreshold">Level Speed Range</span></label>
+                    <div class="col-sm-2">
+                        <input id="FGMS_driver" type="text" class="form-control" data-widget="editbox" data-type="int" maxlength="3">
+                    </div>
+                    <div class="col-sm-1"><span>&nbsp;~&nbsp;</span></div>
+                    <div class="col-sm-4">
+                        <input id="Alarm_normal" type="text" class="form-control" style="width:50%;" data-widget="editbox" data-param="SGMS" data-type="int" maxlength="3">
+                        <label class="input1">km/h</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-5"><span data-lang="STR_DSM_ALARM_SecondaryThreshold">Secondary Speed Range</span></label>
+                    <div class="col-sm-1"><span>&nbsp;≥&nbsp;</span></div>
+                    <div class="col-sm-4">
+                        <label><span id="SGMS_linkage" style="width: 40%;">60</span><label class="input1">km/h</label></label>
+                    </div>
+                </div>
+            </div>
+            <div id="dsm_360_bsd_speed" class="form-group row" style="display:none">
+                <div class="row">
+                    <label class="col-sm-4"><span data-lang="STR_BSD_ALARM_LevelThreshold">Alarm Speed Range</span></label>
+					<div class="col-sm-2">
+                        <input id="FGMS_360_bsd" type="text" class="form-control" data-widget="editbox" data-type="int">
+                    </div>
+                    <div class="col-sm-1"><span>&nbsp;~&nbsp;</span></div>
+                    <div class="col-sm-5">
+                        <input id="SGMS_360_bsd" type="text" class="form-control" style="width:50%;" data-widget="editbox" data-param="SGMS" data-type="int">
+                        <label class="input1"><span data-lang="STR_KM_H">km/h</span></label>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="dsm_no_driver_speed" class="form-group row" style="display:none">
+                <div class="row">
+                    <label class="col-sm-4"><span data-lang="STR_DSM_ALARM_LevelThreshold">Level Speed Range</span></label>
+                    <div class="col-sm-1" style="padding-top:4px;"><span>&nbsp;≥&nbsp;</span></div>
+                    <div class="col-sm-4">
+                        <input id="FGMS_no_driver" type="text" class="form-control" style="width:50%;" data-widget="editbox" data-type="int" maxlength="3">
+                        <label class="input1">km/h</label>
+                    </div>
+                </div>
+            </div>
+            <div id="ai_low_speed" class="form-group row" style="display:none">
+                <div class="row">
+                    <label class="col-sm-4"><span data-lang="STR_DSM_ALARM_LevelThreshold">Level Speed Range</span></label>
+                    <div class="col-sm-1" style="padding-top:4px;"><span>&nbsp;≤&nbsp;</span></div>
+                    <div class="col-sm-5">
+                        <input type="text" id="FGMS_low_speed" class="form-control" data-widget="editbox" data-type="int" maxlength="2" style="width: 40%;">
+                    </div>
+                </div>
+            </div>
+            <div id="dsm_normal_config" class="form-group row">
+                <div class="row" id="sensitivity">
+                    <label class="col-sm-4"><span data-lang="STR_MOTION SENSITIVITY">Sensitivity</span></label>
+                    <div id="sensitivity_selectbox" class="col-sm-3">
+                        <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" data-param="ESST" readonly=""><div class="lavaui-combo-panel list-group" style="width: 105px; height: 120px; overflow: auto; display: none;"><a href="#" class="list-group-item" data-value="1">Low</a><a href="#" class="list-group-item" data-value="2">Middle</a><a href="#" class="list-group-item" data-value="3">High</a><a href="#" class="list-group-item" data-value="4">User-Defined</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                    </div>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" data-widget="editbox" name="UDT" data-type="int" id="udt" style="display: none;">
+                    </div>
+                </div>
+                <div class="row" style="display: none;" id="Distracted_driving">
+                    <label class="col-sm-4"><span data-lang="STR_Analyzing_Conditions">Judgement</span></label>
+                    <div class="col-sm-4">
+                        <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" id="dsm_SPONE" readonly=""><div class="lavaui-combo-panel list-group" style="width: 148px; height: 90px; overflow: auto; display: none;"><a href="#" class="list-group-item active" data-value="0">L+R+Up+Down</a><a href="#" class="list-group-item" data-value="1">L+R</a><a href="#" class="list-group-item" data-value="2">Up+Down</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                    </div>
+                </div>
+                <div class="row" style="display: none;" id="distractionLeft">
+                    <label class="col-sm-4"><span data-lang="STR_RIGHT_LEFT_LOOK">R/L Look</span></label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" data-widget="editbox" name="UDT" data-type="int" id="distractionUDT">
+                    </div>
+                </div>
+                <div class="row" style="display: none;" id="distractionUp">
+                    <label class="col-sm-4"><span data-lang="STR_UP_DOWN_LOOK">U/D Look</span></label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" data-widget="editbox" data-type="int" id="dsm_SPTWO">
+                    </div>
+                </div>
+                <div class="row time">
+                    <label class="col-sm-4"><span data-lang="STR_DurationTime">Duration</span></label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" data-widget="editbox" data-param="VT" data-type="int" maxlength="3" style="width: 40%;"><label class="input1">(0 ~ 600)Second</label>
+                    </div>
+                </div>
+                <div class="row" style="display: none;" id="Distracted_level">
+                    <label class="col-sm-4"><span data-lang="STR_Distractionlevel">Distraction Level</span></label>
+                    <div class="col-sm-4">
+                        <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" data-param="SPTHREE" readonly=""><div class="lavaui-combo-panel list-group" style="width: 148px; height: 90px; overflow: auto; display: none;"><a href="#" class="list-group-item" data-value="1">Light</a><a href="#" class="list-group-item" data-value="2">Medium</a><a href="#" class="list-group-item" data-value="3">High</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                    </div>
+                </div>
+                <div class="row time">
+                    <label class="col-sm-4"><span data-lang="STR_Alarm_StopDelay">Effective Time</span></label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" data-widget="editbox" data-param="SDT" data-type="int" id="stopDelayTimeInput" maxlength="2" style="width: 40%;"><label class="input1">(0 ~ 10)Second</label>
+                    </div>
+                    <div class="col-sm-2">
+                        <button name="help" class="btn btn-sm" type="button">&nbsp;<i class="fa fa-question" style="font-size:18px;"></i>&nbsp;</button>
+                    </div>
+                </div>
+                <div class="row delayTime">
+                    <label class="col-sm-4"><span data-lang="STR_Alarm_StopDelay">Effective Time</span></label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" data-widget="editbox" data-param="SDT" data-type="int" id="delayTimeInput">
+                    </div>
+                    <div class="col-sm-2">
+                        <button name="help" class="btn btn-sm" type="button">&nbsp;<i class="fa fa-question" style="font-size:18px;"></i>&nbsp;</button>
+                    </div>
+                </div>
+            </div>
+            <div id="dsm_normal_bsd" class="form-group">
+                <div class="row">
+                    <label class="col-sm-4"><span data-lang="STR_BSD_ALARM_LevelThreshold">Alarm Speed Range</span></label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" data-widget="editbox" data-type="int" id="bsd_FGMS">
+                    </div>
+                    <div class="col-sm-1"><span>&nbsp;~&nbsp;</span></div>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" style="width:50%;" data-widget="editbox" id="bsd_SGMS" data-type="int">
+                        <label class="input1">km/h</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4"><span data-lang="STR_BSD_STRAINGT_ALARM">Straight Alarm Distance Range</span></label>
+                    <div class="col-sm-3">
+                        <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" id="bsd_SPONE" readonly=""><div class="lavaui-combo-panel list-group" style="width: 113px; height: 90px; overflow: auto; display: none;"><a href="#" class="list-group-item active" data-value="0">50</a><a href="#" class="list-group-item" data-value="1">80</a><a href="#" class="list-group-item" data-value="2">120</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                    </div>
+                    <div class="col-sm-2" style="padding-top: 5px;">
+                        <label class="input1"><span data-lang="STR_UNIT_CM">CM</span></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4"><span data-lang="STR_BSD_TURN_ALARM">Turn Alarm Distance Range</span></label>
+                    <div class="col-sm-3">
+                        <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" id="bsd_SPTWO" readonly=""><div class="lavaui-combo-panel list-group" style="width: 113px; height: 90px; overflow: auto; display: none;"><a href="#" class="list-group-item active" data-value="0">150</a><a href="#" class="list-group-item" data-value="1">200</a><a href="#" class="list-group-item" data-value="2">250</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                    </div>
+                    <div class="col-sm-2" style="padding-top: 5px;">
+                        <label class="input1"><span data-lang="STR_UNIT_CM">CM</span></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" type="button"><span data-lang="STR_CANCEL">Cancel</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_OK">OK</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,81 @@
+<div class="panel">
+    <div class="panel-body">
+        <ul class="tabs" data-options="onSelect:'window.appParamApi.refreshInterfaceFinish'">
+            <li class="active"><a href="#ftpServer"><span data-lang="STR_FTP_CLIENT">FTP Server</span></a></li>
+            <li><a href="#download"><span data-lang="STR_AutoDownload">Download</span></a></li>
+        </ul>
+        <div class="tabs-content">
+            <div id="ftpServer" class="panel-body active">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_FTP ENABLE">FTP Enable</span></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="checkbox">
+                                <input type="checkbox" data-widget="checkbox" data-param="FTPS-EN" class="form-control">
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_FTP SERVER">Server</span></a>
+                        </div>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" data-type="address-input" data-widget="editbox" data-param="FTPS-SERVERIP" maxlength="39" style="color: rgb(255, 255, 255);">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_FTP PORT">Port</span></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" data-widget="editbox" data-param="FTPS-PORT" data-type="port-input" maxlength="5" style="color: rgb(255, 255, 255);">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_FTP NAME">User Name</span></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" data-widget="editbox" data-param="FTPS-LOGINUSER" data-type="mdvr-input" maxlength="31" style="color: rgb(255, 255, 255);">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_FTP PASSWD">Password</span></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="password" class="form-control" data-widget="editbox" data-param="FTPS-LOGINPWD" data-type="mdvr-input" maxlength="31" style="color: rgb(255, 255, 255);" value=""><i data-name="password" class="input-icon fa fa-eye"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- download 页面-->
+            <div id="download" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label class="checkbox">
+                                <a><span data-lang="STR_AutoDownload_Link">Auto Download Reconnect</span></a>
+                                <input type="checkbox" class="form-control" data-widget="checkbox" data-param="GSP-ATDLE">
+                                <span></span>
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" data-widget="editbox" data-param="GSP-RCI" maxlength="2" disabled="" style="width: 40%; color: gray;"><label class="input1">(1 ~ 10)Minutes</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="div_save_default" class="form-group">
+        <div class="form-actions right">
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_Default">Default</span></button>
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_APPLY">Save</span></button>
+        </div>
+    </div>
+</div>
+

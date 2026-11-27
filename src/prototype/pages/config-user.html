@@ -1,0 +1,109 @@
+<div class="panel">
+    <div class="panel-body">
+        <ul class="tabs" style="display:none" data-options="onSelect:'window.appParamApi.refreshInterfaceFinish'">
+            <li class="active"><a href="#user_setup"></a></li>
+        </ul>
+        <div class="tabs-content">
+            <div id="user_setup" class="panel-body active">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_OVERTIME QUIT">Idle Time</span></a>
+                        </div>
+                        <div class="col-sm-5">
+                            <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" data-param="GSP-SSS" readonly=""><div class="lavaui-combo-panel list-group" style="width: 260px; height: 146px; overflow: auto;"><a href="#" class="list-group-item" data-value="30">30 Seconds</a><a href="#" class="list-group-item" data-value="60">1 Minute</a><a href="#" class="list-group-item" data-value="180">3 Minutes</a><a href="#" class="list-group-item" data-value="300">5 Minutes</a><a href="#" class="list-group-item" data-value="600">10 Minutes</a><a href="#" class="list-group-item active" data-value="0">Never</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                        </div>
+                    </div>
+                    <div class="form-group userinfo">
+                        <label class="col-sm-4"><span data-lang="STR_USER MANAGE">User Management</span></label>
+                        <div class="col-sm-3">
+                            <button class="btn btn-operater" id="add_user" style="color: rgb(255, 255, 255);" type="button"><span data-lang="STR_Add">Add</span> </button>
+                        </div>
+                    </div>
+                    <div class="form-group userinfo">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <table class="table table-bordered table-striped align-center">
+                                    <thead>
+                                        <tr>
+                                            <th><span data-lang="STR_USER NAME">User Name</span></th>
+                                            <th><span data-lang="STR_USER GROUP">User Group</span></th>
+                                            <th><span data-lang="STR_OPERATE">Setup</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="display_user_info_list"><tr><td>admin</td><td><label>Admin</label></td><td><div><button name="delete" class="btn btn-sm outline" style="display:none" data-value="0" type="button"><i class="fa fa-remove"></i></button><button name="edit" class="btn btn-sm outline" style="margin-left:15px" data-value="0" type="button"><i class="fa fa-navicon"></i></button><div></div></div></td></tr><tr><td>user</td><td><label>Normal User</label></td><td><div><button name="delete" class="btn btn-sm outline" style="display:inline-block" data-value="1" type="button"><i class="fa fa-remove"></i></button><button name="edit" class="btn btn-sm outline" style="margin-left:15px" data-value="1" type="button"><i class="fa fa-navicon"></i></button><div></div></div></td></tr></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="div_save_default" class="form-group">
+        <div class="form-actions right">
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_Default">Default</span></button>
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_APPLY">Save</span></button>
+        </div>
+    </div>
+</div>
+
+
+<!-- 编辑用户名密码 -->
+<div id="edit_dialog_modal" class="modal no-backdrop in  modal-page-middle">
+    <div class="modal-dialog modal-md">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none">
+                <span data-lang="STR_Edit">Edit</span>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <a><span data-lang="STR_USER NAME">User Name</span></a>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" id="edit_username" class="form-control" maxlength="10" data-widget="editbox" data-type="mdvr-input">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <a><span data-lang="STR_USER GROUP">User Group</span></a>
+                </div>
+                <div class="col-sm-5">
+                    <a id="edit_usertype"></a>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <a id="password_text"><span data-lang="STR_PASSWORD">Password</span></a>
+                </div>
+                <div class="col-sm-5">
+                    <input type="password" id="edit_password" class="form-control" maxlength="16" data-widget="editbox" data-type="mdvr-input" value="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <a id="edit_confirm_text"></a>
+                </div>
+                <div class="col-sm-5">
+                    <input type="password" id="confirm_password" class="form-control" maxlength="16" data-widget="editbox" data-type="mdvr-input" value="">
+                </div>
+            </div>
+            <div class="form-group row" id="old_check">
+                <div class="col-sm-5">
+                    <a><span data-lang="STR_USER_OLD_PASSWORD">Original Password</span></a>
+                </div>
+                <div class="col-sm-5">
+                    <input type="password" id="old_password" class="form-control" maxlength="16" data-widget="editbox" data-type="mdvr-input" value="">
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" type="button"><span data-lang="STR_CANCEL">Cancel</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_OK">OK</span></button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,3721 @@
+{
+  "reference-base.json": {
+    "controls": [
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "",
+        "param": "IOP-0-N",
+        "value": "Sensor1"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "",
+        "param": "IOP-0-S",
+        "value": "S1"
+      },
+      {
+        "checked": true,
+        "disabled": false,
+        "id": "",
+        "name": "enable",
+        "param": "IOP-0-EN",
+        "value": "0"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "type",
+        "param": "IOP-0-AS",
+        "value": "Alarm"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "",
+        "param": "IOP-0-UT",
+        "value": "Door 1"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "",
+        "param": "IOP-1-N",
+        "value": "Sensor2"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "",
+        "param": "IOP-1-S",
+        "value": "S2"
+      },
+      {
+        "checked": true,
+        "disabled": false,
+        "id": "",
+        "name": "enable",
+        "param": "IOP-1-EN",
+        "value": "0"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "type",
+        "param": "IOP-1-AS",
+        "value": "Alarm"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "",
+        "param": "IOP-1-UT",
+        "value": "Door 2"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "",
+        "param": "IOP-2-N",
+        "value": "Sensor3"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "",
+        "param": "IOP-2-S",
+        "value": "S3"
+      },
+      {
+        "checked": true,
+        "disabled": false,
+        "id": "",
+        "name": "enable",
+        "param": "IOP-2-EN",
+        "value": "0"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "type",
+        "param": "IOP-2-AS",
+        "value": "Alarm"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "",
+        "param": "IOP-2-UT",
+        "value": "Door 3"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "",
+        "param": "IOP-3-N",
+        "value": "Sensor4"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "",
+        "param": "IOP-3-S",
+        "value": "S4"
+      },
+      {
+        "checked": true,
+        "disabled": false,
+        "id": "",
+        "name": "enable",
+        "param": "IOP-3-EN",
+        "value": "0"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "type",
+        "param": "IOP-3-AS",
+        "value": "Alarm"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "",
+        "param": "IOP-3-UT",
+        "value": "Door 4"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "",
+        "param": "IOP-4-N",
+        "value": "Sensor5"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "",
+        "param": "IOP-4-S",
+        "value": "S5"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "enable",
+        "param": "IOP-4-EN",
+        "value": "0"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "type",
+        "param": "IOP-4-AS",
+        "value": "Alarm"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "",
+        "param": "IOP-4-UT",
+        "value": "None"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "",
+        "param": "IOP-5-N",
+        "value": "Sensor6"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "",
+        "param": "IOP-5-S",
+        "value": "S6"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "enable",
+        "param": "IOP-5-EN",
+        "value": "0"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "type",
+        "param": "IOP-5-AS",
+        "value": "Alarm"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "",
+        "param": "IOP-5-UT",
+        "value": "None"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "",
+        "param": "IOP-6-N",
+        "value": "Sensor7"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "",
+        "param": "IOP-6-S",
+        "value": "S7"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "enable",
+        "param": "IOP-6-EN",
+        "value": "0"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "type",
+        "param": "IOP-6-AS",
+        "value": "Alarm"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "",
+        "param": "IOP-6-UT",
+        "value": "None"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "",
+        "param": "IOP-7-N",
+        "value": "Sensor8"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "",
+        "param": "IOP-7-S",
+        "value": "S8"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "enable",
+        "param": "IOP-7-EN",
+        "value": "0"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "type",
+        "param": "IOP-7-AS",
+        "value": "Alarm"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "",
+        "param": "IOP-7-UT",
+        "value": "None"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "",
+        "param": "IOP-8-N",
+        "value": "Sensor9"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "",
+        "param": "IOP-8-S",
+        "value": "S9"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "id": "",
+        "name": "enable",
+        "param": "IOP-8-EN",
+        "value": "0"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "type",
+        "param": "IOP-8-AS",
+        "value": "Alarm"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "id": "",
+        "name": "",
+        "param": "IOP-8-UT",
+        "value": "None"
+      }
+    ]
+  },
+  "use-inspection.json": [
+    {
+      "use": {
+        "text": "None",
+        "value": "0"
+      }
+    },
+    {
+      "use": {
+        "text": "Urgency Alarm",
+        "value": "1"
+      }
+    },
+    {
+      "use": {
+        "text": "Neutral Taxiing",
+        "value": "3"
+      }
+    },
+    {
+      "use": {
+        "text": "Door 1",
+        "value": "8"
+      }
+    },
+    {
+      "use": {
+        "text": "Door 2",
+        "value": "11"
+      }
+    },
+    {
+      "use": {
+        "text": "Door 3",
+        "value": "14"
+      }
+    },
+    {
+      "use": {
+        "text": "Door 4",
+        "value": "46"
+      }
+    },
+    {
+      "use": {
+        "text": "Door 5",
+        "value": "47"
+      }
+    },
+    {
+      "use": {
+        "text": "Door 6",
+        "value": "48"
+      }
+    },
+    {
+      "use": {
+        "text": "Door 7",
+        "value": "49"
+      }
+    },
+    {
+      "use": {
+        "text": "Door 8",
+        "value": "50"
+      }
+    },
+    {
+      "use": {
+        "text": "Passing Light",
+        "value": "17"
+      }
+    },
+    {
+      "use": {
+        "text": "Distance Light",
+        "value": "18"
+      }
+    },
+    {
+      "use": {
+        "text": "Right Steering",
+        "value": "19"
+      }
+    },
+    {
+      "use": {
+        "text": "Left Steering",
+        "value": "20"
+      }
+    },
+    {
+      "use": {
+        "text": "Braking",
+        "value": "21"
+      }
+    },
+    {
+      "use": {
+        "text": "Startup",
+        "value": "191"
+      }
+    },
+    {
+      "use": {
+        "text": "Seat Belt",
+        "value": "28"
+      }
+    },
+    {
+      "use": {
+        "text": "Anti Forgotten",
+        "value": "23"
+      }
+    },
+    {
+      "use": {
+        "text": "Out Device Motion",
+        "value": "26"
+      }
+    },
+    {
+      "use": {
+        "text": "Stop Alarm",
+        "value": "32"
+      }
+    }
+  ],
+  "use-0-trigger.json": {
+    "expected": [
+      {
+        "key": "TM",
+        "disabled": false
+      },
+      {
+        "key": "EL",
+        "disabled": false
+      },
+      {
+        "key": "SDT",
+        "disabled": false
+      }
+    ]
+  },
+  "use-0-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-1-trigger.json": {
+    "expected": [
+      {
+        "key": "TM",
+        "disabled": true
+      },
+      {
+        "key": "EL",
+        "disabled": false
+      },
+      {
+        "key": "VT",
+        "disabled": false
+      },
+      {
+        "key": "SDT",
+        "disabled": false
+      }
+    ]
+  },
+  "use-1-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-3-trigger.json": {
+    "expected": [
+      {
+        "key": "TM",
+        "disabled": false
+      },
+      {
+        "key": "EL",
+        "disabled": false
+      },
+      {
+        "key": "SDT",
+        "disabled": false
+      }
+    ]
+  },
+  "use-3-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-8-trigger.json": {
+    "expected": [
+      {
+        "key": "TM",
+        "disabled": false
+      },
+      {
+        "key": "EL",
+        "disabled": false
+      },
+      {
+        "key": "SDT",
+        "disabled": false
+      }
+    ]
+  },
+  "use-8-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-11-trigger.json": {
+    "expected": [
+      {
+        "key": "TM",
+        "disabled": false
+      },
+      {
+        "key": "EL",
+        "disabled": false
+      },
+      {
+        "key": "SDT",
+        "disabled": false
+      }
+    ]
+  },
+  "use-11-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-14-trigger.json": {
+    "expected": [
+      {
+        "key": "TM",
+        "disabled": false
+      },
+      {
+        "key": "EL",
+        "disabled": false
+      },
+      {
+        "key": "SDT",
+        "disabled": false
+      }
+    ]
+  },
+  "use-14-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-46-trigger.json": {
+    "expected": [
+      {
+        "key": "TM",
+        "disabled": false
+      },
+      {
+        "key": "EL",
+        "disabled": false
+      },
+      {
+        "key": "SDT",
+        "disabled": false
+      }
+    ]
+  },
+  "use-46-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-47-trigger.json": {
+    "expected": [
+      {
+        "key": "TM",
+        "disabled": false
+      },
+      {
+        "key": "EL",
+        "disabled": false
+      },
+      {
+        "key": "SDT",
+        "disabled": false
+      }
+    ]
+  },
+  "use-47-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-48-trigger.json": {
+    "expected": [
+      {
+        "key": "TM",
+        "disabled": false
+      },
+      {
+        "key": "EL",
+        "disabled": false
+      },
+      {
+        "key": "SDT",
+        "disabled": false
+      }
+    ]
+  },
+  "use-48-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-49-trigger.json": {
+    "expected": [
+      {
+        "key": "TM",
+        "disabled": false
+      },
+      {
+        "key": "EL",
+        "disabled": false
+      },
+      {
+        "key": "SDT",
+        "disabled": false
+      }
+    ]
+  },
+  "use-49-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-50-trigger.json": {
+    "expected": [
+      {
+        "key": "TM",
+        "disabled": false
+      },
+      {
+        "key": "EL",
+        "disabled": false
+      },
+      {
+        "key": "SDT",
+        "disabled": false
+      }
+    ]
+  },
+  "use-50-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-17-trigger.json": {
+    "expected": [
+      {
+        "key": "TM",
+        "disabled": false
+      },
+      {
+        "key": "EL",
+        "disabled": false
+      },
+      {
+        "key": "SDT",
+        "disabled": false
+      }
+    ]
+  },
+  "use-17-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-18-trigger.json": {
+    "expected": [
+      {
+        "key": "TM",
+        "disabled": false
+      },
+      {
+        "key": "EL",
+        "disabled": false
+      },
+      {
+        "key": "SDT",
+        "disabled": false
+      }
+    ]
+  },
+  "use-18-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-19-trigger.json": {
+    "expected": [
+      {
+        "key": "TM",
+        "disabled": false
+      },
+      {
+        "key": "EL",
+        "disabled": false
+      },
+      {
+        "key": "SDT",
+        "disabled": false
+      }
+    ]
+  },
+  "use-19-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-20-trigger.json": {
+    "expected": [
+      {
+        "key": "TM",
+        "disabled": false
+      },
+      {
+        "key": "EL",
+        "disabled": false
+      },
+      {
+        "key": "SDT",
+        "disabled": false
+      }
+    ]
+  },
+  "use-20-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-21-trigger.json": {
+    "expected": [
+      {
+        "key": "TM",
+        "disabled": false
+      },
+      {
+        "key": "EL",
+        "disabled": false
+      },
+      {
+        "key": "SDT",
+        "disabled": false
+      }
+    ]
+  },
+  "use-21-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-191-trigger.json": {
+    "expected": [
+      {
+        "key": "TM",
+        "disabled": false
+      },
+      {
+        "key": "EL",
+        "disabled": false
+      },
+      {
+        "key": "SDT",
+        "disabled": false
+      }
+    ]
+  },
+  "use-191-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-28-trigger.json": {
+    "expected": [
+      {
+        "key": "TM",
+        "disabled": false
+      },
+      {
+        "key": "EL",
+        "disabled": false
+      },
+      {
+        "key": "SDT",
+        "disabled": false
+      }
+    ]
+  },
+  "use-28-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-23-trigger.json": {
+    "expected": [
+      {
+        "key": "alarmtrigger1",
+        "disabled": false
+      },
+      {
+        "key": "CCMDuration",
+        "disabled": false
+      },
+      {
+        "key": "CCMMustTime",
+        "disabled": false
+      },
+      {
+        "key": "ignitionDelay1",
+        "disabled": true
+      },
+      {
+        "key": "CCM-AOON",
+        "disabled": false
+      },
+      {
+        "key": "CCM-IOM.0",
+        "disabled": false
+      },
+      {
+        "key": "CCM-IOM.1",
+        "disabled": false
+      }
+    ]
+  },
+  "use-23-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-26-trigger.json": {
+    "expected": [
+      {
+        "key": "alarmtrigger2",
+        "disabled": false
+      },
+      {
+        "key": "msIgnitionOff",
+        "disabled": false
+      },
+      {
+        "key": "ignitionDelay2",
+        "disabled": true
+      },
+      {
+        "key": "delayTime",
+        "disabled": false
+      }
+    ]
+  },
+  "use-26-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "use-32-trigger.json": {
+    "expected": [
+      {
+        "key": "TM",
+        "disabled": false
+      },
+      {
+        "key": "EL",
+        "disabled": false
+      },
+      {
+        "key": "SDT",
+        "disabled": false
+      },
+      {
+        "key": "DT",
+        "disabled": false
+      },
+      {
+        "key": "EDT",
+        "disabled": false
+      }
+    ]
+  },
+  "use-32-link.json": {
+    "expected": [
+      {
+        "key": "AR-CH.0",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.1",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.2",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.3",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.4",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.5",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.6",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.7",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.8",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.9",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.10",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.11",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.12",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.13",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.14",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.15",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.16",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.17",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.18",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.19",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.20",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.21",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.22",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.23",
+        "disabled": false
+      },
+      {
+        "key": "AR-CH.24",
+        "disabled": false
+      },
+      {
+        "key": "AR-P",
+        "disabled": true
+      },
+      {
+        "key": "AR-D",
+        "disabled": true
+      },
+      {
+        "key": "AR-L",
+        "disabled": true
+      },
+      {
+        "key": "PS-ID.0",
+        "disabled": false
+      },
+      {
+        "key": "PS-ID.1",
+        "disabled": false
+      },
+      {
+        "key": "PS-T",
+        "disabled": true
+      },
+      {
+        "key": "SM",
+        "disabled": false
+      },
+      {
+        "key": "SS-EN",
+        "disabled": false
+      }
+    ]
+  },
+  "screen-0.json": {
+    "layoutInputs": 0
+  },
+  "screen-1.json": {
+    "layoutInputs": 1
+  },
+  "screen-2.json": {
+    "layoutInputs": 2
+  },
+  "screen-3.json": {
+    "layoutInputs": 3
+  },
+  "screen-4.json": {
+    "layoutInputs": 4
+  }
+}

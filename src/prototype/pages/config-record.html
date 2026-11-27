@@ -1,0 +1,422 @@
+
+
+<div class="panel">
+    <div class="panel-body">
+        <ul class="tabs" data-options="onSelect:'window.appParamApi.refreshInterfaceFinish'">
+            <li class="active"><a href="#record_common"><span data-lang="STR_TONGYONG SET">General</span></a></li>
+            <li class=""><a href="#record_main_stream"><span data-lang="STR_MAIN STREAM">Main Stream</span></a></li>
+            <li class=""><a href="#record_sub_stream"><span data-lang="STR_SUB STREAM">Sub Stream</span></a></li>
+            <li class=""><a href="#record_osd"><span data-lang="STR_OVERLAY_OSD">Record OSD</span></a></li>
+            <li class="" style="display: none;"><a href="#record_audio"><span data-lang="STR_AUDIO SETUP">Audio Frequency</span></a></li>
+        </ul>
+        <div class="tabs-content">
+            <!-- 通用 -->
+            <div id="record_common" class="panel-body active">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-4"><span data-lang="STR_VIDEO SYSTEM">System</span></label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" data-widget="selectbox" data-param="GSP-VSA">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4"><span data-lang="STR_AUTO COVER">Overwrite</span></label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" data-widget="selectbox" data-param="RP-MP-0-OT">
+                        </div>
+                        <div class="col-sm-3" id="common_auto_cover_id" style="display:none">
+                            <input type="text" class="form-control" style="width:30%;" data-widget="editbox" data-type="int" data-param="RP-MP-0-OVD">
+                            <label class="input1"><span data-lang="STR_DAY 1-31">(1~31)Days</span></label>
+                        </div>
+                        <div class="col-sm-4" id="common_auto_cover_id2" style="display:none">
+                            <input type="text" class="form-control" style="width:30%;" data-widget="editbox" data-type="int" data-param="RP-MP-0-OVM">
+                        </div>
+                    </div>
+                    <div class="form-group channel">
+                        <label class="col-sm-4"><span data-lang="STR_THE_GROUP_ONE">Group One</span></label>
+                        <div class="col-sm-8">
+                            <div class="row">
+                                <div class="checkbox-list checkbox-inline" data-widget="checkgroupbox" data-param="RP-MP-0-GROUPS-0-CHM"></div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-3" style="padding-left:0;padding-top: 5px;"><span data-lang="STR_KEEP_THE_DAY">Retention days</span></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" data-widget="editbox" data-type="int" data-param="RP-MP-0-GROUPS-0-DAYS">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-group channel">
+                        <label class="col-sm-4"><span data-lang="STR_THE_GROUP_TWO">Group Two</span></label>
+                        <div class="col-sm-8">
+                            <div class="row">
+                                <div class="checkbox-list checkbox-inline" data-widget="checkgroupbox" data-param="RP-MP-0-GROUPS-1-CHM"></div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-3" style="padding-left:0;padding-top: 5px;"><span data-lang="STR_KEEP_THE_DAY">Retention days</span></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" data-widget="editbox" data-type="int" data-param="RP-MP-0-GROUPS-1-DAYS">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-group" id="lockDuration">
+                        <label class="col-sm-4"><span data-lang="STR_RECORD_LOCK_DAYS">Lock Duration</span></label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" data-widget="editbox" data-type="int" data-param="RP-MP-0-OLD">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4"><span data-lang="STR_PRE-REC">Pre-recording</span></label>
+                        <div class="col-sm-4">
+                            <label class="checkbox" style="width:8%;margin-top:3px;margin-right:0px;float:left">
+                                <input id="common_pre_record" type="checkbox" value="0" data-widget="checkbox" data-param="RP-DPRE">
+                                <span></span>
+                            </label>
+                            <!-- <div id="common_pre_record_time" style="width:65%; float:left;display:none;">
+                                <input type="text" class="form-control" data-widget="selectbox" data-param="RP-PRS"/>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- Sd卡录像设置 -->
+                    <div class="form-group">
+                        <div class="row">
+                            <label class="col-sm-4"><span data-lang="STR_SDCARD">SD</span><span data-lang="STR_RECORD MODE"> Record Mode</span></label>
+                            <div class="col-sm-3">
+                                <input id="double_record_mode" type="text" class="form-control" data-widget="selectbox" data-param="AR-RM">
+                            </div>
+                        </div>
+                        <div class="row" name="non-sd-record" style="display: none;">
+                            <label class="col-sm-4 retract"><span data-lang="STR_RECORD_STORAGE_RESOURCE">SD Write Resource Ratio</span></label>
+                            <label class="col-sm-2" id="sd_record_percentage">0%</label>
+                        </div>
+                        <div class="row" name="non-sd-record" style="display: none;">
+                            <label class="col-sm-4 retract"><span data-lang="STR_RECORD_STORAGE">Record Storage</span></label>
+                            <div class="col-sm-6">
+                                <div class="radio-list radio-inline" data-widget="radiolistbox" data-param="AR-HID">
+                                    <label class="radio">
+                                        <span name="sd-record-pos"></span><span data-lang="STR_INTERNAL_SDCARD">Internal SD</span>
+                                        <input type="radio" name="radio-one">
+                                        <span></span>
+                                    </label>
+                                    <label class="radio">
+                                        <span name="sd-record-pos"></span><span data-lang="STR_EXTERNAL_SDCARD">External SD</span>
+                                        <input type="radio" name="radio-one">
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" name="non-sd-record" style="display: none;">
+                            <label class="col-sm-4 retract"><span style="margin-left:25px;" data-lang="STR_CHANNEL">Channel</span></label>
+                            <div class="col-sm-8">
+                                <div class="checkbox-list checkbox-inline" id="record_mode_channel_list" data-widget="checkgroupbox"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--硬盘录像设置-->
+                    <div class="form-group" id="hdd_record_config_show" style="display:none; padding-bottom: 35px;">
+                        <div class="row">
+                            <label class="col-sm-4"><span data-lang="STR_HDD_RECORD_SUB_ENABLE">HDD Double Recording</span></label>
+                            <div class="col-sm-4">
+                                <label class="checkbox" style="width:8%;margin-top:3px;margin-right:0px;float:left">
+                                    <input type="checkbox" value="0" data-widget="checkbox" data-param="AR-HDAE">
+                                    <span></span>
+                                </label>
+                                <button name="help" class="btn btn-sm" type="button">&nbsp;<i class="fa fa-question" style="font-size:18px;"></i>&nbsp;</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-4 retract"><span data-lang="STR_HDD_RECORD_TIMES">HDD Record Duration</span></label>
+                            <div class="col-sm-8">
+                                <div class="page-line">
+                                    <div class="hdd-tableTop-shortname">
+                                        <div style="float:left;">
+                                            <span data-lang="STR_HDD_RECORD_MAIN">Main</span>
+                                        </div>
+                                        <div style="float:left; margin-left:12px;">
+                                            <button class="btn btn-sm" style="margin-top:4px;margin-left:2px; line-height:15px;" id="dec_time" type="button"><i class="fa fa-minus"></i></button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="hdd-tableTop-middle">
+                                        <div id="substream_hdd" class="tar-image-bg" style="float:left; margin-left:2px;">
+                                            <div class="tar-image-remove"></div>
+                                            <!-- <i class="fa fa-circle tar-remove-bg"></i> -->
+                                        </div>
+                                    </div>
+                                    <div class="hdd-tableTop-rightname">
+                                        <div style="float:left; margin-left:12px;">
+                                            <button class="btn btn-sm" style="margin-top:4px;margin-left:2px; line-height:15px;" id="add_time" type="button"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                        <div style="float:left; margin-left:12px;">
+                                            <span data-lang="STR_HDD_RECORD_SUB">Sub</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-line">
+                                    <div class="hdd-tableTop-shortname">
+                                        <label id="lab_main_hour" style="margin-left:50%"> 0&nbsp;H </label>
+                                    </div>
+                                    <div class="hdd-tableTop-middle"></div>
+                                    <div class="hdd-tableTop-rightname">
+                                        <label id="lab_sub_hour" style="margin-left:10%"> 0&nbsp;H </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" name="record_pm">
+                        <label class="col-sm-4"><span data-lang="STR_VIDEO_CPME">Protected Recording</span></label>
+                        <div class="col-sm-4">
+                            <label class="checkbox" style="width:8%;margin-top:3px;margin-right:0px;float:left">
+                                <input id="common_pre_record" type="checkbox" value="0" data-widget="checkbox" data-param="RP-CPME">
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group" name="record_pm">
+                        <label class="col-sm-4"><span data-lang="STR_CHANNEL">Channel</span></label>
+                        <div class="col-sm-8">
+                        <div class="row">
+                            <div class="checkbox-list checkbox-inline" data-widget="checkgroupbox" data-param="RP-CPMCHM"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 主码流 -->
+            <div id="record_main_stream" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group" id="table_main_stream">
+                        <div class="table-overflow-null" style="width: 9%">
+                            <table name="table-left" class="table table-bordered table-striped align-center fixed"></table>
+                        </div>
+                        <div class="table-overflow-x" style="width: 90%;">
+                            <table name="table-right" class="table table-bordered table-striped align-center fixed"></table>
+                        </div>
+                    </div>
+                    <div class="form-group" id="show_main_stream_percentage" style="display: none;">
+                        <label class="col-sm-2" id="main_stream_percentage_text"><span data-lang="DIALOG_PercentageMainStream">Percentage Of Main Stream</span></label>
+                        <label class="col-sm-2" id="main_stream_percentage">0%</label>
+
+                        <label class="col-sm-2" id="main_ahd_stream_percentage_text"><span data-lang="STR_MAIN_IN_R">AHD :</span>&nbsp;<label id="main_ahd_tream_percentage">0%</label></label>
+                        
+
+                        <label class="col-sm-2" id="main_ipc_stream_percentage_text"><span data-lang="STR_MAIN_IP_R">IPC :</span>&nbsp;<label id="main_ipc_stream_percentage">0%</label></label>
+                        
+                    </div>
+                    <div class="form-group">
+                        <div id="main_copy_to" class="col-sm-9"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 子码流 -->
+            <div id="record_sub_stream" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group" id="table_sub_stream">
+                        <div class="table-overflow-null" style="width: 9%">
+                            <table name="table-left" class="table table-bordered table-striped align-center fixed"></table>
+                        </div>
+                        <div class="table-overflow-x" style="width: 90%;">
+                            <table name="table-right" class="table table-bordered table-striped align-center fixed"></table>
+                        </div>
+                    </div>
+                    <div class="form-group" id="show_sub_stream_percentage">
+                        <label class="col-sm-6"><span data-lang="DIALOG_PercentageSubStream">Percentage Of Sub Stream</span></label>
+                        <label class="col-sm-2" id="sub_stream_percentage">0%</label>
+                    </div>
+                    <div class="form-group">
+                        <div id="sub_copy_to" class="col-sm-9"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- OSD叠加 -->
+            <div id="record_osd" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group" id="overlay_osd_enable_form"></div>
+                    <div class="form-group">
+                        <label class="col-sm-4"><span data-lang="STR_DATION SET">Position</span></label>
+                        <div class="col-sm-4">
+                            <button id="overlay_osd_edit_position" class="btn btn-operater" type="button"><span data-lang="STR_SETUP">Setup</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 音频 -->
+            <div id="record_audio" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group" id="table_record_audio">
+                        <div class="table-overflow-null" style="width: 9%">
+                            <table name="table-left" class="table table-bordered table-striped align-center fixed"></table>
+                        </div>
+                        <div class="table-overflow-x" style="width: 90%">
+                            <table name="table-right" class="table table-bordered table-striped align-center fixed"></table>
+                        </div>
+                    </div>
+                    <div class="form-group" id="show_record_audio_percentage" style="display: none;">
+                        <label class="col-sm-6"><span data-lang="DIALOG_PercentageMainStream">Percentage Of Main Stream</span></label>
+                        <label class="col-sm-2" id="record_audio_percentage">0%</label>
+                    </div>
+                    <div class="form-group" id="audio_copyto_div">
+                        <div id="audio_copy_to" class="col-sm-9"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="div_save_default" class="form-group">
+        <div class="form-actions right">
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_Default">Default</span></button>
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_APPLY">Save</span></button>
+        </div>
+    </div>
+</div>  
+
+
+
+<!-- 硬盘双码流说明页面 -->
+<div id="double_hdd_help" class="modal-body" style="display:none">
+    <div class="form-group row">
+        <span data-lang="STR_HddDoubleRecord_Help01">HDD can simultaneously store the main stream and the sub-stream, wherein:</span>
+    </div>
+    <div class="form-group row">
+        <label style="margin-left: 20px"><span data-lang="STR_HddDoubleRecord_Help02">After canceling, the whole hard disk will be recorded as the main stream, and the data will be locked according to the parameter configuration.</span></label>
+    </div>
+    <div class="form-group row">
+        <label style="margin-left: 20px"><span data-lang="STR_HddDoubleRecord_Help03">After enabling, the default master stream recording time is equal to the sub-stream recording time (the main stream length is less than or equal to the sub-stream length); the main stream length can be adjusted, the main stream recording is unlocked, Time coverage; sub-stream video recording cover the use of parameter locking configuration lock.</span></label>
+    </div>
+</div>
+
+<!-- 录像计划设置页面 -->
+<div id="edit_record_plan_modal" class="modal no-backdrop in modal-page-middle">
+    <div class="modal-dialog modal-md">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none">
+                <span data-lang="STR_RECORD SCHEDULE">Schedule</span>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group row">
+                <table class="table table-bordered table-striped align-center">
+                    <thead>
+                        <tr>
+                            <th style="width:14%"><span data-lang="STR_RECORD TIME_PERIOD_SET">Set Period</span></th>
+                            <th style="width:80%"><div id="title_time_area" style="position:relative;font-size:8px"></div></th>
+                            <th style="width:5%"><span data-lang="STR_Edit">Edit</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><span data-lang="STR_SUN.">SUN.</span></th>
+                            <th><div name="planweek" style="position:relative;"></div></th>
+                            <th><button name="edit" class="btn btn-sm outline" data-value="0" type="button"><i class="fa fa-navicon"></i></button></th>
+                        </tr>
+                        <tr>
+                            <th><span data-lang="STR_MON.">MON.</span></th>
+                            <th><div name="planweek" style="position:relative;"></div></th>
+                            <th><button name="edit" class="btn btn-sm outline" data-value="1" type="button"><i class="fa fa-navicon"></i></button></th>
+                        </tr>
+                        <tr>
+                            <th><span data-lang="STR_TUE.">TUS.</span></th>
+                            <th><div name="planweek" style="position:relative;"></div></th>
+                            <th><button name="edit" class="btn btn-sm outline" data-value="2" type="button"><i class="fa fa-navicon"></i></button></th>
+                        </tr>
+                        <tr>
+                            <th><span data-lang="STR_WED.">WED.</span></th>
+                            <th><div name="planweek" style="position:relative;"></div></th>
+                            <th><button name="edit" class="btn btn-sm outline" data-value="3" type="button"><i class="fa fa-navicon"></i></button></th>
+                        </tr>
+                        <tr>
+                            <th><span data-lang="STR_THU.">THU.</span></th>
+                            <th><div name="planweek" style="position:relative;"></div></th>
+                            <th><button name="edit" class="btn btn-sm outline" data-value="4" type="button"><i class="fa fa-navicon"></i></button></th>
+                        </tr>
+                        <tr>
+                            <th><span data-lang="STR_FRI.">FRI.</span></th>
+                            <th><div name="planweek" style="position:relative;"></div></th>
+                            <th><button name="edit" class="btn btn-sm outline" data-value="5" type="button"><i class="fa fa-navicon"></i></button></th>
+                        </tr>
+                        <tr>
+                            <th><span data-lang="STR_SAT.">SAT.</span></th>
+                            <th><div name="planweek" style="position:relative;"></div></th>
+                            <th><button name="edit" class="btn btn-sm outline" data-value="6" type="button"><i class="fa fa-navicon"></i></button></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="form-group row">
+                <div id="copy_to" class="col-sm-12"></div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" type="button"><span data-lang="STR_CANCEL">Cancel</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_OK">OK</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 录像计划设置页面 时间段设置 -->
+<div id="edit_plan_time_area_modal" class="modal no-backdrop in modal-page-middle">
+    <div class="modal-dialog modal-md">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none">
+                <span data-lang="STR_RECORD SCHEDULE">Schedule</span>
+            </div>
+        </div>
+        <div class="modal-body" style="min-height:320px">
+            <div class="form-group row">
+                <label class="col-sm-3"><span data-lang="STR_ADD PLAN">Add A Plan</span></label>
+                <div class="col-sm-2">
+                    <button id="plen_area_add" class="btn btn-sm outline" type="button"><i class="fa fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="form-group row">
+                <table class="table table-bordered table-striped align-center">
+                    <thead>
+                        <tr>
+                            <th><span data-lang="STR_START TIME">Start Time</span></th>
+                            <th><span data-lang="STR_END TIME">End Time</span></th>
+                            <th><span data-lang="STR_RECORD TYPE">Video Type</span></th>
+                            <th><span data-lang="STR_Delete">Delete</span></th>
+                        </tr>
+                    </thead>
+                    <tbody id="record_plan_timer_list"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" type="button"><span data-lang="STR_CANCEL">Cancel</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_OK">OK</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- OSD坐标设置页面 -->
+<div id="overlay_osd_position_modal" class="modal no-backdrop in modal-page-middle">
+    <div class="modal-dialog modal-md">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none">
+                <span data-lang="STR_OVERLAY_OSD">Record OSD</span>&nbsp;<span data-lang="STR_DATION SET">Position</span>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group row">
+                <div class="osd-canvas"></div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" style="margin-right:15%;" type="button"><span data-lang="STR_Default">Default</span></button>
+                <button class="btn" type="button"><span data-lang="STR_CANCEL">Cancel</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_OK">OK</span></button>
+            </div>
+        </div>
+    </div>
+</div>

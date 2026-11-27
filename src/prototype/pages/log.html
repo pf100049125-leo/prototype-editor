@@ -1,0 +1,76 @@
+<div class="container">
+        <div class="page-body" style="position: relative;height: 100%;overflow: initial;">
+            <div class="row form-group" style="margin-left:0;margin-right:0">
+                <div class="col-sm-2" style="padding-top: 8px">
+                    <span data-lang="STR_Log type">Log Type</span>
+                </div>
+                <div class="col-sm-2">
+                    <span class="lavaui-combo-container"><input type="text" id="log_type" data-widget="selectbox" readonly="" class="form-control"><div class="lavaui-combo-panel list-group" style="width: 183px; height: 102px; overflow: auto;"><a href="#" class="list-group-item" data-value="0">Alarm Log</a><a href="#" class="list-group-item active" data-value="1">Operation Log</a><a href="#" class="list-group-item" data-value="2">Locked Log</a></div><span class="lavaui-combo-triangle" style="top: 13px;"></span></span>
+                </div>
+                <div class="col-sm-1" style="padding-top: 8px">
+                    <span data-lang="STR_TIME">Time</span>
+                </div>
+                <div class="col-sm-2">
+                    <span class="lavaui-combo-container"><input type="text" id="time_date" data-widget="datetimebox" readonly="" class="form-control" data-format="1"><div class="lavaui-combo-panel" style="width: 250px; height: auto;"><div class="datetimebox-container lava-calendar"><div class="lava-calendar-header" style="background:undefined;"><div class="lava-calendar-prevyear">«</div><div class="lava-calendar-nextyear">»</div><div class="lava-calendar-prevmonth">&lt;</div><div class="lava-calendar-nextmonth">&gt;</div><span class="lava-calendar-text">2026-09</span></div><table class="lava-calendar-table"><thead class="lava-calendar-thead"><tr><th style="color:undefined;">Su</th><th style="color:undefined;">Mo</th><th style="color:undefined;">Tu</th><th style="color:undefined;">We</th><th style="color:undefined;">Th</th><th style="color:undefined;">Fr</th><th style="color:undefined;">Sa</th></tr></thead><tbody class="lava-calendar-tbody"><tr><td style="height: 0px;"></td><td style="height: 0px;"></td><td data-date="2026/9/1" style="height: 0px;">1</td><td data-date="2026/9/2" style="height: 0px;">2</td><td data-date="2026/9/3" style="height: 0px;">3</td><td data-date="2026/9/4" style="height: 0px;">4</td><td data-date="2026/9/5" style="height: 0px;">5</td></tr><tr><td data-date="2026/9/6" style="height: 0px;">6</td><td data-date="2026/9/7" style="height: 0px;">7</td><td data-date="2026/9/8" style="height: 0px;">8</td><td data-date="2026/9/9" style="height: 0px;">9</td><td data-date="2026/9/10" style="height: 0px;">10</td><td data-date="2026/9/11" style="height: 0px;">11</td><td data-date="2026/9/12" style="height: 0px;">12</td></tr><tr><td data-date="2026/9/13" style="height: 0px;">13</td><td data-date="2026/9/14" style="height: 0px;">14</td><td data-date="2026/9/15" style="height: 0px;">15</td><td data-date="2026/9/16" style="height: 0px;">16</td><td data-date="2026/9/17" style="height: 0px;">17</td><td data-date="2026/9/18" style="height: 0px;">18</td><td data-date="2026/9/19" style="height: 0px;">19</td></tr><tr><td data-date="2026/9/20" style="height: 0px;">20</td><td data-date="2026/9/21" style="height: 0px;">21</td><td data-date="2026/9/22" style="height: 0px;">22</td><td data-date="2026/9/23" style="height: 0px;">23</td><td data-date="2026/9/24" style="height: 0px;">24</td><td data-date="2026/9/25" style="height: 0px;">25</td><td data-date="2026/9/26" style="height: 0px;">26</td></tr><tr><td data-date="2026/9/27" style="height: 0px;">27</td><td data-date="2026/9/28" class="active" style="height: 0px;">28</td><td data-date="2026/9/29" style="height: 0px;">29</td><td data-date="2026/9/30" style="height: 0px;">30</td><td style="height: 0px;"></td><td style="height: 0px;"></td><td style="height: 0px;"></td></tr><tr><td style="height: 0px;"></td><td style="height: 0px;"></td><td style="height: 0px;"></td><td style="height: 0px;"></td><td style="height: 0px;"></td><td style="height: 0px;"></td><td style="height: 0px;"></td></tr></tbody></table><div class="lava-calendar-menu hidden"><div class="lava-calendar-menu-year"><div class="lava-calendar-prevyear-inner">«</div><span><input class="lava-calendar-menu-year-input" maxlength="4" readonly=""></span><div class="lava-calendar-nextyear-inner">»</div></div><div class="lava-calendar-menu-month"><table><tbody><tr><td data-month="1">Jan</td><td data-month="2">Feb</td><td data-month="3">Mar</td><td data-month="4">Apr</td></tr><tr><td data-month="5">May</td><td data-month="6">Jun</td><td data-month="7">Jul</td><td data-month="8">Aug</td></tr><tr><td data-month="9">Sep</td><td data-month="10">Oct</td><td data-month="11">Nov</td><td data-month="12">Dec</td></tr></tbody></table></div></div></div></div></span>
+                </div>
+                <div class="col-sm-1">
+                    &nbsp;
+                </div>
+                <div class="col-sm-2">
+                    &nbsp;
+                </div>
+                <div class="col-sm-2">
+                    <button id="btn_search" class="btn" style="color: rgb(255, 255, 255);" type="button"><span data-lang="STR_SEARCH">Search</span></button>
+                </div>
+            </div>
+            <div class="row form-group" style="margin-left:0;margin-right:0">
+                <div id="alarm_type_name" class="col-sm-2" style="padding-top: 8px">Operate Type</div>
+                <div class="col-sm-2">
+                    <span class="lavaui-combo-container"><input type="text" id="alarm_type" data-widget="selectbox" readonly="" class="form-control" disabled="" style="color: gray;"><div class="lavaui-combo-panel list-group" style="width: 183px; height: 265px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">All</a><a href="#" class="list-group-item" data-value="1">IO Alarm</a><a href="#" class="list-group-item" data-value="2">Urgent  Alarm</a><a href="#" class="list-group-item" data-value="3">Speed Alarm</a><a href="#" class="list-group-item" data-value="4">Video Loss</a><a href="#" class="list-group-item" data-value="6">Motion</a><a href="#" class="list-group-item" data-value="7">ACC Alarm</a><a href="#" class="list-group-item" data-value="8">Electricfence Alarm</a><a href="#" class="list-group-item" data-value="12">AI Alarm</a></div><span class="lavaui-combo-triangle" style="top: 13px;"></span></span>
+                </div>
+                <div class="col-sm-1" style="padding-top: 8px">
+                    <span data-lang="STR_FROM">From</span>
+                </div>
+                <div class="col-sm-2" style="position: relative;">
+                    <input type="text" id="time_start" data-widget="timebox" value="00:00:00" class="form-control">
+                </div>
+                <div class="col-sm-1" style="padding-top: 8px">
+                    <span data-lang="STR_TO">To</span>
+                </div>
+                <div class="col-sm-2" style="position: relative;">
+                    <input type="text" id="time_end" data-widget="timebox" value="23:59:59" class="form-control">
+                </div>
+                <div class="col-sm-2">
+                    <button id="btn_export" class="btn" disabled="" style="color: gray;" type="button"><span data-lang="STR_EXPORT">Export</span></button>
+                </div>
+            </div>
+            <div class="row form-group" style="margin-left:0; margin-right:0; height:450px; text-align:left;">
+                <table class="table table-bordered table-striped" id="log_table" style="margin-top: 40px; display: none;">
+                    <thead>
+                        <tr>
+                            <th data-field="col1"><span data-lang="STR_OPRATE TYPE">Operate Type</span></th>
+                            <th data-field="col2"><span data-lang="STR_TIME">Time</span></th>
+                            <th data-field="col3"><span data-lang="STR_INFORMATION">Information</span></th>
+                        </tr>
+                    </thead>
+                </table><style type="text/css">.table-log_table-col1{width:228px;}.table-log_table-col2{width:351px;}.table-log_table-col3{width:597px;}</style><div class="div-table" style="height: 450px; overflow: hidden;"><div class="div-head" style="width: 1229px; overflow: hidden;"><div class="div-head-table" style="position:relative;"><table class="jq-table table table-bordered"><thead>
+                        <tr>
+                            <th data-field="col1"><div class="table-log_table-col1"><span data-lang="STR_OPRATE TYPE">Operate Type</span></div></th>
+                            <th data-field="col2"><div class="table-log_table-col2"><span data-lang="STR_TIME">Time</span></div></th>
+                            <th data-field="col3"><div class="table-log_table-col3"><span data-lang="STR_INFORMATION">Information</span></div></th>
+                        </tr>
+                    </thead></table></div></div><div class="div-body" style="width: 100%; overflow: hidden auto; height: 412px;"><div class="div-body-table"><table class="jq-table table table-bordered table-striped"><tbody><tr class="table-row-0"><td><div class="table-log_table-col1">&nbsp;</div></td><td><div class="table-log_table-col2">&nbsp;</div></td><td><div class="table-log_table-col3">&nbsp;</div></td></tr><tr class="table-row-1"><td><div class="table-log_table-col1">&nbsp;</div></td><td><div class="table-log_table-col2">&nbsp;</div></td><td><div class="table-log_table-col3">&nbsp;</div></td></tr><tr class="table-row-2"><td><div class="table-log_table-col1">&nbsp;</div></td><td><div class="table-log_table-col2">&nbsp;</div></td><td><div class="table-log_table-col3">&nbsp;</div></td></tr><tr class="table-row-3"><td><div class="table-log_table-col1">&nbsp;</div></td><td><div class="table-log_table-col2">&nbsp;</div></td><td><div class="table-log_table-col3">&nbsp;</div></td></tr><tr class="table-row-4"><td><div class="table-log_table-col1">&nbsp;</div></td><td><div class="table-log_table-col2">&nbsp;</div></td><td><div class="table-log_table-col3">&nbsp;</div></td></tr><tr class="table-row-5"><td><div class="table-log_table-col1">&nbsp;</div></td><td><div class="table-log_table-col2">&nbsp;</div></td><td><div class="table-log_table-col3">&nbsp;</div></td></tr><tr class="table-row-6"><td><div class="table-log_table-col1">&nbsp;</div></td><td><div class="table-log_table-col2">&nbsp;</div></td><td><div class="table-log_table-col3">&nbsp;</div></td></tr><tr class="table-row-7"><td><div class="table-log_table-col1">&nbsp;</div></td><td><div class="table-log_table-col2">&nbsp;</div></td><td><div class="table-log_table-col3">&nbsp;</div></td></tr><tr class="table-row-8"><td><div class="table-log_table-col1">&nbsp;</div></td><td><div class="table-log_table-col2">&nbsp;</div></td><td><div class="table-log_table-col3">&nbsp;</div></td></tr><tr class="table-row-9"><td><div class="table-log_table-col1">&nbsp;</div></td><td><div class="table-log_table-col2">&nbsp;</div></td><td><div class="table-log_table-col3">&nbsp;</div></td></tr></tbody></table></div></div></div>
+            </div>
+            
+            <div class="div-pagination">
+                <div style="float:left;padding-top:5px;" class="div-pagination-tip">
+                    <span data-lang="STR_SEARCH COUNT">Have Found</span>
+                    <span id="total_count_num" class="span-first">0</span>
+                    <span data-lang="STR_LOG DATA">Data</span>
+                </div>
+            </div>
+        </div>
+
+        
+    
+</div>

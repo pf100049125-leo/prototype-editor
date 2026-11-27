@@ -1,0 +1,80 @@
+
+<div class="panel">
+    <div class="panel-body">
+        <ul class="tabs" style="display:none" data-options="onSelect:'window.appParamApi.refreshInterfaceFinish'">
+            <li class="active"><a href="#camera_setup"><span data-lang="STR_AHD_SET">Camera Setup</span></a></li>
+        </ul>
+        <div class="tabs-content">
+            <div id="camera_setup" class="panel-body active" style="min-height:420px">
+                <div class="ahd-video-left">
+                    <div class="form-group low">
+                        <div id="video" class="ahd-video-content">
+                            <canvas style="object-fit:fill;" width="493" height="420"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="ahd-cmd-right">
+                    <div class="form form-horizontal" style="padding:0">
+                        <div class="form-group">
+                            <label class="col-sm-5"><span data-lang="STR_CHANNEL">Channel</span></label>
+                            <div class="col-sm-6">
+                                <span class="lavaui-combo-container"><input id="ahd_channel_select" type="text" class="form-control" data-widget="selectbox" data-type="int" readonly=""><div class="lavaui-combo-panel list-group" style="width: 84px; height: 146px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">Channel 1</a><a href="#" class="list-group-item" data-value="1">Channel 2</a><a href="#" class="list-group-item" data-value="2">Channel 3</a><a href="#" class="list-group-item" data-value="3">Channel 4</a><a href="#" class="list-group-item" data-value="4">Channel 5</a><a href="#" class="list-group-item" data-value="5">Channel 6</a><a href="#" class="list-group-item" data-value="6">Channel 7</a><a href="#" class="list-group-item" data-value="7">Channel 8</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                            </div>
+                        </div>
+                        <div class="form-group" id="ahd_menu" style="width: 240px; display: none;">
+                            <div class="ahd-cmd-menu">
+                                <div class="config-three-row-first">
+                                    <label>UTC</label>
+                                </div>
+                                <div class="config-three-row-second">
+                                    <button class="btn" id="ahd_opt_up" type="button"><i class="fa fa-caret-up" aria-hidden="true"></i></button>
+                                </div>
+                                <div class="config-three-row-third">
+                                </div>
+                                
+                                <div class="config-three-row-first">
+                                    <button class="btn" id="ahd_opt_left" type="button"><i class="fa fa-caret-left" aria-hidden="true"></i></button>
+                                </div>
+                                <div class="config-three-row-second">
+                                    <button class="btn" id="ahd_opt_ok" type="button"><i class="fa fa-circle-o" aria-hidden="true"></i></button>
+                                </div>
+                                <div class="config-three-row-third">
+                                    <button class="btn" id="ahd_opt_right" type="button"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                                </div>
+                                
+                                <div class="config-three-row-first">
+                                </div>
+                                <div class="config-three-row-second">
+                                    <button class="btn" id="ahd_opt_down" type="button"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                                </div>
+                                <div class="config-three-row-third">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group" id="ahd_menu_nonsupport" style="">
+                            <div class="ahd-cmd-menu">
+                                <label class="label-red"><span data-lang="STR_AHD_MenuNonsupport">This device does not support the UTC menu function.</span></label>
+                            </div>
+                            
+                        </div>
+                        <div class="form-group" id="ahd_installangle" style="">
+                            <label class="col-sm-5"><span data-lang="STR_AHD_InstallAngle">Install Angle</span></label>
+                            <div class="col-sm-7">
+                                <span class="lavaui-combo-container"><input id="ahd_config_install" type="text" class="form-control" data-widget="selectbox" data-param="PCAE-0-RT" readonly=""><div class="lavaui-combo-panel list-group" style="width: 102px; height: 90px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">0°</a><a href="#" class="list-group-item" data-value="1">90°</a><a href="#" class="list-group-item" data-value="3">-90°</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-5"><span data-lang="STR_Mirror_Flip">Mirror/Flip</span></label>
+                            <div class="col-sm-7">
+                                <span class="lavaui-combo-container"><input id="ahd_mirror_flip" type="text" class="form-control" data-widget="selectbox" data-param="PCAE-0-FM" readonly=""><div class="lavaui-combo-panel list-group" style="width: 102px; height: 120px; overflow: auto;"><a href="#" class="list-group-item active" data-value="0">OFF</a><a href="#" class="list-group-item" data-value="1">Mirror</a><a href="#" class="list-group-item" data-value="2">Flip</a><a href="#" class="list-group-item" data-value="3">Mirror+Flip</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>   
+
+
+

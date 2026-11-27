@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  windows-checks:
+    name: Windows checks and build
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '24.21.0'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run check
+      - run: npm test
+      - run: npm run dist
+      - run: node scripts/release-assets.cjs
+      - name: Upload branch preview
+        uses: actions/upload-artifact@v7
+        with:
+          name: windows-preview-${{ github.run_number }}-${{ github.run_attempt }}
+          path: |
+            dist/PrototypeEditor-*-portable.exe
+            dist/SHA256SUMS.txt
+          compression-level: 0
+          if-no-files-found: error
+          retention-days: 7
+      - name: Upload test reports
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: checks-${{ github.run_number }}-${{ github.run_attempt }}
+          path: .qa/*-results.json
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 7

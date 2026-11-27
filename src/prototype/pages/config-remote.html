@@ -1,0 +1,156 @@
+
+<div class="panel">
+    <div class="panel-body">
+        <ul class="tabs" style="display:none" data-options="onSelect:'window.appParamApi.refreshInterfaceFinish'">
+            <li class="active"><a href="#ipc_setup"></a></li>
+        </ul>
+        <div class="tabs-content">
+            <div id="ipc_setup" class="panel-body active">
+                <div class="form form-horizontal">
+                    <div class="form-group record-overflow">
+                        <!-- style="width:720px;margin-left:10%" -->
+                        <table class="table table-bordered table-striped align-center">
+                            <thead id="remote_device_title"></thead>
+                            <tbody id="remote_device_list"></tbody>
+                        </table>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-6" style="text-align:right;">
+                            <span style="margin-right:30px;" data-lang="STR_IPC_START_ADDRESS">Local Address</span>
+                            <label id="ipc_start_ip" class="input1"><span>10.100.100.</span></label>
+                            <input id="ipc_start_address" type="text" class="form-control" style="width:58px;height:28px" data-widget="editbox" data-type="int">
+                        </div>
+                        <div id="remote_quick_set_show" class="col-sm-4" style="margin-left:80px;display:none;">
+                            <button class="btn" type="button"><span data-lang="STR_QuickSet">Fast Setup</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="div_save_default" class="form-group">
+        <div class="form-actions right">
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_Default">Default</span></button>
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_APPLY">Save</span></button>
+        </div>
+    </div>
+</div>  
+
+
+
+<!-- 编辑IPC列表信息 -->
+<div id="edit_remote_modal" class="modal no-backdrop in modal-page-middle">
+    <div class="modal-dialog modal-md">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none">
+                <span data-lang="STR_CONFIG_NETCH">Network Setup</span>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group row">
+                <div class="col-sm-3">
+                    <a><span data-lang="STR_REMOTE_DEVICE">Remote Device</span></a>
+                </div>
+                <div class="col-sm-4">
+                    <input id="edit_device_type" type="text" class="form-control" data-widget="selectbox">
+                </div>
+               
+            </div>
+            <!-- <div class="form-group row" id="edit_device_mode_show">
+                <div class="col-sm-3">
+                    <a><span data-lang="STR_IPC_MODETYPE"></span></a>
+                </div>
+                <div class="col-sm-4">
+                    <input id="edit_device_mode" type="text" class="form-control" data-widget="selectbox"/>
+                </div>
+                <div class="col-sm-3" id="edit_device_install_show">
+                    <input id="edit_device_install" type="text" class="form-control" data-widget="selectbox"/>
+                </div>
+            </div> -->
+            <div class="form-group row">
+                <div class="col-sm-3">
+                    <a><span data-lang="STR_PROTOCOL TYPE">Protocol Type</span></a>
+                </div>
+                <div class="col-sm-4">
+                    <input id="edit_protocol_type" type="text" class="form-control" data-widget="selectbox">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-3">
+                    <a><span data-lang="STR_IP ADDRESS">IP Address</span></a>
+                </div>
+                <div class="col-sm-6">
+                    <input id="edit_ip_address" type="text" class="form-control" data-widget="editbox">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-3">
+                    <a><span data-lang="STR_PORT">Port</span></a>
+                </div>
+                <div class="col-sm-6">
+                    <input id="edit_port" type="text" class="form-control" data-widget="editbox" data-type="port-input" maxlength="5">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-3">
+                    <a><span data-lang="STR_USER NAME">User Name</span></a>
+                </div>
+                <div class="col-sm-6">
+                    <input id="edit_username" type="text" class="form-control" data-widget="editbox" data-type="mdvr-input" maxlength="16">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-3">
+                    <a><span data-lang="STR_PASSWORD">Password</span></a>
+                </div>
+                <div class="col-sm-6">
+                    <input id="edit_userpwd" type="password" class="form-control" data-widget="editbox" data-type="mdvr-input" maxlength="16" value="">
+                </div>
+            </div>
+            <div class="form-group row" id="edit_remotechn_show">
+                <div class="col-sm-3">
+                    <a><span data-lang="STR_IPC_Edit_RemoteChn">Remote Chn</span></a>
+                </div>
+                <div class="col-sm-4">
+                    <input id="edit_remotechn" type="text" class="form-control" data-widget="selectbox" disabled="">
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" type="button"><span data-lang="STR_CANCEL">Cancel</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_OK">OK</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 搜索IPC列表信息选择页面 -->
+<div id="search_remote_select_modal" class="modal no-backdrop in modal-page-middle">
+    <div class="modal-dialog modal-md" style="width:680px;">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none">
+                <span data-lang=""> </span>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group row">
+                <div class="form-group" style="max-height: 980px;">
+                    <table class="table table-bordered table-striped align-center">
+                        <thead id="remote_select_title"></thead>
+                        <tbody id="remote_select_list"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" type="button"><span data-lang="STR_CANCEL">Cancel</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_OK">OK</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_Refresh">Refresh</span></button>
+            </div>
+        </div>
+    </div>
+</div>

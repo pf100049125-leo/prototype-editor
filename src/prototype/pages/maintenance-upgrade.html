@@ -1,0 +1,167 @@
+<div class="panel">
+    <div class="panel-body">
+        <div class="row">
+            <div class="basic-background" id="LOCAL" style="display:none">
+                <div class="col-sm-10">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <a>LOCAL</a>
+                        </div>
+                        <div class="col-sm-3">
+                            <span data-lang="STR_P2DEVICE_VER">Firmware Version:</span>
+                        </div>
+                        <div class="col-sm-7">
+                            <a id="xpad_number"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">&nbsp;</div>
+                        <div class="col-sm-3">
+                            <span data-lang="STR_P2MCU_VER"> MCU Version:</span>
+                        </div>
+                        <div class="col-sm-7">
+                            <a id="xpad_mcu_number"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2" style="margin-top: 12px;">
+                    <button class="btn btn-operater" id="local_upgrade_device" type="button"> <span data-lang="STR_UPGRADE">Upgrade</span></button>
+                </div>
+            </div>
+            
+            <div id="upgrade"><div class="basic-background "><div class="col-sm-9"><a>System Reboot</a></div><div class="col-sm-2" style="margin-top: -4px;"><button class="btn btn-operater" type="button">Reboot</button> </div></div><div class="basic-background select"><div class="col-sm-3"><a>Device Upgrade</a></div><div class="col-sm-6"><div class="form-group"><div class="input-group"><input class="form-control" data-widget="editbox" id="file_path_remote_upgrade_device" type="text"><input name="fileTrans" data-widget="editbox" id="remote_upgrade_device" type="file" style="display: none;"><span class="input-group-addon" style="width: 50px;cursor: pointer;line-height: 1.0;">Browse</span></div></div></div><div class="col-sm-2" style="margin-top: -4px;"><button class="btn btn-operater" type="button">Upgrade</button> </div></div><div class="basic-background "><div class="col-sm-3"><a>GPS Upgrade</a></div><div class="col-sm-6"><div class="form-group"><div class="input-group"><input class="form-control" data-widget="editbox" id="file_path_gps_upgrade_device" type="text"><input name="fileTrans" data-widget="editbox" id="gps_upgrade_device" type="file" style="display: none;"><span class="input-group-addon" style="width: 50px;cursor: pointer;line-height: 1.0;">Browse</span></div></div></div><div class="col-sm-2" style="margin-top: -4px;"><button class="btn btn-operater" type="button">Upgrade</button> </div></div><div class="basic-background select"><div class="col-sm-3"><a>Acousto Upgrade</a></div><div class="col-sm-6"><div class="form-group"><div class="input-group"><input class="form-control" data-widget="editbox" id="file_path_acousto_upgrade_device" type="text"><input name="fileTrans" data-widget="editbox" id="acousto_upgrade_device" type="file" style="display: none;"><span class="input-group-addon" style="width: 50px;cursor: pointer;line-height: 1.0;">Browse</span></div></div></div><div class="col-sm-2" style="margin-top: -4px;"><button class="btn btn-operater" type="button">Upgrade</button> </div></div><div class="basic-background "><div class="col-sm-3"><a>4G Upgrade</a></div><div class="col-sm-6"><div class="form-group"><div class="input-group"><input class="form-control" data-widget="editbox" id="file_path_4g_upgrade_device" type="text"><input name="fileTrans" data-widget="editbox" id="4g_upgrade_device" type="file" style="display: none;"><span class="input-group-addon" style="width: 50px;cursor: pointer;line-height: 1.0;">Browse</span></div></div></div><div class="col-sm-2" style="margin-top: -4px;"><button class="btn btn-operater" type="button">Upgrade</button> </div></div></div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--ipc升级模态框-->
+<div id="edit_ipc_dialog_modal" class="modal no-backdrop in  modal-page-middle">
+    <div class="modal-dialog modal-md">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none">
+                <span data-lang="STR_IPC_UPGRADE">IPC Upgrade</span>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group row">
+                <table class="table table-bordered table-striped align-center">
+                    <thead>
+                        <tr>
+                            <th><span data-lang="STR_ALL">All</span> <div class="col-sm-4"> <label class="checkbox"><input type="checkbox" id="check_all_ipc" data-widget="checkbox" class="form-control"><span></span></label></div></th>
+                            <th><span data-lang="STR_CHANNEL">Channel</span></th>
+                            <th><span data-lang="STR_CURRENT_VERSION">Current Version</span></th>
+                            <th><span data-lang="STR_Upgrade result">Upgrade Result</span></th>
+                        </tr>
+                    </thead>
+                    <tbody id="display_ipc_info_list"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" type="button"><span data-lang="STR_CANCEL">Cancel</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_UPGRADE">Upgrade</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--客流仪升级模态框-->
+<div id="edit_p2_dialog_modal" class="modal no-backdrop in  modal-page-middle">
+    <div class="modal-dialog modal-md">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none">
+                <span data-lang="STR_P2_UPGRADE">Passenger Flow Meter Upgrade</span>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group row">
+                <table class="table table-bordered table-striped align-center">
+                    <thead>
+                        <tr>
+                            <th><span data-lang="STR_ALL">All</span> <div class="col-sm-4"> <label class="checkbox"><input type="checkbox" id="check_all_p2" data-widget="checkbox" class="form-control"><span></span></label></div></th>
+                            <th><span data-lang="STR_DOOR_POSITION">Door Position</span></th>
+                            <th><span data-lang="STR_FIRMWARE VERSION">Firmware Version</span></th>
+                            <th><span data-lang="STR_MCU VERSION">MCU Version</span></th>
+                            <th><span data-lang="STR_Upgrade result">Upgrade Result</span></th>
+                        </tr>
+                    </thead>
+                    <tbody id="display_p2_info_list"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" type="button"><span data-lang="STR_CANCEL">Cancel</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_UPGRADE">Upgrade</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--远程rwatch升级模态框-->
+<div id="edit_RWatch_dialog_modal" class="modal no-backdrop in  modal-page-middle">
+    <div class="modal-dialog modal-md">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none">
+                <span data-lang="STR_RWATCH UPDATE">R-Watch Upgrade</span>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group row">
+                <table class="table table-bordered table-striped align-center">
+                    <thead>
+                        <tr>
+                            <th><span data-lang="STR_ALL">All</span> <div class="col-sm-4"> <label class="checkbox"><input type="checkbox" id="check_all_rwatch" data-widget="checkbox" class="form-control"><span></span></label></div></th>
+                            <th><span data-lang="STR_CHANNEL">Channel</span></th>
+                            <th><span data-lang="STR_CURRENT_VERSION">Current Version</span></th>
+                            <th><span data-lang="STR_Upgrade result">Upgrade Result</span></th>
+                        </tr>
+                    </thead>
+                    <tbody id="display_rwatch_info_list"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" type="button"><span data-lang="STR_CANCEL">Cancel</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_UPGRADE">Upgrade</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 声光报警器升级模态框 -->
+<div id="edit_ACOUSTO_dialog_modal" class="modal no-backdrop in  modal-page-middle">
+    <div class="modal-dialog modal-md">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none">
+                <span data-lang="STR_ACOUSTO_UPDATE">Acousto Upgrade</span>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group row">
+                <table class="table table-bordered table-striped align-center">
+                    <thead>
+                        <tr>
+                            <th><span data-lang="STR_ALL">All</span> <div class="col-sm-4"> <label class="checkbox"><input type="checkbox" id="check_all_acousto" data-widget="checkbox" class="form-control"><span></span></label></div></th>
+                            <th><span data-lang="STR_CHANNEL">Channel</span></th>
+                            <th><span data-lang="STR_CHANNEL">Channel</span></th>
+                            <th><span data-lang="STR_CURRENT_VERSION">Current Version</span></th>
+                            <th><span data-lang="STR_Upgrade result">Upgrade Result</span></th>
+                        </tr>
+                    </thead>
+                    <tbody id="display_acousto_info_list"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0px;">
+                <button class="btn" type="button"><span data-lang="STR_CANCEL">Cancel</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_UPGRADE">Upgrade</span></button>
+            </div>
+        </div>
+    </div>
+</div>

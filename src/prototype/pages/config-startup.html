@@ -1,0 +1,269 @@
+<div class="panel">
+    <div class="panel-body">
+        <ul class="tabs" data-options="onSelect:'window.appParamApi.refreshInterfaceFinish'">
+            <li class="active"><a href="#onoff"><span data-lang="STR_SWITCH_ONOFF">ON/OFF</span></a></li>
+            <li><a href="#sleep"><span data-lang="STR_SLEEP">Sleep</span></a></li>
+            <li><a href="#wake"><span data-lang="STR_WAKE">Wake</span></a></li>
+        </ul>
+        <div class="tabs-content">
+            <div id="onoff" class="panel-body active">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_ONOFF WAY">ON/OFF Mode</span></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" data-param="SSP-UPT" readonly=""><div class="lavaui-combo-panel list-group" style="width: 147px; height: 90px; overflow: auto; display: none;"><a href="#" class="list-group-item active" data-value="0">Ignition</a><a href="#" class="list-group-item" data-value="1">Timer</a><a href="#" class="list-group-item" data-value="2">Ignition Or Timer</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a id="onoff_delay_time">Ignition Delay</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" id="SSP-DDS" class="form-control" data-widget="editbox" data-type="int" style="width: 40%; color: rgb(255, 255, 255);"><label class="input1">(3 ~ 86399)Second</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a id="onoff_video_time"><span data-lang="STR_VIDEO_DELAY OFF">Shutdown Recording Delay</span></a>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" id="SSP-DR" class="form-control" data-widget="editbox" data-type="int" maxlength="3" style="width: 40%; color: rgb(255, 255, 255);"><label class="input1">(0 ~ 300)Second</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_ONOFFTIMER TIME">Timer From</span></a>
+                        </div>
+                        <div class="col-sm-2" style="position: relative;">
+                            <input id="time_start" type="text" class="form-control" maxlength="8" data-widget="timebox" disabled="" style="color: gray;">
+                        </div>
+                        <div class="col-sm-1" style="padding:4px;text-align:center;">
+                            <a><span data-lang="STR_Until">To</span></a>
+                        </div>
+                        <div class="col-sm-2" style="position: relative;">
+                            <input id="time_end" type="text" class="form-control" maxlength="8" data-widget="timebox" disabled="" style="color: gray;">
+                        </div>
+                    </div>
+                    <div class="form-group" id="light_off_time_div">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_BLCT">Light Off Time</span></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" data-param="SSP-CPM" readonly=""><div class="lavaui-combo-panel list-group" style="width: 147px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item active" data-value="0">Never</a><a href="#" class="list-group-item" data-value="1">Custom</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                        </div>
+                    </div>
+                    <div class="form-group" id="light_off_time_def_div" style="display: none;">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_USERDEFINED_TIME">Custom</span></a>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" data-widget="editbox" data-type="int" data-param="SSP-UTIME" maxlength="4" style="width: 40%;"><label class="input1">(1 ~ 3600)Second</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_CPXTOUCHEN">CPX Screen Touch</span></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <label class="checkbox">
+                                <input type="checkbox" value="0" data-widget="checkbox" data-param="SSP-CPTE">
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sleep 页面-->
+            <div id="sleep" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-5">
+                            <a class="bolder"><span data-lang="STR_SLEPP MODE">Sleep Mode</span></a>
+                        </div>
+                        <div class="col-sm-5" id="sleep_mode_div">
+                            <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" data-param="VPP-SBM" readonly=""><div class="lavaui-combo-panel list-group" style="width: 260px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item active" data-value="0">No Consumption Standby</a><a href="#" class="list-group-item" data-value="1">Low Power Standby</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="col-sm-5">
+                            <a class="bolder"><span data-lang="STR_LOWPOWER PT">Low Volt Protect</span></a>
+                        </div>
+                        <div class="col-sm-5">
+                            <label class="checkbox">
+                                <input type="checkbox" value="0" data-widget="checkbox" data-param="VPP-VPS" style="color: rgb(255, 255, 255);">
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-5">
+                            <a class="retract"><span data-lang="STR_BATTERY_LOWPOWER PT">Battery Low Voltage Protect</span></a>
+                        </div>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" style="width: 40%; color: gray;" data-widget="editbox" data-param="VPP-LV" disabled="">
+                            <label class="input1">(8.0 ~ 11.5)V</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-5">
+                            <a class="retract"><span data-lang="STR_RECOVER_ON_VOLTAGE">Voltage Startup</span></a>
+                        </div>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" style="width: 40%; color: gray;" data-widget="editbox" data-param="VPP-UV" disabled="">
+                            <label class="input1">(12.0 ~ 14.0)V</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-5">
+                            <a class="retract"><span data-lang="STR_BATTERY_POWER_ALARM">Low Volt Upload</span></a>
+                        </div>
+                        <div class="col-sm-5">
+                            <label class="checkbox">
+                                <input type="checkbox" data-widget="checkbox" data-param="VPP-CE" value="0" disabled="" style="color: gray;">
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 唤醒 页面-->
+            <div id="wake" class="panel-body">
+                <div class="form form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a class="bolder"><span data-lang="STR_IO_WAKE">IO Wake</span></a>
+                        </div>
+                        <div class="col-sm-2">
+                            <label class="checkbox">
+                                <input type="checkbox" data-widget="checkbox" data-param="SWUS-IOWP" value="0">
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a class="retract"><span data-lang="STR_WAKE_IO">IO</span></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" data-param="SWUS-IOMASK" readonly="" style="color: rgb(255, 255, 255);"><div class="lavaui-combo-panel list-group" style="width: 147px; height: 146px; overflow: auto; display: none;"><a href="#" class="list-group-item active" data-value="0">None</a><a href="#" class="list-group-item" data-value="1">IO 1</a><a href="#" class="list-group-item" data-value="2">IO 2</a><a href="#" class="list-group-item" data-value="4">IO 3</a><a href="#" class="list-group-item" data-value="8">IO 4</a><a href="#" class="list-group-item" data-value="16">IO 5</a><a href="#" class="list-group-item" data-value="32">IO 6</a><a href="#" class="list-group-item" data-value="64">IO 7</a><a href="#" class="list-group-item" data-value="128">IO 8</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a class="retract"><span data-lang="STR_TRIGGER CONDITIONS">Trigger</span></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <span class="lavaui-combo-container"><input type="text" class="form-control" data-widget="selectbox" id="IOLVL" readonly="" style="color: rgb(255, 255, 255);"><div class="lavaui-combo-panel list-group" style="width: 147px; height: 60px; overflow: auto; display: none;"><a href="#" class="list-group-item" data-value="0">Low</a><a href="#" class="list-group-item active" data-value="1">High</a></div><span class="lavaui-combo-triangle" style="top: 11px;"></span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a class="bolder"><span data-lang="STR_REMOTE_WAKE">Remote Wake</span></a>
+                        </div>
+                        <div class="col-sm-2">
+                            <label class="checkbox">
+                                <input type="checkbox" data-widget="checkbox" data-param="SWUS-RTWP" value="0">
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a class="bolder" style="float: left;"><span data-lang="STR_TEL_WAKE">Telephone Wake</span></a>
+                            <label class="checkbox" style="float: left; margin-left:10px;">
+                                <input type="checkbox" data-widget="checkbox" data-param="SWUS-PHWP" name="tel">
+                                <span></span>
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="bolder" style="float: left;"><span data-lang="STR_SMS_WEEK">SMS Wake</span></a>
+                            <label class="checkbox" style="float: left; margin-left:10px;">
+                                <input type="checkbox" data-widget="checkbox" data-param="SWUS-NTWP" name="tel">
+                                <span></span>
+                            </label>
+                        </div>
+                        <div class="col-sm-2">
+                            <button class="btn btn-operater" id="tel_button" disabled="" style="color: gray;" type="button"><span data-lang="STR_SETTINGS">Setup</span></button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a><span data-lang="STR_G_SENSOR_WEEK">G-sensor Wake</span></a>
+                        </div>
+                        <div class="col-sm-2">
+                            <label class="checkbox">
+                                <input type="checkbox" data-widget="checkbox" data-param="SWUS-GSWP" value="0">
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a class="retract"><span data-lang="STR_G_SENSOR_X_THRESHOLD"> X Threshold</span></a>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" name="week_sensor" data-widget="editbox" maxlength="3" data-param="SWUS-TX" class="form-control">
+                        </div>
+                        <div class="col-sm-2" style="padding-top: 8px">
+                            <a><span>(0~9.9)g</span></a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a class="retract"><span data-lang="STR_G_SENSOR_Y_THRESHOLD"> Y Threshold</span></a>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" name="week_sensor" data-widget="editbox" maxlength="3" data-param="SWUS-TY" class="form-control">
+                        </div>
+                        <div class="col-sm-2" style="padding-top: 8px">
+                            <a><span>(0~9.9)g</span></a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <a class="retract"><span data-lang="STR_G_SENSOR_Z_THRESHOLD"> Z Threshold</span></a>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" name="week_sensor" data-widget="editbox" maxlength="3" data-param="SWUS-TZ" class="form-control">
+                        </div>
+                        <div class="col-sm-2" style="padding-top: 8px">
+                            <a><span>(0~9.9)g</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="div_save_default" class="form-group">
+        <div class="form-actions right">
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_Default">Default</span></button>
+            <button class="btn btn-default-save" type="button"><span data-lang="STR_APPLY">Save</span></button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 电话本弹窗 -->
+<div id="telephone_book_modal" class="modal no-backdrop in modal-page-middle">
+    <div class="modal-dialog modal-md">
+        <div class="modal-header">
+            <div class="modal-title" style="text-align:center; float:none"><span data-lang="STR_TEL_BOOK">Telephone Book</span></div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group" id="weel_tels">
+
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row" style="text-align:center;margin-bottom: 0;">
+                <button class="btn" type="button"><span data-lang="STR_CANCEL">Cancel</span></button>
+                <button class="btn" style="margin-left:15%;" type="button"><span data-lang="STR_OK">OK</span></button>
+            </div>
+        </div>
+    </div>
+</div>
