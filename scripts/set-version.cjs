@@ -1,7 +1,7 @@
 'use strict';
 const fs = require('node:fs'), path = require('node:path');
 function setVersion(version, root = path.resolve(__dirname, '..')) {
-  if (!/^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$/.test(version)) throw Error('Use a stable version such as 3.0.2');
+  if (!/^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$/.test(version)) throw Error('Use a stable version such as 1.0.1');
   const read = file => fs.readFileSync(path.join(root, file), 'utf8');
   const pkg = JSON.parse(read('package.json')), lock = JSON.parse(read('package-lock.json'));
   const prior = pkg.version;
@@ -24,6 +24,6 @@ function setVersion(version, root = path.resolve(__dirname, '..')) {
 }
 module.exports = { setVersion };
 if (require.main === module) {
-  try { if (process.argv.length !== 3) throw Error('Usage: npm run version:set -- 3.0.2'); console.log(JSON.stringify(setVersion(process.argv[2]), null, 2)); }
+  try { if (process.argv.length !== 3) throw Error('Usage: npm run version:set -- 1.0.1'); console.log(JSON.stringify(setVersion(process.argv[2]), null, 2)); }
   catch (error) { console.error(error.message); process.exitCode = 1; }
 }

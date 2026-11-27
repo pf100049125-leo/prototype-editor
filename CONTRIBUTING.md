@@ -14,17 +14,17 @@
 
 - `main`：维护可用的统一版本。
 - `feature/*`、`fix/*`：各自的功能和修复。
-- `v3.0.1`：初始基线标签，保留在最初的基线提交上。
-- `v3.0.2` 等标签：后续正式版本。不要把旧标签移动到新提交。
+- `v1.0.0`：初始基线标签，保留在最初的基线提交上。
+- `v1.0.1` 等标签：后续正式版本。不要把旧标签移动到新提交。
 
-无需为每个版本保留一条永久分支。需要长期维护旧版本时，再建立 `maintenance/3.0` 等分支，并另行配置相应的发布规则；当前正式发布工作流只接受 main 的提交。
+无需为每个版本保留一条永久分支。需要长期维护旧版本时，再建立 `maintenance/1.0` 等分支，并另行配置相应的发布规则；当前正式发布工作流只接受 main 的提交。
 
 ## 发布一个新版本
 
 在自己的分支上更新版本并记录改动：
 
 ```bash
-npm run version:set -- 3.0.2
+npm run version:set -- 1.0.1
 npm run check
 npm test
 ```
@@ -34,8 +34,8 @@ npm test
 ```bash
 git switch main
 git pull --ff-only
-git tag -a v3.0.2 -m "Release 3.0.2"
-git push origin v3.0.2
+git tag -a v1.0.1 -m "Release 1.0.1"
+git push origin v1.0.1
 ```
 
 Release 工作流会检查标签与版本一致，并确认提交已属于 `origin/main`，随后测试、打包并创建发布草稿。维护者下载 EXE 做实际验收后，在 GitHub Releases 中发布草稿。

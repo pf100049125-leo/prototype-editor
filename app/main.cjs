@@ -56,7 +56,7 @@ else {
     });
     window = new BrowserWindow({
       width: 1680, height: 1040, minWidth: 1000, minHeight: 700,
-      title: 'PrototypeEditor 3.0.1 · 原型编辑器', icon: path.join(__dirname, 'icon.ico'),
+      title: 'PrototypeEditor 1.0.0 · 原型编辑器', icon: path.join(__dirname, 'icon.ico'),
       show: false, autoHideMenuBar: true, backgroundColor: '#f4f5f7',
       webPreferences: { preload: path.join(__dirname, 'preload.cjs'), contextIsolation: true, sandbox: true, nodeIntegration: false }
     });

@@ -1,6 +1,6 @@
 {
   "name": "prototype-editor-desktop",
-  "version": "3.0.1",
+  "version": "1.0.0",
   "description": "原型编辑器：原页面编辑、独立交互与图片导出",
   "main": "app/main.cjs",
   "author": "PrototypeEditor",

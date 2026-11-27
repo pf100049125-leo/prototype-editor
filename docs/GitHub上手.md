@@ -1,6 +1,19 @@
 # GitHub 上手
 
-## 第一次上传和建立基线
+## 当前仓库
+
+仓库地址：[pf100049125-leo/prototype-editor](https://github.com/pf100049125-leo/prototype-editor)。基线版本为 `1.0.0`，基线标签为 `v1.0.0`。
+
+## 克隆并开始开发
+
+```bash
+git clone https://github.com/pf100049125-leo/prototype-editor.git
+cd prototype-editor
+npm ci
+npm start
+```
+
+## 创建自己的新仓库（可选）
 
 1. 在 GitHub 新建空仓库，名称例如 `prototype-editor`，选择公开或私有。先不要在网页端添加 README、gitignore 或许可证，以免与现有源码产生首次合并冲突。
 2. 解压本项目，在 `package.json` 所在目录打开终端。上传的是解压后的源码文件，不是只上传 ZIP 或 EXE。
@@ -9,14 +22,14 @@
 ```bash
 git init -b main
 git add .
-git commit -m "chore: establish v3.0.1 baseline"
+git commit -m "chore: establish v1.0.0 baseline"
 git remote add origin https://github.com/你的账号/prototype-editor.git
 git push -u origin main
-git tag -a v3.0.1 -m "Baseline 3.0.1"
-git push origin v3.0.1
+git tag -a v1.0.0 -m "Baseline 1.0.0"
+git push origin v1.0.0
 ```
 
-将示例地址换成你的仓库地址。`v3.0.1` 标记当前基线，未来分支无论如何发展，都可以定位到这次提交。本项目当前没有代你创建远程仓库或基线标签。
+将示例地址换成你的仓库地址。`v1.0.0` 标记当前基线，未来分支无论如何发展，都可以定位到这次提交。以上命令仅用于创建你自己的新仓库；参与现有项目时使用 Fork 或功能分支。
 
 ## 开启协作
 
@@ -45,7 +58,7 @@ git push origin v3.0.1
 
 ## 版本更新
 
-日常提交可以不改版本号；准备发布时，用 `npm run version:set -- 3.0.2` 同步 package、锁文件、窗口标题和预加载版本，再通过 PR 合并。发布命令见根目录 CONTRIBUTING.md。
+日常提交可以不改版本号；准备发布时，用 `npm run version:set -- 1.0.1` 同步 package、锁文件、窗口标题和预加载版本，再通过 PR 合并。发布命令见根目录 CONTRIBUTING.md。
 
 Git 管理源码和历史，不会自动安装 EXE 到使用者电脑；新 EXE 仍由使用者从 Releases 下载。原型 JSON 文件的业务差异也不会自动理解，需要人工审查。
 
@@ -56,4 +69,4 @@ Git 管理源码和历史，不会自动安装 EXE 到使用者电脑；新 EXE 
 - [版本发布](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)
 - [Actions 工作流权限](https://docs.github.com/en/actions/tutorials/authenticate-with-github_token)
 
-本地已检查代码与工作流结构；GitHub 上的真实运行需在上传后验证。当前不额外附加开源许可证，公开范围及授权由项目负责人确定。
+自动化执行结果可在本仓库 Actions 页面查看。当前不额外附加开源许可证，公开范围及授权由项目负责人确定。
